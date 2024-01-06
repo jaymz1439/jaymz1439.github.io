@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>사용법 on 헬름</title>
-    <link>https://zou-zongming.github.io/ko/docs/howto/</link>
+    <link>https://jaymz1439.github.io/ko/docs/howto/</link>
     <description>Recent content in 사용법 on 헬름</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <atom:link href="https://zou-zongming.github.io/ko/docs/howto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaymz1439.github.io/ko/docs/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>차트 개발 팁과 비법</title>
-      <link>https://zou-zongming.github.io/ko/docs/howto/charts_tips_and_tricks/</link>
+      <link>https://jaymz1439.github.io/ko/docs/howto/charts_tips_and_tricks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/howto/charts_tips_and_tricks/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/howto/charts_tips_and_tricks/</guid>
       <description>이 가이드는 핼름 차트 개발자들이 production-quality 차트들을 만들면서 배운 팁과 비법을 담고 있습니다.&#xA;템플릿 함수 이해하기 Helm uses Go templates for templating your resource files. While Go ships several built-in functions, we have added many others.&#xA;First, we added all of the functions in the Sprig library.&#xA;We also added two special template functions: include and required. The include function allows you to bring in another template, and then pass the results to other template functions.</description>
     </item>
     <item>
       <title>차트 리포지토리 동기화</title>
-      <link>https://zou-zongming.github.io/ko/docs/howto/chart_repository_sync_example/</link>
+      <link>https://jaymz1439.github.io/ko/docs/howto/chart_repository_sync_example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/howto/chart_repository_sync_example/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/howto/chart_repository_sync_example/</guid>
       <description>참고: 이곳의 예제들은 차트 리포지토리를 제공하는 Google Cloud Storage (GCS) 버킷에 맞게 작성되었다.&#xA;전제 조건 gsutil 툴을 설치해야 한다. gsutill rsync 기능이 필요하다. 헬름 바이너리에 대한 접근 권한이 있어야 한다. 선택 사항: 실수로 파일을 삭제할 경우를 대비하여 GCS 버킷에 오브젝트 버전 관리를 설정하는 것을 추천한다. 로컬 차트 리포지토리 디렉터리 설정 차트 리포지토리 가이드에서 한 것처럼 로컬 디렉터리를 만들고, 패키지된 차트를 그 디렉터리로 옮긴다.&#xA;예제:&#xA;$ mkdir fantastic-charts $ mv alpine-0.1.0.tgz fantastic-charts/ 업데이트 된 index.</description>
     </item>
   </channel>

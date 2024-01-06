@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>차트 템플릿 가이드 on 헬름</title>
-    <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/</link>
+    <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/</link>
     <description>Recent content in 차트 템플릿 가이드 on 헬름</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <atom:link href="https://zou-zongming.github.io/ko/docs/chart_template_guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaymz1439.github.io/ko/docs/chart_template_guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>시작하기</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/getting_started/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/getting_started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/getting_started/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/getting_started/</guid>
       <description>이 섹션에서는 차트를 만든 다음 첫 번째 템플릿을 추가할 것이다. 우리가 여기서 만든 차트는 가이드의 나머지 부분에서 쭉 사용될 것이다.&#xA;시작하기 위해 헬름 차트를 간단히 살펴보자.&#xA;차트 차트 가이드에 설명된 대로, 헬름 차트는 다음과 같이 구성된다:&#xA;mychart/ Chart.yaml values.yaml charts/ templates/ ... templates/ 디렉토리는 템플릿 파일을 위한 것이다. 헬름이 차트를 평가할 때, templates/ 디렉토리의 모든 파일을 템플릿 렌더링 엔진으로 전달한다. 그리고 나서 처리 결과를 모아 쿠버네티스로 보낸다.&#xA;values.yaml 파일도 템플릿에 중요하다.</description>
     </item>
     <item>
       <title>빌트인 객체</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/builtin_objects/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/builtin_objects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/builtin_objects/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/builtin_objects/</guid>
       <description>객체는 템플릿 엔진에서 템플릿으로 전달된다. 그리고 사용자의 코드는 객체를 전달할 수 있다. (with 와 range 문을 볼 때 예제로 확인할 수 있다.) 이후에 보게 될 tuple 함수와 같이 템플릿 내에서 새로운 객체를 만드는 몇 가지 방법이 있다.&#xA;객체는 간단히 하나의 값만 가질 수도 있다. 또는 다른 객체나 기능을 포함할 수 있다. 예를 들어, Release 객체는 (Release.Name 과 같은) 여러 객체를 포함하며 Files 객체는 몇 가지 함수를 가지고 있다.&#xA;이전 섹션에서는 템플릿에 릴리즈 이름을 삽입하기 위해 {{.</description>
     </item>
     <item>
       <title>Values 파일</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/values_files/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/values_files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/values_files/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/values_files/</guid>
       <description>이전 섹션에서 우리는 헬름 템플릿에서 제공하는 빌트인 객체를 살펴봤다. 기본 객체 중 하나는 Values이다. 이 객체는 차트로 전달된 값에 접근할 수 있게 해준다. 이 객체의 내용들은 여러 출처에서 나온다:&#xA;본 차트에 포함된 values.yaml 파일 서브 차트의 경우, 부모 차트의 values.yaml 파일 -f 플래그 (helm install -f myvals.yaml ./mychart)가 있는 helm install 또는 helm upgrade로 전달된 values.yaml 파일 --set (such as helm install --set foo=bar ./mychart)과 함께 전달된 개별 매개변수 위 목록은 적용될 값의 순서이다: 기본 값인 values.</description>
     </item>
     <item>
       <title>템플릿 함수와 파이프라인</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/functions_and_pipelines/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/functions_and_pipelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/functions_and_pipelines/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/functions_and_pipelines/</guid>
       <description>So far, we&#39;ve seen how to place information into a template. But that information is placed into the template unmodified. Sometimes we want to transform the supplied data in a way that makes it more useable to us.&#xA;Let&#39;s start with a best practice: When injecting strings from the .Values object into the template, we ought to quote these strings. We can do that by calling the quote function in the template directive:</description>
     </item>
     <item>
       <title>템플릿 함수 목록</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/function_list/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/function_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/function_list/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/function_list/</guid>
       <description>헬름에는 템플릿에서 활용할 수 있는 많은 템플릿 함수들이 포함되어 있다. 여기에 나열되며 다음 범주로 분류된다.&#xA;암호화 및 보안 날짜 사전 인코딩 파일 경로 쿠버네티스 및 차트 논리 및 흐름 제어 목록 수학 네트워크 리플렉션 정규 표현식 유의적 버전 문자열 형 변환 URL UUID 논리 및 흐름 제어 함수 헬름은 and, coalesce, default, empty, eq, fail, ge, gt, le, lt, ne, not, or 를 포함한 수많은 논리 및 흐름 제어 기능이 포함되어 있다.</description>
     </item>
     <item>
       <title>흐름(flow) 제어</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/control_structures/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/control_structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/control_structures/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/control_structures/</guid>
       <description>Control structures (called &amp;quot;actions&amp;quot; in template parlance) provide you, the template author, with the ability to control the flow of a template&#39;s generation. Helm&#39;s template language provides the following control structures:&#xA;if/else - 조건부 블록 생성 with - 스코프 지정 range - &amp;quot;for each&amp;quot; 스타일 반복문 제공 In addition to these, it provides a few actions for declaring and using named template segments:&#xA;define declares a new named template inside of your template template imports a named template block declares a special kind of fillable template area In this section, we&#39;ll talk about if, with, and range.</description>
     </item>
     <item>
       <title>변수</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/variables/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/variables/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/variables/</guid>
       <description>With functions, pipelines, objects, and control structures under our belts, we can turn to one of the more basic ideas in many programming languages: variables. In templates, they are less frequently used. But we will see how to use them to simplify code, and to make better use of with and range.&#xA;In an earlier example, we saw that this code will fail:&#xA;{{- with .Values.favorite }} drink: {{ .drink | default &amp;#34;tea&amp;#34; | quote }} food: {{ .</description>
     </item>
     <item>
       <title>지명 템플릿</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/named_templates/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/named_templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/named_templates/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/named_templates/</guid>
       <description>It is time to move beyond one template, and begin to create others. In this section, we will see how to define named templates in one file, and then use them elsewhere. A named template (sometimes called a partial or a subtemplate) is simply a template defined inside of a file, and given a name. We&#39;ll see two ways to create them, and a few different ways to use them.</description>
     </item>
     <item>
       <title>NOTES.txt 파일 작성하기</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/notes_files/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/notes_files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/notes_files/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/notes_files/</guid>
       <description>이 섹션에서는 차트 사용자에게 지침을 제공하는 헬름의 도구들을 살펴본다. helm install 이나 helm upgrade 가 끝나면, 헬름은 사용자에게 유용한 정보들을 출력할 수 있다. 이 정보는 템플릿을 사용하여 많은 부분을 커스터마이징할 수 있다.&#xA;차트에 설치 메모를 추가하기 위해, 간단하게 templates/NOTES.txt 파일을 생성한다. 이 파일은 평범한 텍스트이지만, 템플릿처럼 처리되며 모든 일반 템플릿 기능과 객체를 사용할 수 있다.&#xA;간단히 NOTES.txt 파일을 생성한다.&#xA;Thank you for installing {{ .Chart.Name }}. Your release is named {{ .</description>
     </item>
     <item>
       <title>템플릿 내부 파일 접근하기</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/accessing_files/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/accessing_files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/accessing_files/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/accessing_files/</guid>
       <description>이전 항목에서 지명 템플릿을 만들고 액세스하는 몇 가지 방법을 살펴보았다. 이런 방법으로 다른 템플릿에서 필요한 템플릿을 쉽게 가져올 수 있다. 하지만 때로는 템플릿이 아닌 파일 을 가져와서 그 내용을 템플릿 렌더러(renderer)로 보내지 않고 직접 주입(inject)하려고 하는 경우가 있을 수 있다.&#xA;헬름은 .Files 객체를 통해 파일에 액세스할 수 있게 해준다. 템플릿 예제를 확인하기 전에 어떻게 작동하는지 살펴보자.&#xA;헬름 차트에 파일을 추가해도 된다. 추가된 파일들은 하나로 묶인다. 다만, 쿠버네티스 객체 저장소에는 제한이 있어 차트는 1M 보다 작아야 한다.</description>
     </item>
     <item>
       <title>서브차트와 글로벌 값</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/subcharts_and_globals/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/subcharts_and_globals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/subcharts_and_globals/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/subcharts_and_globals/</guid>
       <description>To this point we have been working only with one chart. But charts can have dependencies, called subcharts, that also have their own values and templates. In this section we will create a subchart and see the different ways we can access values from within templates.&#xA;Before we dive into the code, there are a few important details to learn about subcharts.&#xA;A subchart is considered &amp;quot;stand-alone&amp;quot;, which means a subchart can never explicitly depend on its parent chart.</description>
     </item>
     <item>
       <title>.helmignore 파일</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/helm_ignore_file/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/helm_ignore_file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/helm_ignore_file/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/helm_ignore_file/</guid>
       <description>.helmignore 파일은 헬름 차트에 포함시키고 싶지 않은 파일들을 지정하는 데 사용한다.&#xA;이 파일이 있으면, helm package 명령어는 애플리케이션을 패키징할 때 .helmignore에서 지정한 패턴에 매칭되는 모든 파일들을 무시할 것이다.&#xA;이를 통해 불필요하거나 민감한 파일 또는 디렉토리들이 헬름 차트에 추가되는 것을 막을 수 있다.&#xA;.helmignore 파일&#xA;.helmignore 파일은 유닉스 쉘 글롭(glob) 매칭, 상대 경로 매칭, 부정(negation, 접두어 ! 사용)을 지원한다. 한 줄에는 하나의 패턴만 있다는 것으로 취급된다.&#xA;.helmignore 파일 예시는 다음과 같다.</description>
     </item>
     <item>
       <title>템플릿 디버깅</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/debugging/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/debugging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/debugging/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/debugging/</guid>
       <description>렌더링된 템플릿이 쿠버네티스 API 서버로 전송될 때 문서 형식 이외의 이유로 YAML 파일들이 거부될 수 있기 때문에, 템플릿 디버깅은 다소 까다로울 수 있다.&#xA;디버깅에 도움이 되는 몇 가지 명령어들이 있다.&#xA;helm lint 는 내 차트가 모범 사례에 맞는지 검증하는 믿을만한 도구이다. helm install --dry-run --debug 혹은 helm template --debug: 앞에서 설명한 적이 있는 방법이다. 서버가 템플릿을 렌더링한 결과물을 매니페스트 파일로 돌려받아 볼 수 있는 매우 유용한 방법이다. helm get manifest: 서버에 어떤 템플릿들이 설치되어 있는지 알아 볼 수 있는 유용한 방법이다.</description>
     </item>
     <item>
       <title>다음 단계</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/wrapping_up/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/wrapping_up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/wrapping_up/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/wrapping_up/</guid>
       <description>본 가이드는 차트 개발자에게 헬름의 템플릿 언어를 사용하는 방법을 깊이 이해시키기 위한 것이다. 템플릿 개발의 기술적 관점이 중심이 된다.&#xA;그러나 이 가이드에서도 실제 차트 개발에 필요한 많은 것들을 모두 다루지는 못했다. 새로운 차트를 작성할 때 도움이 되는 다른 유용한 문서들은 다음과 같다.&#xA;Helm Charts project is an indispensable source of charts. That project is also sets the standard for best practices in chart development. The Kubernetes Documentation provides detailed examples of the various resource kinds that you can use, from ConfigMaps and Secrets to DaemonSets and Deployments.</description>
     </item>
     <item>
       <title>부록: YAML 기법</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/yaml_techniques/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/yaml_techniques/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/yaml_techniques/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/yaml_techniques/</guid>
       <description>Most of this guide has been focused on writing the template language. Here, we&#39;ll look at the YAML format. YAML has some useful features that we, as template authors, can use to make our templates less error prone and easier to read.&#xA;스칼라(scalar)와 콜렉션(collection) According to the YAML spec, there are two types of collections, and many scalar types.&#xA;The two types of collections are maps and sequences:&#xA;map: one: 1 two: 2 three: 3 sequence: - one - two - three Scalar values are individual values (as opposed to collections)</description>
     </item>
     <item>
       <title>부록: Go 자료형과 템플릿</title>
-      <link>https://zou-zongming.github.io/ko/docs/chart_template_guide/data_types/</link>
+      <link>https://jaymz1439.github.io/ko/docs/chart_template_guide/data_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ko/docs/chart_template_guide/data_types/</guid>
+      <guid>https://jaymz1439.github.io/ko/docs/chart_template_guide/data_types/</guid>
       <description>헬름 템플릿 언어는 강한 타이핑(strongly typed)인 Go 프로그래밍 언어로 구현된다. 이러한 이유로, 템플릿에서의 변수는 _타이핑(typed)_된다. 대부분의 경우, 변수는 다음 자료형 중 하나로 노출된다.&#xA;string: 텍스트 문자열 bool: true 또는 false int: 정수 값 (8, 16, 32, 64 비트의 부호가 있거나(signed) 없는(unsinged) 다양한 자료형이 있다) float64: 64비트 부동 소수점 값 (8, 16, 32 비트의 다양한 자료형이 있다) byte slice([]byte), 흔히 (잠재적으로) 바이너리 데이터를 담기 위해 사용된다. struct(구조체): 프로퍼티와 메소드를 가지는 객체 위의 자료형 중 하나에 대한 슬라이스(인덱스 있는 리스트) 위의 자료형 중 하나에 대한 문자열-키 맵(map[string]interface{}) Go에는 다른 여러가지 자료형이 있는데, 템플릿에서는 때에 따라 자료형을 변환해야 할 수도 있다.</description>
     </item>
   </channel>

@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ベストプラクティス on Helm</title>
-    <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/</link>
+    <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/</link>
     <description>Recent content in ベストプラクティス on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="https://zou-zongming.github.io/ja/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaymz1439.github.io/ja/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一般的な慣習</title>
-      <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/conventions/</link>
+      <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/conventions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ja/docs/chart_best_practices/conventions/</guid>
+      <guid>https://jaymz1439.github.io/ja/docs/chart_best_practices/conventions/</guid>
       <description>ベストプラクティスガイドのこの部分では一般的な慣習について説明します。&#xA;チャート名 チャート名は英小文字と数字である必要があります。単語はダッシュ（-）で区切ることも できます 。&#xA;例:&#xA;drupal nginx-lego aws-cluster-autoscaler 英大文字とアンダースコアは両方ともチャート名に用いることはできません。ドットもチャート名には使わないべきです。&#xA;バージョン数 可能ならばどこであっても、Helm はバージョン数を表現するために SemVer 2 を使います。（Docker イメージタグは SemVer に従う必要がないことに注意してください。またこれは残念ながら規約の例外とみなされています。）&#xA;SemVer バージョンが Kubernetes ラベルに保存されるとき、私たちは慣習的に文字 + を文字 _ に置き換えます。これはラベルで + が値を表さないようにするためです。&#xA;YAML のフォーマット YAML ファイルは 2 つのスペース でインデントされるべきです（そしてタブは使いません）。&#xA;単語 Helm と Chart の使い方 単語 Helm および helm の使い方についていくつかの慣習があります。&#xA;Helm はプロジェクト全体を表します。 helm はクライアントサイドのコマンドを表します。 用語 chart を大文字化する必要はありません。なぜならそれは固有名詞ではないためです。 しかし、ファイル名はケース・センシティブであるため Chart.yaml は大文字化する必要があります。 迷ったときは、 Helm （大文字の &#39;H&#39; を含む）を使いましょう。</description>
     </item>
     <item>
       <title>値</title>
-      <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/values/</link>
+      <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ja/docs/chart_best_practices/values/</guid>
+      <guid>https://jaymz1439.github.io/ja/docs/chart_best_practices/values/</guid>
       <description>ベストプラクティスガイドのこの部分では、値の設定方法を解説します。 チャートのvalues.yamlの書き方に重点を置いて、値を構造化して利用するおすすめの方法を解説します。&#xA;命名規則 変数名は小文字で始める必要があります。また、単語はキャメルケースで区切ってください。&#xA;正しい書き方:&#xA;chicken: true chickenNoodleSoup: true 正しくない書き方:&#xA;Chicken: true # 最初を大文字にすると予約語と衝突することがあります chicken-noodle-soup: true # ハイフンは使わないでください ユーザー定義のパラメータと区別しやすくするため、Helmの全ての予約語は大文字で始まります。 例) .Release.Name, .Capabilities.KubeVersion&#xA;フラット・ネスト構造の値 YAMLは柔軟な形式なので、値を深くネストすることも、フラットにすることもできます。&#xA;ネスト:&#xA;server: name: nginx port: 80 フラット:&#xA;serverName: nginx serverPort: 80 ほとんどの場合、ネストよりフラットな方が好まれます。フラットな方がテンプレートの開発者・ユーザーがよりシンプルに理解できるからです。&#xA;ネストされた値を安全に扱うためには、全ての階層で値をチェックする必要があります。&#xA;{{ if .Values.server }} {{ default &amp;#34;none&amp;#34; .Values.server.name }} {{ end }} ネストされた全ての階層では値が存在するかをチェックする必要があります。 その一方でフラット構成の場合、このようなチェックをせずにテンプレートを読みやすく、使いやすくすることができます。&#xA;{{ default &amp;#34;none&amp;#34; .Values.serverName }} 関連する変数が多数あり、そのうちの少なくとも1つが必須の変数である場合は、 読みやすさを向上させるためにネストされた値を使うことがあります。&#xA;型の明確化 YAMLの型強制ルールは直感に反することがあります。例えば foo: falseと foo: &amp;quot;false&amp;quot;は同じではありません。foo: 12345678 のように大きな整数は、 科学的表記に変換される場合があります。&#xA;型変換エラーを回避する最も簡単な方法は、文字列は明示的に扱い、その他全ては暗黙的に扱うことです。 簡潔に言えば、すべての文字列を引用する ということです。</description>
     </item>
     <item>
       <title>テンプレート</title>
-      <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/templates/</link>
+      <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ja/docs/chart_best_practices/templates/</guid>
+      <guid>https://jaymz1439.github.io/ja/docs/chart_best_practices/templates/</guid>
       <description>ベストプラクティスガイドのこの部分では、テンプレートについて焦点を合わせます。&#xA;templates/の構造 templates/ディレクトリは次のように構造化されるべきです:&#xA;テンプレートファイルは、YAMLを出力するのであれば、.yamlの拡張子をつけるべきです。 .tpl拡張子はフォーマットされない内容を出力するテンプレートファイルに使用することができます。 テンプレートファイルの名前はキャメルケースではなく、ハイフン区切り（my-example-configmap.yaml） で命名すべきです。 それぞれのリソース定義は、テンプレートファイル毎に独立したものにすべきです。 テンプレートファイルの名前は、そのリソースの種類を名前に含めるべきです。e.g. foo-pod.yaml, bar-svc.yaml 定義されたテンプレートの名前 定義されたテンプレート（{{ define }} ディレクティブの中に作られたテンプレート）は グローバルにアクセス可能です。つまり、チャートとそのサブチャート全てが、{{ define }} で作成されたテンプレートにアクセスすることができます。&#xA;そのため、定義されたテンプレート名は全て、名前空間を含んでいるべきです。&#xA;正しい書き方:&#xA;{{- define &amp;#34;nginx.fullname&amp;#34; }} {{/* ... */}} {{ end -}} 正しくない書き方:&#xA;{{- define &amp;#34;fullname&amp;#34; -}} {{/* ... */}} {{ end -}} 新しいチャートは常に、自動的にテンプレート名をベストプラクティスに応じて定義するため、 helm createコマンド経由で作成することを強く推奨します。&#xA;テンプレートのフォーマット テンプレートは 二つのスペース でインデントするべきです。（タブではなく）&#xA;テンプレートディレクティブは、中括弧の開始の後と終わりの前にスペースを入れるべきです。&#xA;正しい書き方:&#xA;{{ .foo }} {{ print &amp;#34;foo&amp;#34; }} {{- print &amp;#34;bar&amp;#34; -}} 正しくない書き方:&#xA;{{.foo}} {{print &amp;#34;foo&amp;#34;}} {{-print &amp;#34;bar&amp;#34;-}} 可能な場合、テンプレートはスペースを詰めるべきです:</description>
     </item>
     <item>
       <title>依存関係</title>
-      <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/dependencies/</link>
+      <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/dependencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ja/docs/chart_best_practices/dependencies/</guid>
+      <guid>https://jaymz1439.github.io/ja/docs/chart_best_practices/dependencies/</guid>
       <description>このセクションでは、Chart.yamlに宣言された依存関係のベストプラクティスについて 解説します。&#xA;バージョン 可能であれば、正確なバージョンを固定するよりバージョンの範囲を使用してください。デフォルト では、パッチレベルのバージョンマッチを使用することが推奨されています:&#xA;version: ~1.2.3 これはバージョン1.2.3とそのバッチバージョンにマッチします。つまり、 ~1.2.3は&amp;gt;= 1.2.3, &amp;lt; 1.3.0と同等になります。&#xA;完全なバージョンマッチのシンタックスについては、&#xD;semver documentation を参照してください。&#xA;プレリリースバージョン 上記のバージョンの制約は、プレリリースバージョンにはマッチしません。 例えば、version: ~1.2.3はversion: ~1.2.4にマッチしますが、version: ~1.2.3-1 にはマッチしません。 以下はパッチレベルのマッチングだけでなく、プレリリースにも対応します:&#xA;version: ~1.2.3-0 リポジトリURL 可能であれば、https://のリポジトリURLを使用し、その後、http://のURLを使用してください。&#xA;リポジトリが、そのインデックスファイルに追加されている場合、リポジトリの名前がURLの別名 として使われます。alias:もしくは@の後に、リポジトリ名を付けて利用してください。&#xA;ファイルのURL（file://...）は固定されたデプロイパイプラインによって組み立てられた チャートのための&amp;quot;特殊なケース&amp;quot;と考えられます。&#xA;downloader pluginsを使用する場合、 URLのスキームはプラグインに固有になります。注意としては、チャートの利用者はその依存関係を ビルドもしくは更新するために、スキームをサポートするプラグインをインストールする必要があります。&#xA;repositoryフィールドが空白の場合、Helmは依存関係の管理操作を行うことができません。 その場合、Helmはその依存関係がnameで指定した名前と同じ名前の、 chartsフォルダーのサブディレクトリにあると推測します。&#xA;コンディションとタグ 任意の 依存関係には、コンディションもしくはタグを追加するべきです。&#xA;コンディションの好ましい書き方:&#xA;condition: somechart.enabled ここではsomechartが依存関係のあるチャートの名前です。&#xA;複数のサブチャート（依存関係）が共に任意もしくは取り替え可能な機能 を提供する場合、これらのチャートは同じタグを共有するべきです。&#xA;例えば、nginxとmemcachedの両方がチャート内で、メインアプリケーション用に パフォーマンスの最適化を提供している場合、そして、その機能を使用する際、その両方が 必要になる場合、このようなタグのセクションを含めるべきでしょう:&#xA;tags: - webaccelerator これにより、利用者はその機能のオンとオフを一つのタグで切り替えることができます。</description>
     </item>
     <item>
       <title>ラベルとアノテーション</title>
-      <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/labels/</link>
+      <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/labels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ja/docs/chart_best_practices/labels/</guid>
+      <guid>https://jaymz1439.github.io/ja/docs/chart_best_practices/labels/</guid>
       <description>ベストプラクティスのこの部分では、チャートの中でラベルとアノテーションを使用する際の ベストプラクティスについて議論します。&#xA;ラベルかアノテーションか？ メタデータの項目は以下の条件でラベルにすべきです:&#xA;リソースを特定するためにKubernetesによって使用される場合 システムに問い合わせをする目的でオペレータに公開すると便利な場合 例えば、オペレータが特定のチャートの全てのインスタンスを便利に見つけられるように、 ラベルとしてhelm.sh/chart: NAME-VERSIONを使うことを推奨します。&#xA;メタデータの項目が問い合わせの目的で使用されない場合、代わりにアノテーションを 使うべきでしょう。&#xA;Helmフックは常にアノテーションです。&#xA;標準的なラベル 次のテーブルはHelmチャートが使う、共通のラベルを定義しています。Helmそれ自体は 特定のラベルが存在することを必要としません。RECとマークされたラベルは使用を推奨され、 グローバルな一貫性のためにチャートに記述される べき です。 OPTとマークされた項目は任意です。これらは慣用句として、あるいは一般的に使用されているもの ではありますが、業務上頻繁に使用されるものではありません。&#xA;名前 ステータス 説明 app.kubernetes.io/name REC これはアプリ全体を反映した名前であるべきです。一般的には{{ template &amp;quot;name&amp;quot; . }}がこのために使われるでしょう。これは多くのKubernetesマニフェストで使用されるものであり、Helm特有のものではありません。 helm.sh/chart REC これはチャート名とバージョンにすべきです: {{ .Chart.Name }}-{{ .Chart.Version | replace &amp;quot;+&amp;quot; &amp;quot;_&amp;quot; }}. app.kubernetes.io/managed-by REC これは常に{{ .Release.Service }}に設定するべきです。Helmで管理されているものを全て見つけるために使用されます。 app.kubernetes.io/instance REC これは{{ .Release.Name }}にすべきです。 これは、同じアプリケーションの異なるインスタンスを区別するのに役立ちます。 app.kubernetes.io/version OPT アプリのバージョンで、{{ .Chart.AppVersion }}に設定できます。 app.kubernetes.io/component OPT これはアプリケーション内の違った役割示す共通のラベルです。例、 app.kubernetes.io/component: frontend app.kubernetes.io/part-of OPT 複数のチャートとソフトウェアが一体となって一つのアプリケーションを構成している場合のラベル。例えば、ウェブサイトを生成するデータベースとアプリケーションソフトウェアなど。これは、対応するトップレベルのアプリケーションにも設定することができます。 Kubernetesのapp.kubernetes.ioプレフィックスが付いたラベルについて、 Kubernetes documentationでより詳細な情報を見つけることができます。</description>
     </item>
     <item>
       <title>PodとPodテンプレート</title>
-      <link>https://zou-zongming.github.io/ja/docs/chart_best_practices/pods/</link>
+      <link>https://jaymz1439.github.io/ja/docs/chart_best_practices/pods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/ja/docs/chart_best_practices/pods/</guid>
+      <guid>https://jaymz1439.github.io/ja/docs/chart_best_practices/pods/</guid>
       <description>ベストプラクティスのこの部分では、チャートマニフェストの、PodとPodテンプレート部分の フォーマットについて説明します。&#xA;以下のリソースのリスト（非網羅的）がPodテンプレートを使用します:&#xA;Deployment ReplicationController ReplicaSet DaemonSet StatefulSet イメージ コンテナイメージは固定されたタグ、もしくはイメージのSHAを使用するべきです。イメージはlatest, head,canaryタグや、その他&amp;quot;浮いている&amp;quot;タグは使用するべきではありません。&#xA;イメージは、簡単に入れ替えられるように、values.yamlに定義しても 良い でしょう。&#xA;image: {{ .Values.redisImage | quote }} イメージとタグは、それぞれ別のフィールドとしてvalues.yamlに定義しても 良い でしょう:&#xA;image: &amp;#34;{{ .Values.redisImage }}:{{ .Values.redisTag }}&amp;#34; ImagePullPolicy helm createはデフォルトで以下のようにして、deployment.yamlの imagePullPolicyをIfNotPresentに設定します:&#xA;imagePullPolicy: {{ .Values.image.pullPolicy }} そして、values.yaml:&#xA;image: pullPolicy: IfNotPresent 同様に、KubernetesはimagePullPolicyが定義されていない場合、デフォルトでIfNotPresentに 設定します。IfNotPresent以外の値が必要な場合、単純にvalues.yamlの値を必要な値に更新 してください。&#xA;Podテンプレートはselectorを宣言するべき 全てのPodテンプレートセクションはselectorを指定するべきです。例えば:&#xA;selector: matchLabels: app.kubernetes.io/name: MyName template: metadata: labels: app.kubernetes.io/name: MyName これはセットとPodの関係を作るため、良い慣習です。&#xA;しかし、Deploymentのようなセットでは、これはさらに重要になります。これがないと、 全ての ラベルのセットが一致するPodを選択するために使用され、もし、バージョンやリリース日のように、 変化するラベルを使用していた場合、これが壊れることになります。</description>
     </item>
   </channel>

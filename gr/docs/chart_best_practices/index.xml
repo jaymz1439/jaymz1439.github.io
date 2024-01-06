@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Βέλτιστες Πρακτικές on Helm</title>
-    <link>https://zou-zongming.github.io/gr/docs/chart_best_practices/</link>
+    <link>https://jaymz1439.github.io/gr/docs/chart_best_practices/</link>
     <description>Recent content in Βέλτιστες Πρακτικές on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>gr</language>
-    <atom:link href="https://zou-zongming.github.io/gr/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jaymz1439.github.io/gr/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Γενικές Συμβάσεις</title>
-      <link>https://zou-zongming.github.io/gr/docs/chart_best_practices/conventions/</link>
+      <link>https://jaymz1439.github.io/gr/docs/chart_best_practices/conventions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/gr/docs/chart_best_practices/conventions/</guid>
+      <guid>https://jaymz1439.github.io/gr/docs/chart_best_practices/conventions/</guid>
       <description>Αυτό το μέρος του Οδηγού Βέλτιστων Πρακτικών εξηγεί τις γενικές συμβάσεις.&#xA;Ονόματα των Charts Τα ονόματα των Charts πρέπει να είναι γραμμένα με μικρά λατινικά γράμματα και αριθμούς. Οι λέξεις μπορούν να διαχωρίζονται με παύλες (-):&#xA;Παραδείγματα:&#xA;drupal nginx-lego aws-cluster-autoscaler Ούτε κεφαλαία γράμματα ούτε κάτω παύλες μπορούν να χρησιμοποιούνται στα ονόματα των charts. Οι τελείες δεν θα έπρεπε να χρησιμοποιούνται στα ονόματα των charts.&#xA;Αριθμοί Εκδόσεων Όπου είναι δυνατό, το Helm χρησιμοποιεί το SemVer 2 για να αναπαραστήσει ττους αριθμούς των εκδόσεων ( versions ).</description>
     </item>
     <item>
       <title>Αλυσίδες Charts</title>
-      <link>https://zou-zongming.github.io/gr/docs/chart_best_practices/dependencies/</link>
+      <link>https://jaymz1439.github.io/gr/docs/chart_best_practices/dependencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/gr/docs/chart_best_practices/dependencies/</guid>
+      <guid>https://jaymz1439.github.io/gr/docs/chart_best_practices/dependencies/</guid>
       <description>Αυτός ο τομέας του οδηγού καλύπτει τις βέλτιστες πρακτικές για τις αλυσίδες charts οι οποίες δηλώνονται στο Chart.yaml.&#xA;Εκδόσεις Όπου είναι δυνατό, χρησιμοποιήστε ένα φάσμα εκδόσεων (versions) αντί να καρφώνετε σε κάποια συγκεκριμένη έκδοση. Το συνιστώμενο default είναι να χρησιμοποιείτε μια έκδοση η οποία να κάνει το ταίριασμα στο επίπεδο του patch:&#xA;version: ~1.2.3 Αυτό θα ταιριάξει με την έκδοση 1.2.3 και όλα τα patches αυτού του release. Με άλλα λόγια, το ~1.</description>
     </item>
   </channel>
