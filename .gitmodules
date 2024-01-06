@@ -1,0 +1,3 @@
+[submodule "zzm/zongming/themes/hugo-book"]
+	path = zzm/zongming/themes/hugo-book
+	url = https://github.com/alex-shpak/hugo-book
