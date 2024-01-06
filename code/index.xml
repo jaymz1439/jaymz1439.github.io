@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on Helm</title>
-    <link>https://helm.sh/code/</link>
+    <link>https://sma-rnd.github.io/code/</link>
     <description>Recent content in Code on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://helm.sh/code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sma-rnd.github.io/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://helm.sh/chartmuseum/</link>
+      <link>https://sma-rnd.github.io/chartmuseum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://helm.sh/chartmuseum/</guid>
+      <guid>https://sma-rnd.github.io/chartmuseum/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://helm.sh/helm/v2/</link>
+      <link>https://sma-rnd.github.io/helm/v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://helm.sh/helm/v2/</guid>
+      <guid>https://sma-rnd.github.io/helm/v2/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://helm.sh/helm/v3/</link>
+      <link>https://sma-rnd.github.io/helm/v3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://helm.sh/helm/v3/</guid>
+      <guid>https://sma-rnd.github.io/helm/v3/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://helm.sh/helm/</link>
+      <link>https://sma-rnd.github.io/helm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://helm.sh/helm/</guid>
+      <guid>https://sma-rnd.github.io/helm/</guid>
       <description></description>
     </item>
   </channel>

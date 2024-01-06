@@ -2,654 +2,654 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://helm.sh/es/docs/topics/charts/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/charts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/charts/"
+                href="https://sma-rnd.github.io/docs/topics/charts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/charts/"
+                href="https://sma-rnd.github.io/ko/docs/topics/charts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/charts/"
+                href="https://sma-rnd.github.io/zh/docs/topics/charts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/charts/"
+                href="https://sma-rnd.github.io/es/docs/topics/charts/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/howto/charts_tips_and_tricks/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/howto/charts_tips_and_tricks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/howto/charts_tips_and_tricks/"
+                href="https://sma-rnd.github.io/docs/howto/charts_tips_and_tricks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/howto/charts_tips_and_tricks/"
+                href="https://sma-rnd.github.io/de/docs/howto/charts_tips_and_tricks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/howto/charts_tips_and_tricks/"
+                href="https://sma-rnd.github.io/ja/docs/howto/charts_tips_and_tricks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/howto/charts_tips_and_tricks/"
+                href="https://sma-rnd.github.io/ko/docs/howto/charts_tips_and_tricks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/howto/charts_tips_and_tricks/"
+                href="https://sma-rnd.github.io/zh/docs/howto/charts_tips_and_tricks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/howto/charts_tips_and_tricks/"
+                href="https://sma-rnd.github.io/es/docs/howto/charts_tips_and_tricks/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/intro/quickstart/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/intro/quickstart/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/de/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/fr/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/ja/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/ko/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/pt/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://helm.sh/ru/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/ru/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/zh/docs/intro/quickstart/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/intro/quickstart/"
+                href="https://sma-rnd.github.io/es/docs/intro/quickstart/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/intro/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/intro/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/intro/"
+                href="https://sma-rnd.github.io/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/intro/"
+                href="https://sma-rnd.github.io/de/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/intro/"
+                href="https://sma-rnd.github.io/fr/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/intro/"
+                href="https://sma-rnd.github.io/ja/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/intro/"
+                href="https://sma-rnd.github.io/ko/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/docs/intro/"
+                href="https://sma-rnd.github.io/pt/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://helm.sh/ru/docs/intro/"
+                href="https://sma-rnd.github.io/ru/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/intro/"
+                href="https://sma-rnd.github.io/zh/docs/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/intro/"
+                href="https://sma-rnd.github.io/es/docs/intro/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/howto/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/howto/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/howto/"
+                href="https://sma-rnd.github.io/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/howto/"
+                href="https://sma-rnd.github.io/de/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/howto/"
+                href="https://sma-rnd.github.io/fr/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/howto/"
+                href="https://sma-rnd.github.io/ja/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/howto/"
+                href="https://sma-rnd.github.io/ko/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/docs/howto/"
+                href="https://sma-rnd.github.io/pt/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/howto/"
+                href="https://sma-rnd.github.io/zh/docs/howto/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/howto/"
+                href="https://sma-rnd.github.io/es/docs/howto/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/charts_hooks/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/charts_hooks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/charts_hooks/"
+                href="https://sma-rnd.github.io/docs/topics/charts_hooks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/charts_hooks/"
+                href="https://sma-rnd.github.io/ko/docs/topics/charts_hooks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/charts_hooks/"
+                href="https://sma-rnd.github.io/zh/docs/topics/charts_hooks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/charts_hooks/"
+                href="https://sma-rnd.github.io/es/docs/topics/charts_hooks/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/intro/install/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/intro/install/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/intro/install/"
+                href="https://sma-rnd.github.io/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/intro/install/"
+                href="https://sma-rnd.github.io/de/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/intro/install/"
+                href="https://sma-rnd.github.io/fr/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/intro/install/"
+                href="https://sma-rnd.github.io/ja/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/intro/install/"
+                href="https://sma-rnd.github.io/ko/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/docs/intro/install/"
+                href="https://sma-rnd.github.io/pt/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://helm.sh/ru/docs/intro/install/"
+                href="https://sma-rnd.github.io/ru/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/intro/install/"
+                href="https://sma-rnd.github.io/zh/docs/intro/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/intro/install/"
+                href="https://sma-rnd.github.io/es/docs/intro/install/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/howto/chart_repository_sync_example/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/howto/chart_repository_sync_example/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/howto/chart_repository_sync_example/"
+                href="https://sma-rnd.github.io/docs/howto/chart_repository_sync_example/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/howto/chart_repository_sync_example/"
+                href="https://sma-rnd.github.io/de/docs/howto/chart_repository_sync_example/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/howto/chart_repository_sync_example/"
+                href="https://sma-rnd.github.io/ko/docs/howto/chart_repository_sync_example/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/howto/chart_repository_sync_example/"
+                href="https://sma-rnd.github.io/zh/docs/howto/chart_repository_sync_example/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/howto/chart_repository_sync_example/"
+                href="https://sma-rnd.github.io/es/docs/howto/chart_repository_sync_example/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/howto/chart_releaser_action/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/howto/chart_releaser_action/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/howto/chart_releaser_action/"
+                href="https://sma-rnd.github.io/docs/howto/chart_releaser_action/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/howto/chart_releaser_action/"
+                href="https://sma-rnd.github.io/zh/docs/howto/chart_releaser_action/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/howto/chart_releaser_action/"
+                href="https://sma-rnd.github.io/es/docs/howto/chart_releaser_action/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/chart_tests/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/chart_tests/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/chart_tests/"
+                href="https://sma-rnd.github.io/docs/topics/chart_tests/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/topics/chart_tests/"
+                href="https://sma-rnd.github.io/ja/docs/topics/chart_tests/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/chart_tests/"
+                href="https://sma-rnd.github.io/ko/docs/topics/chart_tests/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/chart_tests/"
+                href="https://sma-rnd.github.io/zh/docs/topics/chart_tests/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/chart_tests/"
+                href="https://sma-rnd.github.io/es/docs/topics/chart_tests/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/"
+                href="https://sma-rnd.github.io/docs/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/topics/"
+                href="https://sma-rnd.github.io/fr/docs/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/topics/"
+                href="https://sma-rnd.github.io/ja/docs/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/"
+                href="https://sma-rnd.github.io/ko/docs/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/docs/topics/"
+                href="https://sma-rnd.github.io/pt/docs/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/"
+                href="https://sma-rnd.github.io/zh/docs/topics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/"
+                href="https://sma-rnd.github.io/es/docs/topics/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/intro/using_helm/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/intro/using_helm/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/de/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/fr/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/ja/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/ko/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://helm.sh/ru/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/ru/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/zh/docs/intro/using_helm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/intro/using_helm/"
+                href="https://sma-rnd.github.io/es/docs/intro/using_helm/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/library_charts/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/library_charts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/library_charts/"
+                href="https://sma-rnd.github.io/docs/topics/library_charts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/library_charts/"
+                href="https://sma-rnd.github.io/ko/docs/topics/library_charts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/library_charts/"
+                href="https://sma-rnd.github.io/zh/docs/topics/library_charts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/library_charts/"
+                href="https://sma-rnd.github.io/es/docs/topics/library_charts/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/provenance/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/provenance/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/provenance/"
+                href="https://sma-rnd.github.io/docs/topics/provenance/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/provenance/"
+                href="https://sma-rnd.github.io/ko/docs/topics/provenance/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/provenance/"
+                href="https://sma-rnd.github.io/zh/docs/topics/provenance/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/provenance/"
+                href="https://sma-rnd.github.io/es/docs/topics/provenance/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/architecture/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/architecture/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/architecture/"
+                href="https://sma-rnd.github.io/docs/topics/architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/topics/architecture/"
+                href="https://sma-rnd.github.io/ja/docs/topics/architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/architecture/"
+                href="https://sma-rnd.github.io/ko/docs/topics/architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/architecture/"
+                href="https://sma-rnd.github.io/zh/docs/topics/architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/architecture/"
+                href="https://sma-rnd.github.io/es/docs/topics/architecture/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/advanced/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/advanced/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/advanced/"
+                href="https://sma-rnd.github.io/docs/topics/advanced/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/topics/advanced/"
+                href="https://sma-rnd.github.io/ja/docs/topics/advanced/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/advanced/"
+                href="https://sma-rnd.github.io/ko/docs/topics/advanced/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/advanced/"
+                href="https://sma-rnd.github.io/zh/docs/topics/advanced/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/advanced/"
+                href="https://sma-rnd.github.io/es/docs/topics/advanced/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/topics/kubernetes_distros/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/topics/kubernetes_distros/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/topics/kubernetes_distros/"
+                href="https://sma-rnd.github.io/docs/topics/kubernetes_distros/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/topics/kubernetes_distros/"
+                href="https://sma-rnd.github.io/ko/docs/topics/kubernetes_distros/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/topics/kubernetes_distros/"
+                href="https://sma-rnd.github.io/zh/docs/topics/kubernetes_distros/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/topics/kubernetes_distros/"
+                href="https://sma-rnd.github.io/es/docs/topics/kubernetes_distros/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/intro/cheatsheet/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/intro/cheatsheet/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/intro/cheatsheet/"
+                href="https://sma-rnd.github.io/docs/intro/cheatsheet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/intro/cheatsheet/"
+                href="https://sma-rnd.github.io/zh/docs/intro/cheatsheet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/intro/cheatsheet/"
+                href="https://sma-rnd.github.io/es/docs/intro/cheatsheet/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/docs/</loc>
+    <loc>https://sma-rnd.github.io/es/docs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/docs/"
+                href="https://sma-rnd.github.io/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/docs/"
+                href="https://sma-rnd.github.io/de/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/docs/"
+                href="https://sma-rnd.github.io/fr/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="gr"
-                href="https://helm.sh/gr/docs/"
+                href="https://sma-rnd.github.io/gr/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/docs/"
+                href="https://sma-rnd.github.io/ja/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/docs/"
+                href="https://sma-rnd.github.io/ko/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/docs/"
+                href="https://sma-rnd.github.io/pt/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://helm.sh/ru/docs/"
+                href="https://sma-rnd.github.io/ru/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/docs/"
+                href="https://sma-rnd.github.io/zh/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/docs/"
+                href="https://sma-rnd.github.io/es/docs/"
                 />
   </url><url>
-    <loc>https://helm.sh/es/</loc>
+    <loc>https://sma-rnd.github.io/es/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://helm.sh/"
+                href="https://sma-rnd.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://helm.sh/de/"
+                href="https://sma-rnd.github.io/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://helm.sh/fr/"
+                href="https://sma-rnd.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="gr"
-                href="https://helm.sh/gr/"
+                href="https://sma-rnd.github.io/gr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://helm.sh/ja/"
+                href="https://sma-rnd.github.io/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://helm.sh/ko/"
+                href="https://sma-rnd.github.io/ko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://helm.sh/pt/"
+                href="https://sma-rnd.github.io/pt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://helm.sh/ru/"
+                href="https://sma-rnd.github.io/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://helm.sh/zh/"
+                href="https://sma-rnd.github.io/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://helm.sh/es/"
+                href="https://sma-rnd.github.io/es/"
                 />
   </url>
 </urlset>
