@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs Inicio on Helm</title>
-    <link>https://sma-rnd.github.io/es/docs/</link>
+    <link>https://zou-zongming.github.io/es/docs/</link>
     <description>Recent content in Docs Inicio on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <atom:link href="https://sma-rnd.github.io/es/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/es/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

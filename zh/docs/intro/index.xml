@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>介绍 on Helm</title>
-    <link>https://sma-rnd.github.io/zh/docs/intro/</link>
+    <link>https://zou-zongming.github.io/zh/docs/intro/</link>
     <description>Recent content in 介绍 on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://sma-rnd.github.io/zh/docs/intro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/zh/docs/intro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>快速入门指南</title>
-      <link>https://sma-rnd.github.io/zh/docs/intro/quickstart/</link>
+      <link>https://zou-zongming.github.io/zh/docs/intro/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/intro/quickstart/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/intro/quickstart/</guid>
       <description>本指南介绍如何快速开始使用Helm。&#xA;先决条件 想成功和正确地使用Helm，需要以下前置条件。&#xA;一个 Kubernetes 集群 确定你安装版本的安全配置 安装和配置Helm。 安装或者使用现有的Kubernetes集群 使用Helm，需要一个Kubernetes集群。对于Helm的最新版本，我们建议使用Kubernetes的最新稳定版， 在大多数情况下，它是倒数第二个次版本。 您也应该有一个本地的 kubectl. 查看Helm和对应支持的Kubernetes版本，您可以参考 Helm 版本支持策略。&#xA;安装 您可以通过 homebrew 下载二进制Helm client安装包，也可以通过github下载 github 官方发布页面&#xA;除此之外的更多安装方式详见 安装指南。&#xA;初始化 当您已经安装好了Helm之后，您可以添加一个chart 仓库。从&#xD;Artifact Hub中查找有效的Helm chart仓库。&#xA;$ helm repo add bitnami https://charts.bitnami.com/bitnami 当添加完成，您将可以看到可以被您安装的charts列表：&#xA;$ helm search repo bitnami NAME CHART VERSION&#x9;APP VERSION DESCRIPTION bitnami/bitnami-common 0.0.9 0.0.9 DEPRECATED Chart with custom templates used in ... bitnami/airflow 8.0.2 2.0.0 Apache Airflow is a platform to programmaticall... bitnami/apache 8.</description>
     </item>
     <item>
       <title>安装Helm</title>
-      <link>https://sma-rnd.github.io/zh/docs/intro/install/</link>
+      <link>https://zou-zongming.github.io/zh/docs/intro/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/intro/install/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/intro/install/</guid>
       <description>该指南展示了如何安装Helm CLI。Helm可以用源码或构建的二进制版本安装。&#xA;用Helm项目安装 Helm项目提供了两种获取和安装Helm的方式。这是官方提供的获取Helm发布版本的方法。另外， Helm社区提供了通过不同包管理器安装Helm的方法。这些方法可以在下面的官方方法之后看到。&#xA;用二进制版本安装 每个Helm&#xD;版本都提供了各种操作系统的二进制版本，这些版本可以手动下载和安装。&#xA;下载&#xD;需要的版本 解压(tar -zxvf helm-v3.0.0-linux-amd64.tar.gz) 在解压目录中找到helm程序，移动到需要的目录中(mv linux-amd64/helm /usr/local/bin/helm) 然后就可以执行客户端程序并&#xD;添加稳定仓库: helm help.&#xA;注意 针对Linux AMD64，Helm的自动测试只有在CircleCi构建和发布时才会执行。测试其他操作系统是社区针对系统问题请求Helm的责任。&#xA;使用脚本安装 Helm现在有个安装脚本可以自动拉取最新的Helm版本并在&#xD;本地安装。&#xA;您可以获取这个脚本并在本地执行。它良好的文档会让您在执行之前知道脚本都做了什么。&#xA;$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 $ chmod 700 get_helm.sh $ ./get_helm.sh 如果想直接执行安装，运行curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3&#xD;| bash。&#xA;通过包管理器安装 Helm社区提供了通过操作系统包管理器安装Helm的方式。但Helm项目不支持且不认为是可信的第三方。&#xA;使用Homebrew (macOS) Helm社区成员贡献了一种在Homebrew构建Helm的方案，这个方案通常是最新的。&#xA;brew install helm (注意：还有一个emacs-helm的方案，当然这是另一个项目了。)&#xA;使用Chocolatey (Windows) Helm社区成员贡献了一个&#xD;Helm包在&#xD;Chocolatey中构建， 包通常是最新的。&#xA;choco install kubernetes-helm 使用Scoop (Windows) Helm社区成员贡献了一个针对 Scoop 的&#xD;Helm包，该包通常是最新的。&#xA;scoop install helm 使用Apt (Debian/Ubuntu) Helm社区成员贡献了针对Apt的一个&#xD;Helm包，包通常是最新的。</description>
     </item>
     <item>
       <title>使用Helm</title>
-      <link>https://sma-rnd.github.io/zh/docs/intro/using_helm/</link>
+      <link>https://zou-zongming.github.io/zh/docs/intro/using_helm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/intro/using_helm/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/intro/using_helm/</guid>
       <description>本指南介绍了使用 Helm 来管理 Kubernetes 集群上的软件包的基础知识。在这之前，假定您已经 安装了 Helm 客户端。&#xA;如果您仅对运行一些快速命令感兴趣，则不妨从&#xD;快速入门指南开始。本章包含了 Helm 命令的详细说明，并解释如何使用 Helm。&#xA;三大概念 Chart 代表着 Helm 包。它包含在 Kubernetes 集群内部运行应用程序，工具或服务所需的所有资源定义。你可以把它看作是 Homebrew formula，Apt dpkg，或 Yum RPM 在Kubernetes 中的等价物。&#xA;Repository（仓库） 是用来存放和共享 charts 的地方。它就像 Perl 的 CPAN 档案库网络 或是 Fedora 的&#xD;软件包仓库，只不过它是供 Kubernetes 包所使用的。&#xA;Release 是运行在 Kubernetes 集群中的 chart 的实例。一个 chart 通常可以在同一个集群中安装多次。每一次安装都会创建一个新的 release。以 MySQL chart为例，如果你想在你的集群中运行两个数据库，你可以安装该chart两次。每一个数据库都会拥有它自己的 release 和 release name。&#xA;在了解了上述这些概念以后，我们就可以这样来解释 Helm：&#xA;Helm 安装 charts 到 Kubernetes 集群中，每次安装都会创建一个新的 release。你可以在 Helm 的 chart repositories 中寻找新的 chart。</description>
     </item>
     <item>
       <title></title>
-      <link>https://sma-rnd.github.io/zh/docs/intro/cheatsheet/</link>
+      <link>https://zou-zongming.github.io/zh/docs/intro/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/intro/cheatsheet/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/intro/cheatsheet/</guid>
       <description>速查表 - HELM Helm 速查表包含了通过Helm管理应用的所有必需命令。&#xA;基本方法/上下文 Chart:&#xA;chart名称，防止被拉取和标记。 &amp;lt;repo_name&amp;gt;/&amp;lt;chart_name&amp;gt; 防止已添加但未被拉取的库。 chart使用URL绝对路径。 Name:&#xA;当前安装的helm chart的名称。 Release:&#xA;赋予安装实例的名称。 Revision:&#xA;Helm 历史命令的值 Repo-name:&#xA;仓库名称 DIR:&#xA;目录 name/path Chart 管理 helm create &amp;lt;name&amp;gt; # Creates a chart directory along with the common files and directories used in a chart. helm package &amp;lt;chart-path&amp;gt; # Packages a chart into a versioned chart archive file. helm lint &amp;lt;chart&amp;gt; # Run tests to examine a chart and identify possible issues: helm show all &amp;lt;chart&amp;gt; # Inspect a chart and list its contents: helm show values &amp;lt;chart&amp;gt; # Displays the contents of the values.</description>
     </item>
   </channel>

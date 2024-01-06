@@ -2,114 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Helm</title>
-    <link>https://sma-rnd.github.io/pt/</link>
+    <link>https://zou-zongming.github.io/pt/</link>
     <description>Recent content on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <atom:link href="https://sma-rnd.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/pt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guia de Início Rápido</title>
-      <link>https://sma-rnd.github.io/pt/docs/intro/quickstart/</link>
+      <link>https://zou-zongming.github.io/pt/docs/intro/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/intro/quickstart/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/intro/quickstart/</guid>
       <description>Esse guia cobre como você rapidamente pode começar a utilizar o Helm.&#xA;Pré-requisitos Os pré-requisitos a seguir são exigidos para uma experiência bem sucedida e segura do uso do Helm.&#xA;Ter acesso a um cluster Kubernetes Decidir quais configurações de segurança serão aplicadas durante a instalação, se houver alguma Instalar e configurar o Helm. Instale o Kubernetes ou tenha acesso a um cluster Você deve ter o Kubernetes instalado. Para a utilização da última versão do Helm, nós recomendamos a última versão estável do Kubernetes, que geralmente é a penúltima minor version.</description>
     </item>
     <item>
       <title>Instalando o  Helm</title>
-      <link>https://sma-rnd.github.io/pt/docs/intro/install/</link>
+      <link>https://zou-zongming.github.io/pt/docs/intro/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/intro/install/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/intro/install/</guid>
       <description>Esse guia ensina como instalar a CLI do Helm. O Helm pode ser instalado a partir do código-fonte, ou mesmo de um binário pré-buildado.&#xA;A partir do Projeto Helm O projeto Helm disponibiliza duas maneiras de baixar e instalar o Helm. Essas são as formas oficiais de se obter as versões do Helm. Além disso, a comunidade do Helm disponibiliza alternativas de download através de diversos gerenciadores de pacotes. A seção de instalação pelos gerenciadores de pacotes se encontra abaixo dos métodos oficiais.</description>
     </item>
     <item>
       <title>Helm</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm/</guid>
       <description>helm O gerenciador de pacotes para o Kubernetes.&#xA;Sinopse O gerenciador de pacotes para o Kubernetes.&#xA;Comandos comuns para o Helm:&#xA;helm search: busca por Charts helm pull: baixa um Chart em seu diretório local helm install: aplica um Chart no Kubernetes helm list: lista as releases dos Charts Variáveis de ambiente:&#xA;Nome Descrição $HELM_CACHE_HOME configura um local alternativo para armazenamento dos arquivos de cache. $HELM_CONFIG_HOME configura um local alternativo para armazenamento para as configurações do Helm.</description>
     </item>
     <item>
       <title>Helm Completion (Preenchimento automático)</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_completion/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_completion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_completion/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_completion/</guid>
       <description>helm completion Gera scripts de preenchimento automático para um shell específico&#xA;Synopsis Gera scripts de preenchimento automático do Helm para um shell específico.&#xA;Options -h, --help ajuda para o preenchimento automático Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Completion Bash</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_completion_bash/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_completion_bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_completion_bash/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_completion_bash/</guid>
       <description>helm completion bash Gera scripts de preenchimento automático para o bash&#xA;Sinopse Gera scripts de preenchimento automático do Helm para o bash shell.&#xA;Para carregar o script de preenchimento automático na sessão ativa do bash:&#xA;source &amp;lt; (helm completion bash) Para carregar o script para cada nova sessão, execute uma vez:&#xA;Linux:&#xA;helm completion bash &amp;gt; /etc/bash_completion.d/helm MacOS:&#xA;helm completion bash &amp;gt; /usr/local/etc/bash_completion.d/helm Comando&#xA;helm completion bash [argumentos] Opções -h, --help ajuda para o preenchimento automático do bash Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Completion Fish</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_completion_fish/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_completion_fish/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_completion_fish/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_completion_fish/</guid>
       <description>helm completion fish Gera scripts de preenchimento automático para o fish&#xA;Sinopse Gera scripts de preenchimento automático do Helm para o fish shell.&#xA;Para carregar o script de preenchimento automático na sessão ativa do fish:&#xA;helm completion fish | source Para carregar o script para cada nova sessão, execute uma vez:&#xA;helm completion fish &amp;gt; ~/.config/fish/completions/helm.fish Será necessário iniciar um novo shell para que as modificações tenham efeito.&#xA;Comando&#xA;helm completion fish [argumentos] Opções -h, --help ajuda para o preenchimento automático do fish --no-descriptions desabilita descrições do preenchimento automático Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Completion Zsh</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_completion_zsh/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_completion_zsh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_completion_zsh/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_completion_zsh/</guid>
       <description>helm completion zsh Gera scripts de preenchimento automático para o zsh&#xA;Sinopse Gera scripts de preenchimento automático do Helm para o zsh shell.&#xA;Para carregar o script de preenchimento automático na sessão ativa do zsh:&#xA;$ source &amp;lt; (helm completion zsh) Para carregar o script para cada nova sessão, execute uma vez:&#xA;$ helm completion zsh &amp;gt; &amp;#34;${fpath[1]}/_helm&amp;#34; Comando&#xA;helm completion zsh [argumentos] Opções -h, --help ajuda para o preenchimento automático do zsh --no-descriptions desabilita descrições do preenchimento automático Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Create</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_create/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_create/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_create/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_create/</guid>
       <description>helm create Cria um novo Chart com um dado nome&#xA;Sinopse Esse comando cria um diretório para o Chart, bem como os arquivos comuns necessários para o Chart.&#xA;Por exemplo, helm create foo criará uma estrutura de diretório como:&#xA;foo/&#xD;├── .helmignore # Descreve os arquivos a serem ignorados durante o empacotamento do Chart.&#xD;├── Chart.yaml # Informação sobre o seu Chart&#xD;├── values.yaml # Valores padrão para os seus templates&#xD;├── charts/ # Charts que este Chart depende&#xD;└── templates/ # Arquivos de template: deployment, service e outros manifestos&#xD;└── tests/ # Arquivos de teste&#xD;helm create cria um diretório a partir do argumento passado.</description>
     </item>
     <item>
       <title>Helm Get</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_get/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_get/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_get/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_get/</guid>
       <description>helm get Baixa informações adicionais de uma dada release&#xA;Sinopse Esse comando consiste em múltiplos subcomandos utilizados para recuperar informações adicionais sobre uma dada release, incluindo:&#xA;Os valores utilizados para gerar a release O arquivo de manifesto gerado As notas advindas do Chart da release Os hooks associados a uma release Opções -h, --help ajuda para o comando get Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Get All</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_get_all/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_get_all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_get_all/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_get_all/</guid>
       <description>helm get all Baixa toda informação sobre uma dada release&#xA;Sinopse Esse comando exibe um conjunto de informações, legíveis para o ser humano, sobre as notas, hooks, valores passados e o manifesto gerado para uma dada release.&#xA;helm get all NOME_DA_RELEASE [argumentos] Opções -h, --help ajuda para recuperar um manifesto --revision int recupera uma revisão específica de uma release --template string template em go para formatar a saída do comando, ex: {{.</description>
     </item>
     <item>
       <title>Helm Get Hooks</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_get_hooks/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_get_hooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_get_hooks/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_get_hooks/</guid>
       <description>helm get hooks Baixa todos os hooks para uma dada release&#xA;Sinopse Esse comando recupera os hooks para uma dada release.&#xA;Hooks são formatados em YAML e separados pelo separador YAML &#39;---\n&#39;.&#xA;helm get hooks NOME_DA_RELEASE [argumentos] Opções -h, --help ajuda para recuperar um manifesto --revision int recupera uma revisão específica de uma release Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Get Manifest</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_get_manifest/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_get_manifest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_get_manifest/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_get_manifest/</guid>
       <description>helm get manifest Baixa o manifesto de uma dada release&#xA;Sinopse Esse comando recupera o manifesto gerado de uma dada release.&#xA;Um manifesto é a representação dos recursos do Kubernetes em um arquivo YAML, o qual foi gerado a partir do Chart da release em questão. Se o Chart depender de outros Charts, os recursos Kubernetes das dependências também serão incluídos no manifesto.&#xA;helm get manifest NOME_DA_RELEASE [argumentos] Opções -h, --help ajuda para recuperar um manifesto --revision int recupera uma revisão específica de uma release Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Get Notes</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_get_notes/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_get_notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_get_notes/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_get_notes/</guid>
       <description>helm get notes Baixa as notas de uma dada release&#xA;Sinopse Esse comando exibe as notas de um Chart para uma dada release.&#xA;helm get notes NOME_DA_RELEASE [argumentos] Opções -h, --help ajuda para recuperar um manifesto --revision int recupera uma revisão específica de uma release Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Get Values</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_get_values/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_get_values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_get_values/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_get_values/</guid>
       <description>helm get values Baixa o arquivo com os valores de uma dada release&#xA;Sinopse Esse comando recupera o arquivo com os valores utilizados em uma dada release.&#xA;helm get values NOME_DA_RELEASE [argumentos] Opções -a, --all exibe todos os valores (computados) -h, --help ajuda para recuperar os valores -o, --output format exibe a saída em um formato específico. Formatos: table, json, yaml (padrão table) --revision int recupera uma revisão específica de uma release Opções gerais --debug exibe uma saída verbosa -h, --help exibe ajuda para um comando do helm --kube-apiserver string o endereço e porta do Kubernetes API server --kube-as-group stringArray o grupo que representará essa operação, esse argumento pode ser repetido para indicar múltiplos grupos --kube-as-user string o usuário que representará essa operação --kube-ca-file string caminho para o certificado para conexão com o Kubernetes API server --kube-context string nome do contexto do kubeconfig a ser usado --kube-token string bearer token usado para autenticação --kubeconfig string caminho para o arquivo kubeconfig -n, --namespace string namespace para essa requisição --registry-config string caminho para o arquivo de configuração do registry (padrão &amp;#34;~/.</description>
     </item>
     <item>
       <title>Helm Install</title>
-      <link>https://sma-rnd.github.io/pt/docs/helm/helm_install/</link>
+      <link>https://zou-zongming.github.io/pt/docs/helm/helm_install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/pt/docs/helm/helm_install/</guid>
+      <guid>https://zou-zongming.github.io/pt/docs/helm/helm_install/</guid>
       <description>helm install Instala um Chart&#xA;Sinopse Esse comando instala um Chart Archive.&#xA;O argumento de instalação deve ser uma referência a um Chart, ou um caminho para um Chart empacotado, ou um caminho para um Chart descompactado ou uma URL.&#xA;Para sobrescrever os valores em um Chart use tanto o argumento --values indicando um arquivo yaml para os valores ou o argumento --set passando os valores através da linha de comando.</description>
     </item>
   </channel>

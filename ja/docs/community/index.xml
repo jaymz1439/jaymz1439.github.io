@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>コミュニティ on Helm</title>
-    <link>https://sma-rnd.github.io/ja/docs/community/</link>
+    <link>https://zou-zongming.github.io/ja/docs/community/</link>
     <description>Recent content in コミュニティ on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="https://sma-rnd.github.io/ja/docs/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/ja/docs/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>開発者ガイド</title>
-      <link>https://sma-rnd.github.io/ja/docs/community/developers/</link>
+      <link>https://zou-zongming.github.io/ja/docs/community/developers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/ja/docs/community/developers/</guid>
+      <guid>https://zou-zongming.github.io/ja/docs/community/developers/</guid>
       <description>このガイドでは、Helmで開発するための環境をセットアップする方法について説明します。&#xA;必要な環境 Goの最新バージョン kubectlおよびKubernetesクラスター (optional) Git Helmをビルドする Makeを使用してプログラムを構築します。最も簡単な方法は次のとおりです:&#xA;$ make 注意: $GOPATH/src/helm.sh/helm のパスにて実行されていない場合、このコマンドは失敗します。 また、build が関連するパッケージが見つけられないため、helm.shディレクトリをシンボリックリンクにしてはいけません。&#xA;このコマンドは必要に応じて依存関係をインストールし、vendor/ツリーを再ビルドしたのち、configurationを検証します。 その後にhelmをコンパイルしてbin/helmに配置します。&#xA;Helmをローカルで実行するには、bin/helmを実行してください。&#xA;Helmは、macOSおよびAlpineを含んだほとんどのLinuxディストリビューションで動作することが知られています。 テストの実行 すべてのテスト(vendor/のテストを除く)を実行するには、make testを実行してください。 前提条件として、&#xD;golangci-lint をインストールする必要があります 。&#xA;コントリビューションガイドライン 私たちはコントリビューションを歓迎します。 このプロジェクトは、（a) コードの品質を高く保ち（b）プロジェクトの一貫性を保ち（c）コントリビューションがオープンソースの法的要件に従うことを保証するため、いくつかのガイドラインを設定しました。 私たちの目的はコントリビューターに負担をかけることではなく、ユーザーが利益を得ることができるようにエレガントで高品質なオープンソースコードを構築することです。&#xA;CONTRIBUTINGガイドを読み、理解していることを確認してください。&#xA;https://github.com/helm/helm/blob/main/CONTRIBUTING.md&#xA;コードの構造 Helmプロジェクトのコードは、以下のように構成されています。&#xA;個々のプログラムはcmd/にあります。cmd/内のコードはライブラリ再利用を目的として設計されていません。 共有ライブラリはpkg/にあります。 scripts/ディレクトリには多数のユーティリティスクリプトがあります。これらのほとんどはCI/CDパイプラインによって使用されます。 Goの依存関係管理は流動的であり、Helmのライフサイクルの過程で変更される可能性があります。 依存関係を手動で管理 しない ことをお勧めします。 その代わりに、プロジェクトのMakefileに依存して管理を行うことをお勧めします。 Helm 3では、Goバージョン1.13以降を使用することをお勧めします。&#xA;ドキュメントの作成 Helm 3以降、ドキュメントは独自のリポジトリに移動されました。 新しい機能を作成する場合は付属のドキュメントを作成して、&#xD;helm-wwwにsubmitしてください。&#xA;例外: Helm CLI output (英語) は helm のバイナリ自体から生成されます。 このoutputを生成する方法については&#xD;Updating the Helm CLI Reference Docs をご覧ください。 翻訳された場合、CLI出力は生成されず/content/&amp;lt;lang&amp;gt;/docs/helmに生成されます。&#xA;Git 規約 バージョン管理システムにはGitを使用しています。 mainブランチは現在の開発候補の中心です。 リリースにはタグが付けられます。</description>
     </item>
     <item>
       <title>プロジェクトの歴史</title>
-      <link>https://sma-rnd.github.io/ja/docs/community/history/</link>
+      <link>https://zou-zongming.github.io/ja/docs/community/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/ja/docs/community/history/</guid>
+      <guid>https://zou-zongming.github.io/ja/docs/community/history/</guid>
       <description>Helm は CNCF の Graduated プロジェクトです。&#xA;Helm は、現在 Helm Classic として知られているものとして始まりました。 これは、2015年に開始され、 最初の KubeCon で導入された Deis プロジェクトです。&#xA;2016 年 1 月、プロジェクトは Kubernetes Deployment Manager と呼ばれる GCS ツールと統合され、 プロジェクトは Kubernetes の下に移動されました。 コードベースの統合の結果、 Helm 2.0 がその年の後半にリリースされました。 Helm 2 で生き残った Deployment Manager の主要な機能はサーバー側のコンポーネントで、 最終的な Helm 2.0 リリースでは DM から Tiller に名前が変更されました。&#xA;Helm は、2018 年 6 月に Kubernetes サブプロジェクトから本格的な CNCF プロジェクトに昇格しました。 Helm はトップレベルの管理組織を形成し、 Monocular、Helm Chart Repo、Chart Museum、そして後に Helm Hub など、 いくつかのプロジェクトが Helm プロジェクトに組み込まれました。&#xA;Helm 3 の開発サイクルが始まると、Tiller が削除され、 Helm はクライアントツールであるという当初のビジョンに近づきました。 ただし、Helm 3 は引き続き Kubernetes クラスター内のリリースを追跡しているため、 チームが共同で Helm リリースのセットで作業することができます。Helm 3 は 2019 年 11 月にリリースされました。</description>
     </item>
     <item>
       <title>Helm ドキュメントの国際化</title>
-      <link>https://sma-rnd.github.io/ja/docs/community/localization/</link>
+      <link>https://zou-zongming.github.io/ja/docs/community/localization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/ja/docs/community/localization/</guid>
+      <guid>https://zou-zongming.github.io/ja/docs/community/localization/</guid>
       <description>このガイドでは Helm ドキュメントをどのように国際化するかを説明します。&#xA;はじめに 翻訳への貢献にはドキュメントへの貢献と同様のプロセスを用います。翻訳は helm-www git リポジトリへの&#xD;プルリクエストによって供給され、プルリクエストはウェブサイトの管理チームによってレビューされます。&#xA;2文字言語コード ドキュメントは ISO 639-1 標準 言語コードによって管理されます。例えば、韓国語の2文字コードは ko です。&#xA;コンテンツや設定でこの言語コードが使われます。3つ例を示します。&#xA;content ディレクトリ内で言語コードがサブディレクトリとして存在し、国際化されたコンテンツがそれぞれのディレクトリに入っています。 i18n ディレクトリはそれぞれの言語について、ウェブサイトで使用されるフレーズについての設定ファイルを保有しています。それらのファイルは [LANG] がその言語の2文字コードとなるような [LANG].toml というパターンで命名されています。 トップレベルの config.toml ファイルではナビゲーションやその他の詳細が言語コードごとに管理されています。 言語コード en を持つ英語が、デフォルトの言語および翻訳元として用いられます。&#xA;フォーク、ブランチ、変更、プルリクエスト 翻訳に貢献するために、まずは Github の helm-www リポジトリの&#xD;フォークを作ることから始めましょう。あなたはまずあなたのフォークに変更をコミットすることから始めるでしょう。&#xA;初期状態であなたのフォークは main として知られるデフォルトブランチに設定されているでしょう。あなたの変更を開発するあるいはプルリクエストを作成するためにブランチを使用してください。もしブランチについて不慣れなら&#xD;それらについて Github ドキュメントで読むことができます。&#xA;ブランチを作成出来たら、翻訳を追加したり、コンテンツを国際化したりしましょう。&#xA;注：helm は Developers Certificate of Origin を利用しています。すべてのコミットは署名されている必要があります。コミットを作成する際に -s か --signoff フラグを用いることで、あなたの Git に設定されている名前とメールアドレスを用いてコミットに署名することができます。詳細については CONTRIBUTING.md をご覧ください。&#xA;準備ができたら、&#xD;プルリクエスト を作成し、helm-www リポジトリに反映しましょう。&#xA;作成されたプルリクエストは管理者によってレビューされます。その過程についての詳細は CONTRIBUTING.md を参照してください。&#xA;コンテンツの翻訳 全ての Helm コンテンツを国際化するのは大きな仕事です。小さなことから初めて大丈夫です。時間をかけて翻訳を拡大することができます。</description>
     </item>
   </channel>

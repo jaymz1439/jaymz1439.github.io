@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frequently Asked Questions on Helm</title>
-    <link>https://sma-rnd.github.io/docs/faq/</link>
+    <link>https://zou-zongming.github.io/docs/faq/</link>
     <description>Recent content in Frequently Asked Questions on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://sma-rnd.github.io/docs/faq/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/docs/faq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Changes Since Helm 2</title>
-      <link>https://sma-rnd.github.io/docs/faq/changes_since_helm2/</link>
+      <link>https://zou-zongming.github.io/docs/faq/changes_since_helm2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/docs/faq/changes_since_helm2/</guid>
+      <guid>https://zou-zongming.github.io/docs/faq/changes_since_helm2/</guid>
       <description>Changes since Helm 2 Here&#39;s an exhaustive list of all the major changes introduced in Helm 3.&#xA;Removal of Tiller During the Helm 2 development cycle, we introduced Tiller. Tiller played an important role for teams working on a shared cluster - it made it possible for multiple different operators to interact with the same set of releases.&#xA;With role-based access controls (RBAC) enabled by default in Kubernetes 1.6, locking down Tiller for use in a production scenario became more difficult to manage.</description>
     </item>
     <item>
       <title>Installing</title>
-      <link>https://sma-rnd.github.io/docs/faq/installing/</link>
+      <link>https://zou-zongming.github.io/docs/faq/installing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/docs/faq/installing/</guid>
+      <guid>https://zou-zongming.github.io/docs/faq/installing/</guid>
       <description>Installing Why aren&#39;t there native packages of Helm for Fedora and other Linux distros? The Helm project does not maintain packages for operating systems and environments. The Helm community may provide native packages and if the Helm project is made aware of them they will be listed. This is how the Homebrew formula was started and listed. If you&#39;re interested in maintaining a package, we&#39;d love it.&#xA;Why do you provide a curl .</description>
     </item>
     <item>
       <title>Uninstalling</title>
-      <link>https://sma-rnd.github.io/docs/faq/uninstalling/</link>
+      <link>https://zou-zongming.github.io/docs/faq/uninstalling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/docs/faq/uninstalling/</guid>
+      <guid>https://zou-zongming.github.io/docs/faq/uninstalling/</guid>
       <description>Uninstalling I want to delete my local Helm. Where are all its files? Along with the helm binary, Helm stores some files in the following locations:&#xA;$XDG_CACHE_HOME $XDG_CONFIG_HOME $XDG_DATA_HOME The following table gives the default folder for each of these, by OS:&#xA;Operating System Cache Path Configuration Path Data Path Linux $HOME/.cache/helm $HOME/.config/helm $HOME/.local/share/helm macOS $HOME/Library/Caches/helm $HOME/Library/Preferences/helm $HOME/Library/helm Windows %TEMP%\helm %APPDATA%\helm %APPDATA%\helm </description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>https://sma-rnd.github.io/docs/faq/troubleshooting/</link>
+      <link>https://zou-zongming.github.io/docs/faq/troubleshooting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/docs/faq/troubleshooting/</guid>
+      <guid>https://zou-zongming.github.io/docs/faq/troubleshooting/</guid>
       <description>Troubleshooting I am getting a warning about &amp;quot;Unable to get an update from the &amp;quot;stable&amp;quot; chart repository&amp;quot; Run helm repo list. If it shows your stable repository pointing to a storage.googleapis.com URL, you will need to update that repository. On November 13, 2020, the Helm Charts repo became unsupported after a year-long deprecation. An archive has been made available at https://charts.helm.sh/stable but will no longer receive updates.&#xA;You can run the following command to fix your repository:</description>
     </item>
   </channel>

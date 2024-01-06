@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>最佳实践 on Helm</title>
-    <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/</link>
+    <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/</link>
     <description>Recent content in 最佳实践 on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://sma-rnd.github.io/zh/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/zh/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一般惯例</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/conventions/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/conventions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/conventions/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/conventions/</guid>
       <description>最佳实践的这部分阐述了一般惯例。&#xA;Chart名称 chart名称必须是小写字母和数字。单词之间 可以 使用横杠分隔(-)：&#xA;示例：&#xA;drupal nginx-lego aws-cluster-autoscaler chart名称中不能用大写字母也不能用下划线。点 . 符号也不行。&#xA;版本号 Helm尽可能使用&#xD;SemVer 2来表示版本号。（注意Docker镜像的tag不一定遵循SemVer， 因此被认为是一个不幸的例外规则。）&#xA;当SemVer版本存储在Kubernetes标签中时，我们通常把+字符改成_，因为标签不允许使用+作为值进行签名。&#xA;格式化YAML YAML 文件应该按照 双空格 缩进(绝不要使用tab键)。&#xA;Helm 和 Chart的用法 以下是几个 Helm 和 helm 的惯用方法。&#xA;Helm 是指整个项目 helm 是指客户端命令 chart 不是专有名词，不需要首字母大写 但Chart.yaml需要首字母大写，因为文件名大小写敏感 若有疑问，使用 Helm (&#39;H&#39;大写).</description>
     </item>
     <item>
       <title>values</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/values/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/values/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/values/</guid>
       <description>最佳实践的该部分包括了values的使用。这部分指南中，我们提供了关于你如何构建和使用values的建议，以及专注于设计chart的 values.yaml文件。&#xA;命名规范 变量名称以小写字母开头，单词按驼峰区分：&#xA;正确的：&#xA;chicken: true chickenNoodleSoup: true 错误的：&#xA;Chicken: true # initial caps may conflict with built-ins chicken-noodle-soup: true # do not use hyphens in the name 注意所有的Helm内置变量以大写字母开头，以便与用户定义的value进行区分：.Release.Name，.Capabilities.KubeVersion。&#xA;扁平或嵌套的Value YAML是一种灵活格式，值可以嵌套得很深，也可以是扁平的。&#xA;嵌套的：&#xA;server: name: nginx port: 80 扁平的&#xA;serverName: nginx serverPort: 80 大多数场景中，扁平的优于嵌套的。因为对模板开发者和用户来说更加简单。&#xA;为了最佳的安全性，嵌套值的每一层都必须检查：&#xA;{{ if .Values.server }} {{ default &amp;#34;none&amp;#34; .Values.server.name }} {{ end }} 对于每个嵌套层，都必须进行存在性检查。但对于扁平的配置，使得模板更易于阅读和使用，这个检查可以跳过。&#xA;{{ default &amp;#34;none&amp;#34; .Values.serverName }} 当有大量的相关变量时，其中至少有一个是非选择性的，嵌套的值可以改善可读性。&#xA;搞清楚类型 YAML的类型强制规则有时候是很反常的。比如，foo: false 和 foo: &amp;quot;false&amp;quot; 是不一样的。大整型数如：foo: 12345678 有时会被转换成科学计数法。</description>
     </item>
     <item>
       <title>模板</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/templates/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/templates/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/templates/</guid>
       <description>最佳实践指南的这部分聚焦于模板。&#xA;templates/结构 templates/目录结构应该如下：&#xA;如果生成YAML输出，模板文件应该有扩展名.yaml。 扩展名是.tpl可用于生成非格式化内容的模板文件。 模板文件名称应该使用横杠符号(my-example-configmap.yaml)，不用驼峰记法。 每个资源的定义应该在它自己的模板文件中。 模板文件的名称应该反映名称中的资源类型。比如：foo-pod.yaml， bar-svc.yaml 定义模板的名称 定义的模板(在{{ define }}命令中定义的模板)是可全局访问的。这就意味着chart和所有的子chart都可以访问用{{ define }}创建的所有模板。&#xA;因此， 所有定义的模板名称应该被命名空间化。&#xA;正确的：&#xA;{{- define &amp;#34;nginx.fullname&amp;#34; }} {{/* ... */}} {{ end -}} 不正确的：&#xA;{{- define &amp;#34;fullname&amp;#34; -}} {{/* ... */}} {{ end -}} 强烈建议通过helm create命令创建新chart，因为模板名称是根据此最佳实践自动定义的。&#xA;格式化模板 模板应该使用两个 空格 缩进（永远不要用tab）。&#xA;模板命令的大括号前后应该使用空格：&#xA;正确的：&#xA;{{ .foo }} {{ print &amp;#34;foo&amp;#34; }} {{- print &amp;#34;bar&amp;#34; -}} 不正确的：&#xA;{{.foo}} {{print &amp;#34;foo&amp;#34;}} {{-print &amp;#34;bar&amp;#34;-}} 模板应该尽可能多地使用空格：&#xA;foo: {{- range .Values.items }} {{ .</description>
     </item>
     <item>
       <title>依赖</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/dependencies/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/dependencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/dependencies/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/dependencies/</guid>
       <description>最佳实践的这部分阐述Chart.yaml中声明的dependencies。&#xA;版本 如果有可能的话，使用版本范围而不是某个固定的版本。建议的默认设置时使用补丁级别版本的匹配：&#xA;version: ~1.2.3 这样会匹配 1.2.3以及该版本的任何补丁，也就是说，~1.2.3相当于&amp;gt;= 1.2.3, &amp;lt; 1.3.0&#xA;关于完整的版本匹配语法，请参照&#xD;语义版本文档。&#xA;预发布版本 上述版本约束不适用于预发布版本。比如 version: ~1.2.3 可以匹配 version: ~1.2.4 但不能匹配 version: ~1.2.3-1。 预发布及补丁级别匹配如下：&#xA;version: ~1.2.3-0 仓库URL 如果可能的话，使用 https:// 仓库URL，而不是http:// URL。&#xA;如果这个仓库已经被添加到仓库索引文件中，仓库名称可以作为URL的别名。使用alias: 或 @ 后跟仓库名称。&#xA;文件URL(file://...) 被认为是一种有固定部署管道组装的chart的“特例”。&#xA;当使用&#xD;下载器插件时，URL会使用特定于插件的方案。 注意，chart的用户需要安装一个支持该方案的插件来更新或构建依赖关系。&#xA;当repository字段为空时，Helm无法对依赖项执行依赖管理操作。在这种场景下，Helm假定依赖关系位于charts 文件夹的子目录中，名称与依赖关系的name属性相同。&#xA;条件和标签 条件和标签可以被添加到任意 可选的 依赖中。&#xA;条件的首先格式是：&#xA;condition: somechart.enabled somechart是依赖的chart名称。&#xA;当多个子chart（依赖）一起提供可选或可交换的特性时，这些chart应该共享相同的标签。&#xA;比如，如果nginx 和 memcached在chart中一起提供性能优化，且需要在使用该功能时同时存在，则都应该有如下的标签部分：&#xA;tags: - webaccelerator 这允许用户使用一个标签打开和关闭该功能。</description>
     </item>
     <item>
       <title>标签和注释</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/labels/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/labels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/labels/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/labels/</guid>
       <description>最佳实践的这部分讨论关于在chart中使用标签和注释的最佳方式。&#xA;是标签还是注释？ 在以下条件下，元数据项应该是标签：&#xA;Kubernetes使用它来识别这种资源 为了查询系统，暴露给操作员会很有用 比如，我们建议使用 helm.sh/chart: NAME-VERSION 作为标签，以便操作员可以找到特定chart的所有实例。&#xA;如果元数据项不是用于查询，就应该设置为注释。&#xA;Helm钩子都是注释。&#xA;标准标签 以下表格定义了Helm chart使用的通用标签。Helm本身从不要求出现特定标签。标记为REC的是推荐标签。且 应该 放置在chart之上保持全局一致性。 标记为OPT的是可选的。 这些是惯用的和常用的，但操作时并不经常依赖。&#xA;名称 状态 描述 app.kubernetes.io/name REC app名称，反应整个app。{{ template &amp;quot;name&amp;quot; . }}经常用于此。很多Kubernetes清单会使用这个，但不是Helm指定的。 helm.sh/chart REC chart的名称和版本： {{ .Chart.Name }}-{{ .Chart.Version | replace &amp;quot;+&amp;quot; &amp;quot;_&amp;quot; }}。 app.kubernetes.io/managed-by REC 此值应始终设置为 {{ .Release.Service }}。 用来查找被Helm管理的所有内容。 app.kubernetes.io/instance REC 这个应该是{{ .Release.Name }}。 有助于在同一应用程序中区分不同的实例。 app.kubernetes.io/version OPT app的版本，且被设置为 {{ .Chart.AppVersion }}. app.kubernetes.io/component OPT 这是通用标签，用于标记块在应用程序中可能扮演的不同角色。比如 app.kubernetes.io/component: frontend。 app.kubernetes.io/part-of OPT 当多个chart或块用于构建一个应用程序时。比如，应用软件和数据库生成一个网站。这可以设置为受支持的顶级应用程序。 你可以在&#xD;Kubernetes documentation找到更多 app.</description>
     </item>
     <item>
       <title>pod和pod模板</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/pods/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/pods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/pods/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/pods/</guid>
       <description>最佳实践的这部分讨论在chart清单中格式化Pod和Pod模板部分。&#xA;以下（非详尽的）资源列表使用Pod模板：&#xA;Deployment ReplicationController ReplicaSet DaemonSet StatefulSet 镜像 容器镜像应该使用固定的tag或镜像SHA。不应该使用latest, head, canary等标签或其他被设计为“浮动的”标签。&#xA;镜像 可以 被定义在 values.yaml 文件中是的切换镜像更加容易。&#xA;image: {{ .Values.redisImage | quote }} 镜像和tag 可以 在 values.yaml中定义为两个独立的字段：&#xA;image: &amp;#34;{{ .Values.redisImage }}:{{ .Values.redisTag }}&amp;#34; 镜像拉取策略 helm create 通过以下方式在deployment.yaml中将 imagePullPolicy 默认设置为 IfNotPresent：&#xA;imagePullPolicy: {{ .Values.image.pullPolicy }} 以及values.yaml:&#xA;image: pullPolicy: IfNotPresent 类似地，如果Kubernetes根本没有定义，默认会将 imagePullPolicy 设置为 IfNotPresent。 如果想设置一个值而不是 IfNotPresent，只需在 values.yaml 中更新为需要的值即可。&#xA;Pod模板应该声明选择器 所有的Pod模板部分应该指定一个selector。比如：&#xA;selector: matchLabels: app.kubernetes.io/name: MyName template: metadata: labels: app.kubernetes.io/name: MyName 这是一个很好的实践，因为它建立了集合和pod之间的关系。&#xA;但这一点对于像工作负载这样的集合来说更加重要。如果没有，标签的 所有 集合会选择匹配pod，如果你使用了改变的标签，比如版本和发布日期，这个功能会失效。</description>
     </item>
     <item>
       <title>自定义资源</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/custom_resource_definitions/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/custom_resource_definitions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/custom_resource_definitions/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/custom_resource_definitions/</guid>
       <description>最佳实践的这部分处理创建和使用自定义资源。&#xA;当使用自定义资源时(CRD)，区分两个不同的部分很重要：&#xA;CRD的声明。是一个具有CustomResourceDefinition类型的yaml文件。 有些资源 使用 CRD. 假设CRD定义了foo.example.com/v1。任何有apiVersion: example.com/v1和 Foo类的资源都可以使用CRD。 使用资源之前安装CRD声明 Helm被优化为尽可能快地将尽可能多的资源加载到Kubernetes中。按照设计，Kubernetes可以获取一整套清单并将其全部上线 （称之为协调循环）。&#xA;但CRD与此不同。&#xA;对于CRD来说，声明必须在所有的CRD类型资源使用之前被注册。注册过程可能需要几秒钟。&#xA;方法1: 使用 helm 随着Helm 3的到来，我们去掉了旧的crd-install钩子以便获取更简单的方法。现在可以在chart中创建一个名为crds的特殊目录来保存CRD。 这些CRD没有模板化，但是运行helm install时可以为chart默认安装。如果CRD已经存在，会显示警告并跳过。如果希望跳过CRD安装步骤， 可以使用--skip-crds参数。&#xA;注意事项（和说明） 目前不支持使用Helm升级或删除CRD。由于数据意外丢失的风险，这是经过多次社区讨论后作出的明确决定。对于如何处理CRD及其生命周期， 目前社区还未达成共识。随着过程的发展，Helm会逐渐支持这些场景。&#xA;执行helm install 和 helm upgrade时的--dry-run参数目前不支持CRD。“模拟运行”的目的是检测chart的输出是否在发送到服务器时实际有效。 但是CRD是对服务器行为的修改。Helm无法在模拟运行时安装CRD，因此客户端无法知道自定义资源(CR)，验证就会失败。 你可以将CRD移动到自己的chart中或者使用helm template代替。&#xA;在讨论CRD支持时需要考虑的另一个重要点是如何处理模板的渲染。Helm 2中使用crd-install的一个明显缺点是， 由于API可用性的变化导致无法有效验证chart（CRD实际上是向Kubernetes集群添加了另一个可用API）。 如果chart安装了CRD， helm不再有一组有效的API版本可供使用。这也是从CRD删除模板支持的原因。有了CRD安装的新方法crds，我们现在可以确保helm拥有当前集群状态的完全有效的信息。&#xA;方法2： 分隔chart 另一个方法是将CRD定义放入chart中，然后将所有使用该CRD的资源放到 另一个 chart中。&#xA;这个方法要将每个chart分开安装，但对于具有集群管理员访问权限的操作员，这种工作流可能更有用。</description>
     </item>
     <item>
       <title>基于角色的访问控制</title>
-      <link>https://sma-rnd.github.io/zh/docs/chart_best_practices/rbac/</link>
+      <link>https://zou-zongming.github.io/zh/docs/chart_best_practices/rbac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sma-rnd.github.io/zh/docs/chart_best_practices/rbac/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/chart_best_practices/rbac/</guid>
       <description>最佳实践的这部分讨论在chart清单中创建和格式化RBAC资源。&#xA;RBAC 资源有：&#xA;ServiceAccount (namespaced) Role (namespaced) ClusterRole RoleBinding (namespaced) ClusterRoleBinding YAML 配置 RBAC和服务账户配置应该使用独立的key。它们是独立的内容。在YAML中将这两个概念分开可以消除歧义使其更加清晰。&#xA;rbac: # Specifies whether RBAC resources should be created create: true serviceAccount: # Specifies whether a ServiceAccount should be created create: true # The name of the ServiceAccount to use. # If not set and create is true, a name is generated using the fullname template name: 这个结构可以在更加复杂的需要多个服务账户的chart中扩展。&#xA;someComponent: serviceAccount: create: true name: anotherComponent: serviceAccount: create: true name: RBAC 资源应该默认创建 rbac.</description>
     </item>
   </channel>
