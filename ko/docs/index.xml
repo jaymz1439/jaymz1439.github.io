@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>문서 홈 on 헬름</title>
-    <link>https://zou-zongming.github.houston.softwaregrp.net/ko/docs/</link>
+    <link>https://zou-zongming.github.io/ko/docs/</link>
     <description>Recent content in 문서 홈 on 헬름</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <atom:link href="https://zou-zongming.github.houston.softwaregrp.net/ko/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/ko/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

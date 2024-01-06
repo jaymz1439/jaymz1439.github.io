@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lernprogramme on Helm</title>
-    <link>https://zou-zongming.github.houston.softwaregrp.net/de/docs/howto/</link>
+    <link>https://zou-zongming.github.io/de/docs/howto/</link>
     <description>Recent content in Lernprogramme on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <atom:link href="https://zou-zongming.github.houston.softwaregrp.net/de/docs/howto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/de/docs/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chart Entwicklung Tipps und Tricks</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/de/docs/howto/charts_tips_and_tricks/</link>
+      <link>https://zou-zongming.github.io/de/docs/howto/charts_tips_and_tricks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/de/docs/howto/charts_tips_and_tricks/</guid>
+      <guid>https://zou-zongming.github.io/de/docs/howto/charts_tips_and_tricks/</guid>
       <description>Dieses Handbuch bespricht Tipps und Tricks, die Helm Chart Entwickler bei der Entwicklung von produktionsreifen Charts gelernt haben.&#xA;Kenne Deine Vorlagenfunktionen Helm benutzt Go Templates für Vorlagen Ihrer Resourcedateien. Wobei Go schon einige eingebauten Funktionen mitbringt, haben wir noch viele andere hinzugefügt.&#xA;Als erstes haben wir alle Funktionen in der Sprig Bibliothek hinzugefügt.&#xA;Wir haben auch zwei spezielle Vorlagenfunktionen hinzugefügt: include und required. Die include Funktion erlaubt Ihnen das Hinzufügen anderer Vorlagen und das Zusammenfügen des Ergebnisses in einer anderen Vorlagenfunktion.</description>
     </item>
     <item>
       <title>Synchronisieren Ihres Chart Repository</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/de/docs/howto/chart_repository_sync_example/</link>
+      <link>https://zou-zongming.github.io/de/docs/howto/chart_repository_sync_example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/de/docs/howto/chart_repository_sync_example/</guid>
+      <guid>https://zou-zongming.github.io/de/docs/howto/chart_repository_sync_example/</guid>
       <description>Hinweis: Dieses Beispiel richtet sich an einen Google Cloud Storage (GCS) Bucket, welcher ein Chart Repository bereitstellt.&#xA;Vorbedingungen Installieren Sie das gsutil Werkzeug. Wir lehnen uns stark an die gsutil rsync Funktionalität Stellen Sie sicher, dass Sie Zugriff auf das Helm Programm haben Optional: Wir empfehlen, dass Sie die Objektversionierung in Ihrem GCS Bucket gesetzt haben, falls Sie etwas versehentlich löschen. Ein lokales Chart Repository Verzeichnis aufsetzen Erstellen Sie ein lokales Verzeichnis wie wir es im Chart Repository Handbuch gemacht haben und legen Sie Ihr Chart Paket in das Verzeichnis.</description>
     </item>
   </channel>

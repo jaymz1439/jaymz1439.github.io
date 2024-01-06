@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>社区 on Helm</title>
-    <link>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/</link>
+    <link>https://zou-zongming.github.io/zh/docs/community/</link>
     <description>Recent content in 社区 on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.io/zh/docs/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开发者指南</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/developers/</link>
+      <link>https://zou-zongming.github.io/zh/docs/community/developers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/developers/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/community/developers/</guid>
       <description>该指南说明如何为开发Helm配置环境。&#xA;先决条件 Go最新版本 Kubernetes集群及kubectl（可选） Git 构建 Helm 我们使用Make构建程序。最简单的开始方式是：&#xA;$ make 有必要的话要先安装依赖，并验证配置。然后会编译 helm 并将其放到 bin/helm。&#xA;在本地执行Helm，可以执行 bin/helm。&#xA;Helm运行在 macOS 和大多数发行版上，包括 Alpine。 执行测试 要运行所有测试，执行 make test。作为先决条件，需要安装 golangci-lint。&#xA;贡献指南 我们欢迎你的贡献。 该项目已经设置了一些指南，为了保证 (a) 代码的高质量，(b) 保持项目一致， (c) 贡献遵循开源法律要求。我们的目的不是为贡献者增加负担，但是要构建优雅和高质量的开源代码， 这样我们的用户才能从中受益。&#xA;确保你已经阅读并理解主要贡献指南：&#xA;https://github.com/helm/helm/blob/main/CONTRIBUTING.md&#xA;代码结构 Helm项目的代码组织如下：&#xA;独立的程序位于 cmd/。cmd/ 中的代码不是为库复用设计的。 共享的库放在 pkg/。 scripts/ 目录包含很多实用程序脚本。大多数用于CI/CD流水线。 Go依赖管理在不断变化，而且在Helm生命周期中很可能发生变化。我们建议开发者 不要 手动管理依赖。 而是建议依靠项目的 Makefile 来处理。使用Helm 3时，建议使用Go 1.13及更新版本。&#xA;编写文档 从Helm 3开始，文档已经移动到了它自己的仓库中。当编制新特性时，请编写随附文档并提交到 helm-www 仓库。&#xA;有个例外：&#xD;Helm CLI 输出 (英文) 是 helm 程序自己生成的。 查看 更新Helm CLI参考文档 来了解如何生成该输出。翻译后，不会生成CLI输出，但可以在 /content/&amp;lt;lang&amp;gt;/docs/helm 中找到。</description>
     </item>
     <item>
       <title>版本 Checklist</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/release_checklist/</link>
+      <link>https://zou-zongming.github.io/zh/docs/community/release_checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/release_checklist/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/community/release_checklist/</guid>
       <description>维护人员发布Helm指南 是时候发布新的Helm了！作为Helm维护者发布版本，如果你的经验与这里的文档不同，那你就是 更新版本checklist 的最佳人选。&#xA;所有版本都将采用vX.Y.Z的形式，X是主版本号，Y是次版本号，Z是补丁发布号。该项目严格遵守 语义化版本， 因此遵循这一点非常重要。&#xA;Helm会提前宣布下个次版本发布的日期。应尽一切努力遵守宣布的日期。此外，在开始发布过程时，应该选择下一个发布的日期在发布过程中使用。&#xA;这些说明将涵盖三种不同版本的遵守发布过程的初始配置：&#xA;主版本 - 发布频率较低 - 有重大更新时 次版本 - 每3到4个月发布 - 无重大更新 补丁版本 - 每月发布 - 不需要指南中的所有步骤 初始化配置&#xA;创建发布分支 主/次版本：在Git中更改版本号 主/次版本：提交并推送发布分支 主/次版本：创建一个候选发布 主/次版本：迭代连续的候选版本 完成发布 编写发布日志 PGP签名下载 发布版本 更新文档 告知社区 Initial Configuration 设置远程Git 需要注意的是该文档假设你的远程upstream仓库关联到了&#xD;https://github.com/helm/helm。 如果不是（比如，如果你选择了“origin”或其他类似的替代），请确保根据本地环境调整列出的代码段。 如果你不确定使用了什么远程的upstream，使用git remote -v命令查看。&#xA;如果你没有&#xD;上游远程， 可以类似这样添加：&#xA;git remote add upstream git@github.com:helm/helm.git 设置环境变量 在该文档中，我们还会引用一些环境变量，更便于设置。针对主、次版本，使用以下选项：&#xA;export RELEASE_NAME=vX.Y.0 export RELEASE_BRANCH_NAME=&amp;#34;release-X.Y&amp;#34; export RELEASE_CANDIDATE_NAME=&amp;#34;$RELEASE_NAME-rc.1&amp;#34; 如果你在创建一个补丁版本，改用以下命令：&#xA;export PREVIOUS_PATCH_RELEASE=vX.Y.Z export RELEASE_NAME=vX.Y.Z+1 export RELEASE_BRANCH_NAME=&amp;#34;release-X.Y&amp;#34; 设置签名Key 我们还会通过对二进制文件和提供的签名文件进行哈希计算增加发布过程的安全性和认证。 使用&#xD;GitHub 和 GPG来执行。 如果还没设置GPG可以按照以下步骤操作：</description>
     </item>
     <item>
       <title>相关项目及文档</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/related/</link>
+      <link>https://zou-zongming.github.io/zh/docs/community/related/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/related/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/community/related/</guid>
       <description>Helm社区已经创建了很多针对Helm的额外工具，插件和文档。我们乐于听到这些项目声音。&#xA;如果你有什么需要补充到这里的话，请创建一个 issue 或者 pull request。&#xA;Helm 插件 helm-adopt - 将现有k8s资源转换成新生成的helm chart的helm v3插件。 Helm Diff - helm upgrade的彩色diff预览 Helm Dashboard - Helm的GUI界面，可视化release、repository及manifest的差异 helm-gcs - 管理Google Cloud Storage中仓库的插件 helm-git - 从Git仓库中安装chart并检索values文件。 helm-k8comp - 使用k8comp从hiera创建Helm Charts的插件 helm-mapkubeapis - 更新helm发布版本元数据用于替换过期或已移除的k8s API helm-monitor - 基于 Prometheus/ElasticSearch的用于监控版本发布和回滚的插件 helm-release-plugin - 该插件用于管理已部署的release，更新release值，拉取（重建）helm chart，以及设置helm release TTL。 helm-s3 - 允许使用AWS S3作为[私有]chart仓库的插件 helm-schema-gen - 为Helm 3生成values的yaml框架的插件 helm-secrets - 安全存储密钥的插件 （基于&#xD;sops） helm-sigstore - Helm集成&#xD;sigstore生态的插件。 用于搜索、上传及验证已签名的Helm chart。 helm-tanka - 在Helm chart中渲染Tanka/Jsonnet的插件 hc-unit - 使用OPA (Open Policy Agent) 和 Rego本地进行chart单元测试的插件 helm-unittest - 使用YAML本地进行chart单元测试的插件 helm-val - 从之前的版本中获取值的插件 helm-external-val - 从外部资源（configMaps， Secrets等）获取Helm values的插件 我们同样鼓励使用GitHub的各位使用&#xD;helm-plugin 给插件仓库打tag。</description>
     </item>
     <item>
       <title>项目历史</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/history/</link>
+      <link>https://zou-zongming.github.io/zh/docs/community/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/history/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/community/history/</guid>
       <description>Helm 是&#xD;CNCF的&#xD;毕业项目。&#xA;Helm 开始时被称为&#xD;Helm Classic，始于2015年的Deis项目并在KubeCon会议中被提出。&#xA;2016年1月，该项目与名为Kubernetes部署管理器的GCS工具合并，并移动到了&#xD;Kubernetes中。 由于代码的合并，Helm 2.0于当年晚些时候发布。在Helm 2中保留的部署管理的关键特性是服务端组件， Helm 2.0最终的发布版本中DM重命名为了Tiller。&#xA;Helm于2018年6月从Kubernetes子项目晋升为CNCF的成熟项目。Helm组建了一个顶级的管理机构并在Helm项目中包含了几个子项目， 包括Monocular，Helm Chart仓库，Chart博物馆，以及后来的Helm Hub。&#xA;当Helm 3开发周期开始时，移除了Tiller，使其更接近于作为客户工具最初愿景。但Helm 3继续跟踪Kubernetes集群内部的版本， 使团队可以共同完成一个公共的Helm发布版本。Helm 3于2019年11月发布。&#xA;Helm 于2020年4月成为CNCF的毕业项目。&#xA;CNCF的&#xD;Artifact Hub在2020年10月份替换了&#xD;Helm Hub。</description>
     </item>
     <item>
       <title>本地化Helm文档</title>
-      <link>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/localization/</link>
+      <link>https://zou-zongming.github.io/zh/docs/community/localization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.houston.softwaregrp.net/zh/docs/community/localization/</guid>
+      <guid>https://zou-zongming.github.io/zh/docs/community/localization/</guid>
       <description>本指南介绍如何本地化Helm文档。&#xA;入门 翻译工作使用与文档稿件相同的过程。翻译通过&#xD;pull requests 提供给 helm-www 仓库并由管理站点的团队审查。&#xA;双字母语言代码 语言代码文档由&#xD;ISO 639-1标准组织。 比如，韩国的双字母代码是 ko。&#xA;在内容和配置中可以找到使用的语音码。三个例子如下：&#xA;content 目录中的子目录以语言码命名且本地化内容在对应的目录中。 主要在每个语言码目录的 docs子目录中。 i18n目录包含一个网站使用的每种语言的配置文件。文件按照 [LANG].toml 形式命名，[LANG] 是双字母语言码。 顶层config.toml文件中，有按语言码组织的导航和其他详细信息的配置。 英文使用语言码 en，是翻译的默认语言和资源。&#xA;Fork, Branch, Change, Pull Request 贡献翻译从&#xD;helm-www仓库 创建fork开始。在你的fork中提交更改。&#xA;默认情况下，fork将在名为master的默认分支上工作。请使用分支提交更改并创建pull requests。如果你不熟悉分支，可以 阅读GitHub文档。&#xA;一旦有了分支，就可以添加翻译，将内容本地化为一种语言。&#xA;注意，Helm使用一个&#xD;Developers Certificate of Origin。 所有的提交需要signoff。提交时可以使用 -s 或 --signoff 参数使用你Git配置的用户和邮箱签署这个提交。 更多细节请查看 CONTRIBUTING.md 文件。&#xA;准备好之后，创建一个 pull request 将翻译提交到helm-www仓库。&#xA;一旦创建了pull request，维护者会进行审查。过程细节查看 CONTRIBUTING.md。&#xA;翻译内容 本地化所有的Helm内容是一项巨大的任务。开始很小的改动是可以的。翻译会随着时间扩展。&#xA;开始一个新语言 开始新语言时有些最低要求，包括：&#xA;添加content/[LANG]/docs目录，包含_index.md 文件。这是顶层的文档落地页。 [LANG].toml 文件在i18n目录中。可以复制en.toml文件作为起点。 在 config.toml文件中添加一部分用于展示新语言。可以用已有语言作为起点。 翻译 已翻译内容需要保留在 content/[LANG]/docs 目录中。应该有相同的URL作为英文源。 比如，将intro翻译为韩文时拷贝英文是有用的：</description>
     </item>
   </channel>
