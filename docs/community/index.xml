@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Helm</title>
-    <link>https://zou-zongming.github.io/docs/community/</link>
+    <link>https://zou-zongming.github.houston.softwaregrp.net/docs/community/</link>
     <description>Recent content in Community on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://zou-zongming.github.io/docs/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.houston.softwaregrp.net/docs/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developer Guide</title>
-      <link>https://zou-zongming.github.io/docs/community/developers/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/community/developers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/community/developers/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/community/developers/</guid>
       <description>This guide explains how to set up your environment for developing on Helm.&#xA;Prerequisites The latest version of Go A Kubernetes cluster w/ kubectl (optional) Git Building Helm We use Make to build our programs. The simplest way to get started is:&#xA;$ make If required, this will first install dependencies and validate configuration. It will then compile helm and place it in bin/helm.&#xA;To run Helm locally, you can run bin/helm.</description>
     </item>
     <item>
       <title>Release Checklist</title>
-      <link>https://zou-zongming.github.io/docs/community/release_checklist/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/community/release_checklist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/community/release_checklist/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/community/release_checklist/</guid>
       <description>A Maintainer&#39;s Guide to Releasing Helm Time for a new Helm release! As a Helm maintainer cutting a release, you are the best person to update this release checklist should your experiences vary from what&#39;s documented here.&#xA;All releases will be of the form vX.Y.Z where X is the major version number, Y is the minor version number and Z is the patch release number. This project strictly follows semantic versioning so following this step is critical.</description>
     </item>
     <item>
       <title>Related Projects and Documentation</title>
-      <link>https://zou-zongming.github.io/docs/community/related/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/community/related/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/community/related/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/community/related/</guid>
       <description>The Helm community has produced many extra tools, plugins, and documentation about Helm. We love to hear about these projects.&#xA;If you have anything you&#39;d like to add to this list, please open an issue or pull request.&#xA;Helm Plugins helm-adopt - A helm v3 plugin to adopt existing k8s resources into a new generated helm chart. helm-chartsnap - Snapshot testing plugin for Helm charts. Helm Diff - Preview helm upgrade as a coloured diff Helm Dt - Plugin that helps distributing Helm charts across OCI registries and on Air gap environments Helm Dashboard - GUI for Helm, visualize releases and repositories, manifest diffs helm-gcs - Plugin to manage repositories on Google Cloud Storage helm-git - Install charts and retrieve values files from your Git repositories helm-k8comp - Plugin to create Helm Charts from hiera using k8comp helm-mapkubeapis - Update helm release metadata to replace deprecated or removed Kubernetes APIs helm-monitor - Plugin to monitor a release and rollback based on Prometheus/ElasticSearch query helm-release-plugin - Plugin for Release management, Update release values, pulls(re-creates) helm Charts from deployed releases, set helm release TTL.</description>
     </item>
     <item>
       <title>The History of the Project</title>
-      <link>https://zou-zongming.github.io/docs/community/history/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/community/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/community/history/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/community/history/</guid>
       <description>Helm is a graduated CNCF project.&#xA;Helm began as what is now known as Helm Classic, a Deis project begun in 2015 and introduced at the inaugural KubeCon.&#xA;In January of 2016, the project merged with a GCS tool called Kubernetes Deployment Manager, and the project was moved under Kubernetes. As a result of the merging of codebases, Helm 2.0 was released later that year. The key feature of Deployment Manager that survived in Helm 2 was the server-side component, renamed from DM to Tiller for the final Helm 2.</description>
     </item>
     <item>
       <title>Localizing Helm Documentation</title>
-      <link>https://zou-zongming.github.io/docs/community/localization/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/community/localization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/community/localization/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/community/localization/</guid>
       <description>This guide explains how to localize the Helm documentation.&#xA;Getting Started Contributions for translations use the same process as contributions for documentation. Translations are supplied through pull requests to the helm-www git repository and pull requests are reviewed by the team that manages the website.&#xA;Two-letter Language Code Documentation is organized by the ISO 639-1 standard for the language codes. For example, the two-letter code for Korean is ko.&#xA;In content and configuration you will find the language code in use.</description>
     </item>
   </channel>

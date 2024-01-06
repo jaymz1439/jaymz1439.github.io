@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Best Practices on Helm</title>
-    <link>https://zou-zongming.github.io/docs/chart_best_practices/</link>
+    <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/</link>
     <description>Recent content in Best Practices on Helm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://zou-zongming.github.io/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General Conventions</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/conventions/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/conventions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/conventions/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/conventions/</guid>
       <description>This part of the Best Practices Guide explains general conventions.&#xA;Chart Names Chart names must be lower case letters and numbers. Words may be separated with dashes (-):&#xA;Examples:&#xA;drupal nginx-lego aws-cluster-autoscaler Neither uppercase letters nor underscores can be used in chart names. Dots should not be used in chart names.&#xA;Version Numbers Wherever possible, Helm uses SemVer 2 to represent version numbers. (Note that Docker image tags do not necessarily follow SemVer, and are thus considered an unfortunate exception to the rule.</description>
     </item>
     <item>
       <title>Values</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/values/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/values/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/values/</guid>
       <description>This part of the best practices guide covers using values. In this part of the guide, we provide recommendations on how you should structure and use your values, with focus on designing a chart&#39;s values.yaml file.&#xA;Naming Conventions Variable names should begin with a lowercase letter, and words should be separated with camelcase:&#xA;Correct:&#xA;chicken: true chickenNoodleSoup: true Incorrect:&#xA;Chicken: true # initial caps may conflict with built-ins chicken-noodle-soup: true # do not use hyphens in the name Note that all of Helm&#39;s built-in variables begin with an uppercase letter to easily distinguish them from user-defined values: .</description>
     </item>
     <item>
       <title>Templates</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/templates/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/templates/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/templates/</guid>
       <description>This part of the Best Practices Guide focuses on templates.&#xA;Structure of templates/ The templates/ directory should be structured as follows:&#xA;Template files should have the extension .yaml if they produce YAML output. The extension .tpl may be used for template files that produce no formatted content. Template file names should use dashed notation (my-example-configmap.yaml), not camelcase. Each resource definition should be in its own template file. Template file names should reflect the resource kind in the name.</description>
     </item>
     <item>
       <title>Dependencies</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/dependencies/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/dependencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/dependencies/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/dependencies/</guid>
       <description>This section of the guide covers best practices for dependencies declared in Chart.yaml.&#xA;Versions Where possible, use version ranges instead of pinning to an exact version. The suggested default is to use a patch-level version match:&#xA;version: ~1.2.3 This will match version 1.2.3 and any patches to that release. In other words, ~1.2.3 is equivalent to &amp;gt;= 1.2.3, &amp;lt; 1.3.0&#xA;For the complete version matching syntax, please see the semver documentation.</description>
     </item>
     <item>
       <title>Labels and Annotations</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/labels/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/labels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/labels/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/labels/</guid>
       <description>This part of the Best Practices Guide discusses the best practices for using labels and annotations in your chart.&#xA;Is it a Label or an Annotation? An item of metadata should be a label under the following conditions:&#xA;It is used by Kubernetes to identify this resource It is useful to expose to operators for the purpose of querying the system. For example, we suggest using helm.sh/chart: NAME-VERSION as a label so that operators can conveniently find all of the instances of a particular chart to use.</description>
     </item>
     <item>
       <title>Pods and PodTemplates</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/pods/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/pods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/pods/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/pods/</guid>
       <description>This part of the Best Practices Guide discusses formatting the Pod and PodTemplate portions in chart manifests.&#xA;The following (non-exhaustive) list of resources use PodTemplates:&#xA;Deployment ReplicationController ReplicaSet DaemonSet StatefulSet Images A container image should use a fixed tag or the SHA of the image. It should not use the tags latest, head, canary, or other tags that are designed to be &amp;quot;floating&amp;quot;.&#xA;Images may be defined in the values.yaml file to make it easy to swap out images.</description>
     </item>
     <item>
       <title>Custom Resource Definitions</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/custom_resource_definitions/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/custom_resource_definitions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/custom_resource_definitions/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/custom_resource_definitions/</guid>
       <description>This section of the Best Practices Guide deals with creating and using Custom Resource Definition objects.&#xA;When working with Custom Resource Definitions (CRDs), it is important to distinguish two different pieces:&#xA;There is a declaration of a CRD. This is the YAML file that has the kind CustomResourceDefinition Then there are resources that use the CRD. Say a CRD defines foo.example.com/v1. Any resource that has apiVersion: example.com/v1 and kind Foo is a resource that uses the CRD.</description>
     </item>
     <item>
       <title>Role-Based Access Control</title>
-      <link>https://zou-zongming.github.io/docs/chart_best_practices/rbac/</link>
+      <link>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/rbac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zou-zongming.github.io/docs/chart_best_practices/rbac/</guid>
+      <guid>https://zou-zongming.github.houston.softwaregrp.net/docs/chart_best_practices/rbac/</guid>
       <description>This part of the Best Practices Guide discusses the creation and formatting of RBAC resources in chart manifests.&#xA;RBAC resources are:&#xA;ServiceAccount (namespaced) Role (namespaced) ClusterRole RoleBinding (namespaced) ClusterRoleBinding YAML Configuration RBAC and ServiceAccount configuration should happen under separate keys. They are separate things. Splitting these two concepts out in the YAML disambiguates them and makes this clearer.&#xA;rbac: # Specifies whether RBAC resources should be created create: true serviceAccount: # Specifies whether a ServiceAccount should be created create: true # The name of the ServiceAccount to use.</description>
     </item>
   </channel>
