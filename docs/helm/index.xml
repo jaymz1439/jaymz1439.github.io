@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helm Commands on Helm</title>
+    <link>https://helm.sh/docs/helm/</link>
+    <description>Recent content in Helm Commands on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://helm.sh/docs/helm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://helm.sh/docs/helm/helm_delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_delete/</guid>
+      <description>helm delete This command has been renamed. Please refer instead to helm uninstall.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://helm.sh/docs/helm/helm_init/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_init/</guid>
+      <description>helm init This command does not exist in Helm 3, following the removal of Tiller. You no longer need to install Tiller in your cluster in order to use Helm.&#xA;If you are using Helm 2, go to v2.helm.sh to view the Helm Init documentation.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://helm.sh/docs/helm/helm_inspect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_inspect/</guid>
+      <description>helm inspect This command has been renamed. Please refer instead to helm show.</description>
+    </item>
+    <item>
+      <title>Helm</title>
+      <link>https://helm.sh/docs/helm/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm/</guid>
+      <description>helm The Helm package manager for Kubernetes.&#xA;Synopsis The Kubernetes package manager&#xA;Common actions for Helm:&#xA;helm search: search for charts helm pull: download a chart to your local directory to view helm install: upload the chart to Kubernetes helm list: list releases of charts Environment variables:&#xA;Name Description $HELM_CACHE_HOME set an alternative location for storing cached files. $HELM_CONFIG_HOME set an alternative location for storing Helm configuration. $HELM_DATA_HOME set an alternative location for storing Helm data.</description>
+    </item>
+    <item>
+      <title>Helm Completion</title>
+      <link>https://helm.sh/docs/helm/helm_completion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_completion/</guid>
+      <description>helm completion generate autocompletion scripts for the specified shell&#xA;Synopsis Generate autocompletion scripts for Helm for the specified shell.&#xA;Options -h, --help help for completion Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Completion Bash</title>
+      <link>https://helm.sh/docs/helm/helm_completion_bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_completion_bash/</guid>
+      <description>helm completion bash generate autocompletion script for bash&#xA;Synopsis Generate the autocompletion script for Helm for the bash shell.&#xA;To load completions in your current shell session:&#xA;source &amp;lt;(helm completion bash)&#xD;To load completions for every new session, execute once:&#xA;Linux:&#xA;helm completion bash &amp;gt; /etc/bash_completion.d/helm&#xD;MacOS:&#xA;helm completion bash &amp;gt; /usr/local/etc/bash_completion.d/helm&#xD;helm completion bash [flags] Options -h, --help help for bash --no-descriptions disable completion descriptions Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Completion Fish</title>
+      <link>https://helm.sh/docs/helm/helm_completion_fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_completion_fish/</guid>
+      <description>helm completion fish generate autocompletion script for fish&#xA;Synopsis Generate the autocompletion script for Helm for the fish shell.&#xA;To load completions in your current shell session:&#xA;helm completion fish | source&#xD;To load completions for every new session, execute once:&#xA;helm completion fish &amp;gt; ~/.config/fish/completions/helm.fish&#xD;You will need to start a new shell for this setup to take effect.&#xA;helm completion fish [flags] Options -h, --help help for fish --no-descriptions disable completion descriptions Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Completion Powershell</title>
+      <link>https://helm.sh/docs/helm/helm_completion_powershell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_completion_powershell/</guid>
+      <description>helm completion powershell generate autocompletion script for powershell&#xA;Synopsis Generate the autocompletion script for powershell.&#xA;To load completions in your current shell session: PS C:&amp;gt; helm completion powershell | Out-String | Invoke-Expression&#xA;To load completions for every new session, add the output of the above command to your powershell profile.&#xA;helm completion powershell [flags] Options -h, --help help for powershell --no-descriptions disable completion descriptions Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Completion Zsh</title>
+      <link>https://helm.sh/docs/helm/helm_completion_zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_completion_zsh/</guid>
+      <description>helm completion zsh generate autocompletion script for zsh&#xA;Synopsis Generate the autocompletion script for Helm for the zsh shell.&#xA;To load completions in your current shell session:&#xA;source &amp;lt;(helm completion zsh)&#xD;To load completions for every new session, execute once:&#xA;helm completion zsh &amp;gt; &amp;quot;${fpath[1]}/_helm&amp;quot;&#xD;helm completion zsh [flags] Options -h, --help help for zsh --no-descriptions disable completion descriptions Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Create</title>
+      <link>https://helm.sh/docs/helm/helm_create/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_create/</guid>
+      <description>helm create create a new chart with the given name&#xA;Synopsis This command creates a chart directory along with the common files and directories used in a chart.&#xA;For example, &#39;helm create foo&#39; will create a directory structure that looks something like this:&#xA;foo/&#xD;├── .helmignore # Contains patterns to ignore when packaging Helm charts.&#xD;├── Chart.yaml # Information about your chart&#xD;├── values.yaml # The default values for your templates&#xD;├── charts/ # Charts that this chart depends on&#xD;└── templates/ # The template files&#xD;└── tests/ # The test files&#xD;&#39;helm create&#39; takes a path for an argument.</description>
+    </item>
+    <item>
+      <title>Helm Dependency</title>
+      <link>https://helm.sh/docs/helm/helm_dependency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_dependency/</guid>
+      <description>helm dependency manage a chart&#39;s dependencies&#xA;Synopsis Manage the dependencies of a chart.&#xA;Helm charts store their dependencies in &#39;charts/&#39;. For chart developers, it is often easier to manage dependencies in &#39;Chart.yaml&#39; which declares all dependencies.&#xA;The dependency commands operate on that file, making it easy to synchronize between the desired dependencies and the actual dependencies stored in the &#39;charts/&#39; directory.&#xA;For example, this Chart.yaml declares two dependencies:&#xA;# Chart.yaml&#xD;dependencies:&#xD;- name: nginx&#xD;version: &amp;quot;1.</description>
+    </item>
+    <item>
+      <title>Helm Dependency Build</title>
+      <link>https://helm.sh/docs/helm/helm_dependency_build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_dependency_build/</guid>
+      <description>helm dependency build rebuild the charts/ directory based on the Chart.lock file&#xA;Synopsis Build out the charts/ directory from the Chart.lock file.&#xA;Build is used to reconstruct a chart&#39;s dependencies to the state specified in the lock file. This will not re-negotiate dependencies, as &#39;helm dependency update&#39; does.&#xA;If no lock file is found, &#39;helm dependency build&#39; will mirror the behavior of &#39;helm dependency update&#39;.&#xA;helm dependency build CHART [flags] Options -h, --help help for build --keyring string keyring containing public keys (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm Dependency List</title>
+      <link>https://helm.sh/docs/helm/helm_dependency_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_dependency_list/</guid>
+      <description>helm dependency list list the dependencies for the given chart&#xA;Synopsis List all of the dependencies declared in a chart.&#xA;This can take chart archives and chart directories as input. It will not alter the contents of a chart.&#xA;This will produce an error if the chart cannot be loaded.&#xA;helm dependency list CHART [flags] Options -h, --help help for list --max-col-width uint maximum column width for output table (default 80) Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Dependency Update</title>
+      <link>https://helm.sh/docs/helm/helm_dependency_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_dependency_update/</guid>
+      <description>helm dependency update update charts/ based on the contents of Chart.yaml&#xA;Synopsis Update the on-disk dependencies to mirror Chart.yaml.&#xA;This command verifies that the required charts, as expressed in &#39;Chart.yaml&#39;, are present in &#39;charts/&#39; and are at an acceptable version. It will pull down the latest charts that satisfy the dependencies, and clean up old dependencies.&#xA;On successful update, this will generate a lock file that can be used to rebuild the dependencies to an exact version.</description>
+    </item>
+    <item>
+      <title>Helm Env</title>
+      <link>https://helm.sh/docs/helm/helm_env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_env/</guid>
+      <description>helm env helm client environment information&#xA;Synopsis Env prints out all the environment information in use by Helm.&#xA;helm env [flags] Options -h, --help help for env Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get</title>
+      <link>https://helm.sh/docs/helm/helm_get/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get/</guid>
+      <description>helm get download extended information of a named release&#xA;Synopsis This command consists of multiple subcommands which can be used to get extended information about the release, including:&#xA;The values used to generate the release The generated manifest file The notes provided by the chart of the release The hooks associated with the release The metadata of the release Options -h, --help help for get Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get All</title>
+      <link>https://helm.sh/docs/helm/helm_get_all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get_all/</guid>
+      <description>helm get all download all information for a named release&#xA;Synopsis This command prints a human readable collection of information about the notes, hooks, supplied values, and generated manifest file of the given release.&#xA;helm get all RELEASE_NAME [flags] Options -h, --help help for all --revision int get the named release with revision --template string go template for formatting the output, eg: {{.Release.Name}} Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get Hooks</title>
+      <link>https://helm.sh/docs/helm/helm_get_hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get_hooks/</guid>
+      <description>helm get hooks download all hooks for a named release&#xA;Synopsis This command downloads hooks for a given release.&#xA;Hooks are formatted in YAML and separated by the YAML &#39;---\n&#39; separator.&#xA;helm get hooks RELEASE_NAME [flags] Options -h, --help help for hooks --revision int get the named release with revision Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get Manifest</title>
+      <link>https://helm.sh/docs/helm/helm_get_manifest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get_manifest/</guid>
+      <description>helm get manifest download the manifest for a named release&#xA;Synopsis This command fetches the generated manifest for a given release.&#xA;A manifest is a YAML-encoded representation of the Kubernetes resources that were generated from this release&#39;s chart(s). If a chart is dependent on other charts, those resources will also be included in the manifest.&#xA;helm get manifest RELEASE_NAME [flags] Options -h, --help help for manifest --revision int get the named release with revision Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get Metadata</title>
+      <link>https://helm.sh/docs/helm/helm_get_metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get_metadata/</guid>
+      <description>helm get metadata This command fetches metadata for a given release&#xA;helm get metadata RELEASE_NAME [flags] Options -h, --help help for metadata -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) --revision int specify release revision Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get Notes</title>
+      <link>https://helm.sh/docs/helm/helm_get_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get_notes/</guid>
+      <description>helm get notes download the notes for a named release&#xA;Synopsis This command shows notes provided by the chart of a named release.&#xA;helm get notes RELEASE_NAME [flags] Options -h, --help help for notes --revision int get the named release with revision Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Get Values</title>
+      <link>https://helm.sh/docs/helm/helm_get_values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_get_values/</guid>
+      <description>helm get values download the values file for a named release&#xA;Synopsis This command downloads a values file for a given release.&#xA;helm get values RELEASE_NAME [flags] Options -a, --all dump all (computed) values -h, --help help for values -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) --revision int get the named release with revision Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm History</title>
+      <link>https://helm.sh/docs/helm/helm_history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_history/</guid>
+      <description>helm history fetch release history&#xA;Synopsis History prints historical revisions for a given release.&#xA;A default maximum of 256 revisions will be returned. Setting &#39;--max&#39; configures the maximum length of the revision list returned.&#xA;The historical release set is printed as a formatted table, e.g:&#xA;$ helm history angry-bird&#xD;REVISION UPDATED STATUS CHART APP VERSION DESCRIPTION&#xD;1 Mon Oct 3 10:15:13 2016 superseded alpine-0.1.0 1.0 Initial install&#xD;2 Mon Oct 3 10:15:13 2016 superseded alpine-0.</description>
+    </item>
+    <item>
+      <title>Helm Install</title>
+      <link>https://helm.sh/docs/helm/helm_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_install/</guid>
+      <description>helm install install a chart&#xA;Synopsis This command installs a chart archive.&#xA;The install argument must be a chart reference, a path to a packaged chart, a path to an unpacked chart directory or a URL.&#xA;To override values in a chart, use either the &#39;--values&#39; flag and pass in a file or use the &#39;--set&#39; flag and pass configuration from the command line, to force a string value use &#39;--set-string&#39;.</description>
+    </item>
+    <item>
+      <title>Helm Lint</title>
+      <link>https://helm.sh/docs/helm/helm_lint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_lint/</guid>
+      <description>helm lint examine a chart for possible issues&#xA;Synopsis This command takes a path to a chart and runs a series of tests to verify that the chart is well-formed.&#xA;If the linter encounters things that will cause the chart to fail installation, it will emit [ERROR] messages. If it encounters issues that break with convention or recommendation, it will emit [WARNING] messages.&#xA;helm lint PATH [flags] Options -h, --help help for lint --quiet print only warnings and errors --set stringArray set values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2) --set-file stringArray set values from respective files specified via the command line (can specify multiple or separate values with commas: key1=path1,key2=path2) --set-json stringArray set JSON values on the command line (can specify multiple or separate values with commas: key1=jsonval1,key2=jsonval2) --set-literal stringArray set a literal STRING value on the command line --set-string stringArray set STRING values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2) --strict fail on lint warnings -f, --values strings specify values in a YAML file or a URL (can specify multiple) --with-subcharts lint dependent charts Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm List</title>
+      <link>https://helm.sh/docs/helm/helm_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_list/</guid>
+      <description>helm list list releases&#xA;Synopsis This command lists all of the releases for a specified namespace (uses current namespace context if namespace not specified).&#xA;By default, it lists only releases that are deployed or failed. Flags like &#39;--uninstalled&#39; and &#39;--all&#39; will alter this behavior. Such flags can be combined: &#39;--uninstalled --failed&#39;.&#xA;By default, items are sorted alphabetically. Use the &#39;-d&#39; flag to sort by release date.&#xA;If the --filter flag is provided, it will be treated as a filter.</description>
+    </item>
+    <item>
+      <title>Helm Package</title>
+      <link>https://helm.sh/docs/helm/helm_package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_package/</guid>
+      <description>helm package package a chart directory into a chart archive&#xA;Synopsis This command packages a chart into a versioned chart archive file. If a path is given, this will look at that path for a chart (which must contain a Chart.yaml file) and then package that directory.&#xA;Versioned chart archives are used by Helm package repositories.&#xA;To sign a chart, use the &#39;--sign&#39; flag. In most cases, you should also provide &#39;--keyring path/to/secret/keys&#39; and &#39;--key keyname&#39;.</description>
+    </item>
+    <item>
+      <title>Helm Plugin</title>
+      <link>https://helm.sh/docs/helm/helm_plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_plugin/</guid>
+      <description>helm plugin install, list, or uninstall Helm plugins&#xA;Synopsis Manage client-side Helm plugins.&#xA;Options -h, --help help for plugin Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm Plugin Install</title>
+      <link>https://helm.sh/docs/helm/helm_plugin_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_plugin_install/</guid>
+      <description>helm plugin install install one or more Helm plugins&#xA;Synopsis This command allows you to install a plugin from a url to a VCS repo or a local path.&#xA;helm plugin install [options] &amp;lt;path|url&amp;gt;... [flags] Options -h, --help help for install --version string specify a version constraint. If this is not specified, the latest version is installed Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Plugin List</title>
+      <link>https://helm.sh/docs/helm/helm_plugin_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_plugin_list/</guid>
+      <description>helm plugin list list installed Helm plugins&#xA;helm plugin list [flags] Options -h, --help help for list Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm Plugin Uninstall</title>
+      <link>https://helm.sh/docs/helm/helm_plugin_uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_plugin_uninstall/</guid>
+      <description>helm plugin uninstall uninstall one or more Helm plugins&#xA;helm plugin uninstall &amp;lt;plugin&amp;gt;... [flags] Options -h, --help help for uninstall Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm Plugin Update</title>
+      <link>https://helm.sh/docs/helm/helm_plugin_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_plugin_update/</guid>
+      <description>helm plugin update update one or more Helm plugins&#xA;helm plugin update &amp;lt;plugin&amp;gt;... [flags] Options -h, --help help for update Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm Pull</title>
+      <link>https://helm.sh/docs/helm/helm_pull/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_pull/</guid>
+      <description>helm pull download a chart from a repository and (optionally) unpack it in local directory&#xA;Synopsis Retrieve a package from a package repository, and download it locally.&#xA;This is useful for fetching packages to inspect, modify, or repackage. It can also be used to perform cryptographic verification of a chart without installing the chart.&#xA;There are options for unpacking the chart after download. This will create a directory for the chart and uncompress into that directory.</description>
+    </item>
+    <item>
+      <title>Helm Push</title>
+      <link>https://helm.sh/docs/helm/helm_push/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_push/</guid>
+      <description>helm push push a chart to remote&#xA;Synopsis Upload a chart to a registry.&#xA;If the chart has an associated provenance file, it will also be uploaded.&#xA;helm push [chart] [remote] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify registry client using this SSL certificate file -h, --help help for push --insecure-skip-tls-verify skip tls certificate checks for the chart upload --key-file string identify registry client using this SSL key file --plain-http use insecure HTTP connections for the chart upload Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Registry</title>
+      <link>https://helm.sh/docs/helm/helm_registry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_registry/</guid>
+      <description>helm registry login to or logout from a registry&#xA;Synopsis This command consists of multiple subcommands to interact with registries.&#xA;Options -h, --help help for registry Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Registry Login</title>
+      <link>https://helm.sh/docs/helm/helm_registry_login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_registry_login/</guid>
+      <description>helm registry login login to a registry&#xA;Synopsis Authenticate to a remote registry.&#xA;helm registry login [host] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify registry client using this SSL certificate file -h, --help help for login --insecure allow connections to TLS registry without certs --key-file string identify registry client using this SSL key file -p, --password string registry password or identity token --password-stdin read password or identity token from stdin -u, --username string registry username Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Registry Logout</title>
+      <link>https://helm.sh/docs/helm/helm_registry_logout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_registry_logout/</guid>
+      <description>helm registry logout logout from a registry&#xA;Synopsis Remove credentials stored for a remote registry.&#xA;helm registry logout [host] [flags] Options -h, --help help for logout Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Repo</title>
+      <link>https://helm.sh/docs/helm/helm_repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_repo/</guid>
+      <description>helm repo add, list, remove, update, and index chart repositories&#xA;Synopsis This command consists of multiple subcommands to interact with chart repositories.&#xA;It can be used to add, remove, list, and index chart repositories.&#xA;Options -h, --help help for repo Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Repo Add</title>
+      <link>https://helm.sh/docs/helm/helm_repo_add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_repo_add/</guid>
+      <description>helm repo add add a chart repository&#xA;helm repo add [NAME] [URL] [flags] Options --allow-deprecated-repos by default, this command will not allow adding official repos that have been permanently deleted. This disables that behavior --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --force-update replace (overwrite) the repo if it already exists -h, --help help for add --insecure-skip-tls-verify skip tls certificate checks for the repository --key-file string identify HTTPS client using this SSL key file --no-update Ignored.</description>
+    </item>
+    <item>
+      <title>Helm Repo Index</title>
+      <link>https://helm.sh/docs/helm/helm_repo_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_repo_index/</guid>
+      <description>helm repo index generate an index file given a directory containing packaged charts&#xA;Synopsis Read the current directory and generate an index file based on the charts found.&#xA;This tool is used for creating an &#39;index.yaml&#39; file for a chart repository. To set an absolute URL to the charts, use &#39;--url&#39; flag.&#xA;To merge the generated index with an existing index file, use the &#39;--merge&#39; flag. In this case, the charts found in the current directory will be merged into the existing index, with local charts taking priority over existing charts.</description>
+    </item>
+    <item>
+      <title>Helm Repo List</title>
+      <link>https://helm.sh/docs/helm/helm_repo_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_repo_list/</guid>
+      <description>helm repo list list chart repositories&#xA;helm repo list [flags] Options -h, --help help for list -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Repo Remove</title>
+      <link>https://helm.sh/docs/helm/helm_repo_remove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_repo_remove/</guid>
+      <description>helm repo remove remove one or more chart repositories&#xA;helm repo remove [REPO1 [REPO2 ...]] [flags] Options -h, --help help for remove Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm Repo Update</title>
+      <link>https://helm.sh/docs/helm/helm_repo_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_repo_update/</guid>
+      <description>helm repo update update information of available charts locally from chart repositories&#xA;Synopsis Update gets the latest information about charts from the respective chart repositories. Information is cached locally, where it is used by commands like &#39;helm search&#39;.&#xA;You can optionally specify a list of repositories you want to update. $ helm repo update &amp;lt;repo_name&amp;gt; ... To update all the repositories, use &#39;helm repo update&#39;.&#xA;helm repo update [REPO1 [REPO2 .</description>
+    </item>
+    <item>
+      <title>Helm Rollback</title>
+      <link>https://helm.sh/docs/helm/helm_rollback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_rollback/</guid>
+      <description>helm rollback roll back a release to a previous revision&#xA;Synopsis This command rolls back a release to a previous revision.&#xA;The first argument of the rollback command is the name of a release, and the second is a revision (version) number. If this argument is omitted or set to 0, it will roll back to the previous release.&#xA;To see revision numbers, run &#39;helm history RELEASE&#39;.&#xA;helm rollback &amp;lt;RELEASE&amp;gt; [REVISION] [flags] Options --cleanup-on-fail allow deletion of new resources created in this rollback when rollback fails --dry-run simulate a rollback --force force resource update through delete/recreate if needed -h, --help help for rollback --history-max int limit the maximum number of revisions saved per release.</description>
+    </item>
+    <item>
+      <title>Helm Search</title>
+      <link>https://helm.sh/docs/helm/helm_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_search/</guid>
+      <description>helm search search for a keyword in charts&#xA;Synopsis Search provides the ability to search for Helm charts in the various places they can be stored including the Artifact Hub and repositories you have added. Use search subcommands to search different locations for charts.&#xA;Options -h, --help help for search Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Search Hub</title>
+      <link>https://helm.sh/docs/helm/helm_search_hub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_search_hub/</guid>
+      <description>helm search hub search for charts in the Artifact Hub or your own hub instance&#xA;Synopsis Search for Helm charts in the Artifact Hub or your own hub instance.&#xA;Artifact Hub is a web-based application that enables finding, installing, and publishing packages and configurations for CNCF projects, including publicly available distributed charts Helm charts. It is a Cloud Native Computing Foundation sandbox project. You can browse the hub at https://artifacthub.io/</description>
+    </item>
+    <item>
+      <title>Helm Search Repo</title>
+      <link>https://helm.sh/docs/helm/helm_search_repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_search_repo/</guid>
+      <description>helm search repo search repositories for a keyword in charts&#xA;Synopsis Search reads through all of the repositories configured on the system, and looks for matches. Search of these repositories uses the metadata stored on the system.&#xA;It will display the latest stable versions of the charts found. If you specify the --devel flag, the output will include pre-release versions. If you want to search using a version constraint, use --version.</description>
+    </item>
+    <item>
+      <title>Helm Show</title>
+      <link>https://helm.sh/docs/helm/helm_show/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_show/</guid>
+      <description>helm show show information of a chart&#xA;Synopsis This command consists of multiple subcommands to display information about a chart&#xA;Options -h, --help help for show Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Show All</title>
+      <link>https://helm.sh/docs/helm/helm_show_all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_show_all/</guid>
+      <description>helm show all show all information of the chart&#xA;Synopsis This command inspects a chart (directory, file, or URL) and displays all its content (values.yaml, Chart.yaml, README)&#xA;helm show all [CHART] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for all --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm Show Chart</title>
+      <link>https://helm.sh/docs/helm/helm_show_chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_show_chart/</guid>
+      <description>helm show chart show the chart&#39;s definition&#xA;Synopsis This command inspects a chart (directory, file, or URL) and displays the contents of the Chart.yaml file&#xA;helm show chart [CHART] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for chart --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm Show Crds</title>
+      <link>https://helm.sh/docs/helm/helm_show_crds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_show_crds/</guid>
+      <description>helm show crds show the chart&#39;s CRDs&#xA;Synopsis This command inspects a chart (directory, file, or URL) and displays the contents of the CustomResourceDefinition files&#xA;helm show crds [CHART] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for crds --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm Show Readme</title>
+      <link>https://helm.sh/docs/helm/helm_show_readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_show_readme/</guid>
+      <description>helm show readme show the chart&#39;s README&#xA;Synopsis This command inspects a chart (directory, file, or URL) and displays the contents of the README file&#xA;helm show readme [CHART] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for readme --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm Show Values</title>
+      <link>https://helm.sh/docs/helm/helm_show_values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_show_values/</guid>
+      <description>helm show values show the chart&#39;s values&#xA;Synopsis This command inspects a chart (directory, file, or URL) and displays the contents of the values.yaml file&#xA;helm show values [CHART] [flags] Options --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for values --insecure-skip-tls-verify skip tls certificate checks for the chart download --jsonpath string supply a JSONPath expression to filter the output --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm Status</title>
+      <link>https://helm.sh/docs/helm/helm_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_status/</guid>
+      <description>helm status display the status of the named release&#xA;Synopsis This command shows the status of a named release. The status consists of:&#xA;last deployment time k8s namespace in which the release lives state of the release (can be: unknown, deployed, uninstalled, superseded, failed, uninstalling, pending-install, pending-upgrade or pending-rollback) revision of the release description of the release (can be completion message or error message, need to enable --show-desc) list of resources that this release consists of (need to enable --show-resources) details on last test suite run, if applicable additional notes provided by the chart helm status RELEASE_NAME [flags] Options -h, --help help for status -o, --output format prints the output in the specified format.</description>
+    </item>
+    <item>
+      <title>Helm Template</title>
+      <link>https://helm.sh/docs/helm/helm_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_template/</guid>
+      <description>helm template locally render templates&#xA;Synopsis Render chart templates locally and display the output.&#xA;Any values that would normally be looked up or retrieved in-cluster will be faked locally. Additionally, none of the server-side testing of chart validity (e.g. whether an API is supported) is done.&#xA;helm template [NAME] [CHART] [flags] Options -a, --api-versions strings Kubernetes api versions used for Capabilities.APIVersions --atomic if set, the installation process deletes the installation on failure.</description>
+    </item>
+    <item>
+      <title>Helm Test</title>
+      <link>https://helm.sh/docs/helm/helm_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_test/</guid>
+      <description>helm test run tests for a release&#xA;Synopsis The test command runs the tests for a release.&#xA;The argument this command takes is the name of a deployed release. The tests to be run are defined in the chart that was installed.&#xA;helm test [RELEASE] [flags] Options --filter strings specify tests by attribute (currently &amp;#34;name&amp;#34;) using attribute=value syntax or &amp;#39;!attribute=value&amp;#39; to exclude a test (can specify multiple or separate values with commas: name=test1,name=test2) -h, --help help for test --logs dump the logs from test pods (this runs after all tests are complete, but before any cleanup) --timeout duration time to wait for any individual Kubernetes operation (like Jobs for hooks) (default 5m0s) Options inherited from parent commands --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm Uninstall</title>
+      <link>https://helm.sh/docs/helm/helm_uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_uninstall/</guid>
+      <description>helm uninstall uninstall a release&#xA;Synopsis This command takes a release name and uninstalls the release.&#xA;It removes all of the resources associated with the last release of the chart as well as the release history, freeing it up for future use.&#xA;Use the &#39;--dry-run&#39; flag to see which releases will be uninstalled without actually uninstalling them.&#xA;helm uninstall RELEASE_NAME [...] [flags] Options --cascade string Must be &amp;#34;background&amp;#34;, &amp;#34;orphan&amp;#34;, or &amp;#34;foreground&amp;#34;.</description>
+    </item>
+    <item>
+      <title>Helm Upgrade</title>
+      <link>https://helm.sh/docs/helm/helm_upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_upgrade/</guid>
+      <description>helm upgrade upgrade a release&#xA;Synopsis This command upgrades a release to a new version of a chart.&#xA;The upgrade arguments must be a release and chart. The chart argument can be either: a chart reference(&#39;example/mariadb&#39;), a path to a chart directory, a packaged chart, or a fully qualified URL. For chart references, the latest version will be specified unless the &#39;--version&#39; flag is set.&#xA;To override values in a chart, use either the &#39;--values&#39; flag and pass in a file or use the &#39;--set&#39; flag and pass configuration from the command line, to force string values, use &#39;--set-string&#39;.</description>
+    </item>
+    <item>
+      <title>Helm Verify</title>
+      <link>https://helm.sh/docs/helm/helm_verify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_verify/</guid>
+      <description>helm verify verify that a chart at the given path has been signed and is valid&#xA;Synopsis Verify that the given chart has a valid provenance file.&#xA;Provenance files provide cryptographic verification that a chart has not been tampered with, and was packaged by a trusted provider.&#xA;This command can be used to verify a local chart. Several other commands provide &#39;--verify&#39; flags that run the same validation. To generate a signed package, use the &#39;helm package --sign&#39; command.</description>
+    </item>
+    <item>
+      <title>Helm Version</title>
+      <link>https://helm.sh/docs/helm/helm_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/helm/helm_version/</guid>
+      <description>helm version print the client version information&#xA;Synopsis Show the version for Helm.&#xA;This will print a representation the version of Helm. The output will look something like this:&#xA;version.BuildInfo{Version:&amp;quot;v3.2.1&amp;quot;, GitCommit:&amp;quot;fe51cd1e31e6a202cba7dead9552a6d418ded79a&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, GoVersion:&amp;quot;go1.13.10&amp;quot;}&#xA;Version is the semantic version of the release. GitCommit is the SHA for the commit that this version was built from. GitTreeState is &amp;quot;clean&amp;quot; if there are no local code changes when this binary was built, and &amp;quot;dirty&amp;quot; if the binary was built from locally modified code.</description>
+    </item>
+  </channel>
+</rss>

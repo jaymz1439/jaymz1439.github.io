@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helm 命令行 on Helm</title>
+    <link>https://helm.sh/zh/docs/helm/</link>
+    <description>Recent content in Helm 命令行 on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://helm.sh/zh/docs/helm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://helm.sh/zh/docs/helm/helm_delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_delete/</guid>
+      <description>helm delete 该命令被重命名。 请参考&#xD;helm uninstall.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://helm.sh/zh/docs/helm/helm_init/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_init/</guid>
+      <description>helm init 该命令不会出现在Helm 3中，遵循&#xD;移除的Tiller。不再需要为使用helm而安装Tiller。&#xA;如果您在使用Helm 2， 前往&#xD;v2.helm.sh 查看&#xD;Helm初始化文档。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://helm.sh/zh/docs/helm/helm_inspect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_inspect/</guid>
+      <description>helm inspect 该命令已被重命名，请参考&#xD;helm show。</description>
+    </item>
+    <item>
+      <title>Helm</title>
+      <link>https://helm.sh/zh/docs/helm/helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm/</guid>
+      <description>helm 针对Kubernetes的Helm包管理器。&#xA;简介 Kubernetes包管理器&#xA;Helm的一般操作：&#xA;helm search: 搜索chart helm pull: 下载chart到本地目录查看 helm install: 上传chart到Kubernetes helm list: 列出已发布的chart 环境变量：&#xA;名称 描述 $HELM_CACHE_HOME 设置一个存储缓存文件的可选位置 $HELM_CONFIG_HOME 设置一个存储Helm配置的可选位置 $HELM_DATA_HOME 设置一个存储Helm数据的可选位置 $HELM_DEBUG 表示Helm是否在Debug模式系运行 $HELM_DRIVER 设置后台存储驱动，可选值包括：configmap, secret, memory, sql $HELM_DRIVER_SQL_CONNECTION_STRING 设置SQL存储驱动使用连接字符串 $HELM_MAX_HISTORY 设置发布历史记录的最大值 $HELM_NAMESPACE 设置用于helm操作的命名空间 $HELM_NO_PLUGINS 禁用插件，HELM_NO_PLUGINS=1 表示禁用插件 $HELM_PLUGINS 设置插件目录路径 $HELM_REGISTRY_CONFIG 设置注册配置文件的路径 $HELM_REPOSITORY_CACHE 设置仓库缓存目录路径 $HELM_REPOSITORY_CONFIG 设置仓库文件的路径 $KUBECONFIG 设置Kubernetes的可选配置文件(默认是&amp;quot;~/.kube/config&amp;quot;) $HELM_KUBEAPISERVER 设置用于身份认证的Kubernetes API服务端 $HELM_KUBECAFILE 设置Kubernetes证书机构文件 $HELM_KUBEASGROUPS 使用逗号分隔的列表设置用于模拟的组 $HELM_KUBEASUSER 为操作设置要模拟的用户名 $HELM_KUBECONTEXT 设置kubeconfig上下文的名称 $HELM_KUBETOKEN 设置用于身份验证的不记名KubeToken $HELM_KUBEINSECURE_SKIP_TLS_VERIFY 设置 Kubernetes API 服务的证书验证是否跳过（不安全） $HELM_KUBETLS_SERVER_NAME 设置用于验证 Kubernetes API 服务器证书的服务器名称 $HELM_BURST_LIMIT 设置当 kubernetes 服务包含很大量CRD时的默认上限值（默认100, -1是不可用） Helm 基于以下配置顺序存储缓存，配置和添加数据：</description>
+    </item>
+    <item>
+      <title>Helm 安装</title>
+      <link>https://helm.sh/zh/docs/helm/helm_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_install/</guid>
+      <description>helm install 安装chart&#xA;简介 该命令用于安装chart包。&#xA;安装参数必须是chart的引用，一个打包后的chart路径，未打包的chart目录或者是一个URL。&#xA;要重写chart中的值，使用&#39;--values&#39;参数传递一个文件或者使用&#39;--set&#39;参数在命令行传递配置，强制使用字符串要用&#39;--set-string&#39;。 当值本身对于命令行太长或者是动态生成的时候，可以使用 &#39;--set-file&#39; 设置独立的值。也可以在命令行使用&#39;--set-json&#39;参数设置json值(scalars/objects/arrays)。&#xA;$ helm install -f myvalues.yaml myredis ./redis 或者&#xA;$ helm install --set name=prod myredis ./redis 或者&#xA;$ helm install --set-string long_int=1234567890 myredis ./redis 或者&#xA;$ helm install --set-file my_script=dothings.sh myredis ./redis 或者&#xA;$ helm install --set-json &amp;#39;master.sidecars=[{&amp;#34;name&amp;#34;:&amp;#34;sidecar&amp;#34;,&amp;#34;image&amp;#34;:&amp;#34;myImage&amp;#34;,&amp;#34;imagePullPolicy&amp;#34;:&amp;#34;Always&amp;#34;,ports&amp;#34;:[{&amp;#34;name&amp;#34;:&amp;#34;portname&amp;#34;,&amp;#34;containerPort&amp;#34;:1234}]}]&amp;#39; myredis ./redis 你可以多次指定&#39;--values&#39;/&#39;-f&#39;参数。最右侧指定的文件优先级最高。比如，如果两个文件myvalues.yaml和override.yaml 都包含名为&#39;Test&#39;的可以，override.yaml中的值优先：&#xA;$ helm install -f myvalues.yaml -f override.yaml myredis ./redis 可以指定&#39;--set&#39;参数多次，最右边的参数优先级最高，比如，&#39;bar&#39;和&#39;newbar&#39;都设置了一个名为&#39;foo&#39;的可以，&#39;newbar&#39;的值优先：&#xA;$ helm install --set foo=bar --set foo=newbar myredis ./redis 类似地,下面的示例中&#39;foo&#39;被设置成了&#39;[&amp;quot;four&amp;quot;]&#39;:</description>
+    </item>
+    <item>
+      <title>Helm 版本</title>
+      <link>https://helm.sh/zh/docs/helm/helm_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_version/</guid>
+      <description>helm version 打印客户端版本信息&#xA;简介 显示Helm的版本。&#xA;该命令会打印Helm的版本描述，输出如下：&#xA;version.BuildInfo{Version:&amp;quot;v3.2.1&amp;quot;, GitCommit:&amp;quot;fe51cd1e31e6a202cba7dead9552a6d418ded79a&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, GoVersion:&amp;quot;go1.13.10&amp;quot;}&#xA;版本是发布的语义化版本。 GitCommit是用于生成此版本提交的SHA 如果构建二级制包是没有本地代码修改，GitTreeState就是&amp;quot;干净的&amp;quot; GoVersion是用于编译Helm的Go版本 当使用--template参数时，下列属性在模板中是可用的：&#xA;.Version 包含了Helm的语义化版本 .GitCommit 是git的提交 .GitTreeState 是Helm构建时的git树结构 .GoVersion 包含Helm编译时使用的Go版本 比如， --template=&#39;Version: {{.Version}}&#39; 输出 &#39;Version: v3.2.1&#39;。&#xA;helm version [flags] 可选项 -h, --help help for version --short print the version number --template string template for version string format 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 包</title>
+      <link>https://helm.sh/zh/docs/helm/helm_package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_package/</guid>
+      <description>helm package 将chart目录打包到chart归档中&#xA;简介 该命令将chart打包成一个chart版本包文件。如果给定路径，就会在该路径中查找chart（必须包含Chart.yaml文件）然后将目录打包。&#xA;chart版本包会用于Helm包仓库。&#xA;要签名一个chart，使用&#39;--sign&#39;参数，在大多数场景中，也要提供&#39;--keyring path/to/secret/keys&#39;和&#39;--key keyname&#39;。&#xA;$ helm package --sign ./mychart --key mykey --keyring ~/.gnupg/secring.gpg&#xA;如果&#39;--keyring&#39;未指定，除非配置了其他方式，不然Helm通常会指定公共秘钥环。&#xA;helm package [CHART_PATH] [...] [flags] 可选项 --app-version string set the appVersion on the chart to this version -u, --dependency-update update dependencies from &amp;#34;Chart.yaml&amp;#34; to dir &amp;#34;charts/&amp;#34; before packaging -d, --destination string location to write the chart. (default &amp;#34;.&amp;#34;) -h, --help help for package --key string name of the key to use when signing.</description>
+    </item>
+    <item>
+      <title>Helm 变量</title>
+      <link>https://helm.sh/zh/docs/helm/helm_env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_env/</guid>
+      <description>helm env helm 客户端环境信息&#xA;简介 Env 打印所有Helm使用的环境信息&#xA;helm env [flags] 可选项 -h, --help help for env 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 补全</title>
+      <link>https://helm.sh/zh/docs/helm/helm_completion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_completion/</guid>
+      <description>helm completion 为指定的shell生成自动补全脚本&#xA;简介 为Helm生成针对于指定shell的自动补全脚本&#xA;可选项 -h, --help help for completion 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 仓库</title>
+      <link>https://helm.sh/zh/docs/helm/helm_repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_repo/</guid>
+      <description>helm repo 添加、列出、删除、更新和索引chart仓库&#xA;简介 该命令由于chart仓库交互的多条子命令组成&#xA;可以用来添加、删除、列举和索引chart仓库&#xA;可选项 -h, --help help for repo 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 仓库更新</title>
+      <link>https://helm.sh/zh/docs/helm/helm_repo_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_repo_update/</guid>
+      <description>helm repo update 从chart仓库中更新本地可用chart的信息&#xA;简介 更新从各自chart仓库中获取的有关chart的最新信息。信息会缓存在本地，被诸如&#39;helm search&#39;等命令使用。&#xA;你可以指定需要更新的仓库列表。 $ helm repo update &amp;lt;repo_name&amp;gt; ... 使用 &#39;helm repo update&#39; 更新所有仓库。&#xA;helm repo update [REPO1 [REPO2 ...]] [flags] 可选项 --fail-on-repo-update-fail update fails if any of the repository updates fail -h, --help help for update 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 仓库列表</title>
+      <link>https://helm.sh/zh/docs/helm/helm_repo_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_repo_list/</guid>
+      <description>helm repo list 列举chart仓库&#xA;helm repo list [flags] 可选项 -h, --help help for list -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 仓库索引</title>
+      <link>https://helm.sh/zh/docs/helm/helm_repo_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_repo_index/</guid>
+      <description>helm repo index 基于包含打包chart的目录，生成索引文件&#xA;简介 读取当前目录，并根据找到的 chart 生成索引文件。&#xA;这个工具用来为chart仓库创建一个&#39;index.yaml&#39;文件，使用&#39;--url&#39;参数创建一个chart的绝对URL。&#xA;要合并生成的索引和已经存在的索引文件时，使用&#39;--merge&#39;参数。在这个场景中，在当前目录中找到的chart会合并到已有索引中， 本地chart的优先级高于已有chart。&#xA;helm repo index [DIR] [flags] 可选项 -h, --help help for index --merge string merge the generated index into the given index --url string url of chart repository 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 测试</title>
+      <link>https://helm.sh/zh/docs/helm/helm_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_test/</guid>
+      <description>helm test 执行发布版本的测试&#xA;简介 测试命令执行发布版本的测试&#xA;该命令使用的参数是部署版本的名称，要运行的测试在已安装的chart中定义。&#xA;helm test [RELEASE] [flags] 可选项 --filter strings specify tests by attribute (currently &amp;#34;name&amp;#34;) using attribute=value syntax or &amp;#39;!attribute=value&amp;#39; to exclude a test (can specify multiple or separate values with commas: name=test1,name=test2) -h, --help help for test --logs dump the logs from test pods (this runs after all tests are complete, but before any cleanup) --timeout duration time to wait for any individual Kubernetes operation (like Jobs for hooks) (default 5m0s) 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 插件</title>
+      <link>https://helm.sh/zh/docs/helm/helm_plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_plugin/</guid>
+      <description>helm plugin 安装、列举或卸载Helm插件&#xA;简介 管理客户端插件。&#xA;可选项 -h, --help help for plugin 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 插件安装</title>
+      <link>https://helm.sh/zh/docs/helm/helm_plugin_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_plugin_install/</guid>
+      <description>helm plugin install 安装一个或多个Helm插件&#xA;简介 该命令允许您通过VCS仓库url或者本地路径安装插件。&#xA;helm plugin install [options] &amp;lt;path|url&amp;gt;... [flags] 可选项 -h, --help help for install --version string specify a version constraint. If this is not specified, the latest version is installed 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 插件列表</title>
+      <link>https://helm.sh/zh/docs/helm/helm_plugin_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_plugin_list/</guid>
+      <description>helm plugin list 列举已安装的Helm插件&#xA;helm plugin list [flags] 可选项 -h, --help help for list 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 插件升级</title>
+      <link>https://helm.sh/zh/docs/helm/helm_plugin_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_plugin_update/</guid>
+      <description>helm plugin update 升级一个或多个Helm插件&#xA;helm plugin update &amp;lt;plugin&amp;gt;... [flags] 可选项 -h, --help help for update 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 插件卸载</title>
+      <link>https://helm.sh/zh/docs/helm/helm_plugin_uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_plugin_uninstall/</guid>
+      <description>helm plugin uninstall 卸载一个或多个Helm插件&#xA;helm plugin uninstall &amp;lt;plugin&amp;gt;... [flags] 可选项 -h, --help help for uninstall 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 回滚</title>
+      <link>https://helm.sh/zh/docs/helm/helm_rollback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_rollback/</guid>
+      <description>helm rollback 回滚发布到上一个版本&#xA;简介 该命令回滚发布到上一个版本&#xA;回滚命令的第一个参数是发布的名称，第二是修订（版本）号，如果省略此参数，会回滚到上一个版本。&#xA;要查看修订号，执行&#39;helm history RELEASE&#39;。&#xA;helm rollback &amp;lt;RELEASE&amp;gt; [REVISION] [flags] 可选项 --cleanup-on-fail allow deletion of new resources created in this rollback when rollback fails --dry-run simulate a rollback --force force resource update through delete/recreate if needed -h, --help help for rollback --history-max int limit the maximum number of revisions saved per release. Use 0 for no limit (default 10) --no-hooks prevent hooks from running during rollback --recreate-pods performs pods restart for the resource if applicable --timeout duration time to wait for any individual Kubernetes operation (like Jobs for hooks) (default 5m0s) --wait if set, will wait until all Pods, PVCs, Services, and minimum number of Pods of a Deployment, StatefulSet, or ReplicaSet are in a ready state before marking the release as successful.</description>
+    </item>
+    <item>
+      <title>Helm 获取钩子</title>
+      <link>https://helm.sh/zh/docs/helm/helm_get_hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_get_hooks/</guid>
+      <description>helm get hooks 下载命名版本的所有钩子&#xA;简介 该命令下载指定版本的钩子&#xA;钩子被格式化为YAML格式并以YAML的&#39;---\n&#39;分隔符分隔&#xA;helm get hooks RELEASE_NAME [flags] 可选项 -h, --help help for hooks --revision int get the named release with revision 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 获取扩展</title>
+      <link>https://helm.sh/zh/docs/helm/helm_get/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_get/</guid>
+      <description>helm get 下载发布的扩展信息&#xA;简介 该命令有多个子命令组成，用来获取发布版本的扩展信息，包括：&#xA;生成版本的值 生成的清单文件 发布的chart提供的注释 与版本关联的钩子 可选项 -h, --help help for get 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 获取清单</title>
+      <link>https://helm.sh/zh/docs/helm/helm_get_manifest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_get_manifest/</guid>
+      <description>helm get manifest 下载命名版本的清单&#xA;简介 该命令用来获取指定版本的清单文件&#xA;清单是由该版本的chart生成的Kubernetes资源的YAML编码表示。&#xA;helm get manifest RELEASE_NAME [flags] 可选项 -h, --help help for manifest --revision int get the named release with revision 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 获取所有</title>
+      <link>https://helm.sh/zh/docs/helm/helm_get_all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_get_all/</guid>
+      <description>helm get all 下载命名版本的所有信息&#xA;简介 该命令打印一个具有可读性的信息集合，包括注释，钩子，提供的values，以及给定版本生成的清单文件。&#xA;helm get all RELEASE_NAME [flags] 可选项 -h, --help help for all --revision int get the named release with revision --template string go template for formatting the output, eg: {{.Release.Name}} 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 获取注释</title>
+      <link>https://helm.sh/zh/docs/helm/helm_get_notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_get_notes/</guid>
+      <description>helm get notes 下载命名版本的注释&#xA;简介 该命令显示了由指定版本chart提供的注释&#xA;helm get notes RELEASE_NAME [flags] 可选项 -h, --help help for notes --revision int get the named release with revision 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 拉取</title>
+      <link>https://helm.sh/zh/docs/helm/helm_pull/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_pull/</guid>
+      <description>helm pull 从仓库下载并（可选）在本地目录解压&#xA;简介 从包仓库中检索包并下载到本地。&#xA;对于要获取检查，修改或重新打包的包很有用，还可以用于在不安装chart的情况下对chart进行加密验证。&#xA;下载chart之后有解压的选项，会为chart创建一个目录并解压到这个目录中。&#xA;如果指定了--verify参数，请求的chart必须有出处文件，且必须通过验证。任意部分的失败都会导致错误，且chart不会在本地保存。&#xA;helm pull [chart URL | repo/chartname] [...] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file -d, --destination string location to write the chart. If this and untardir are specified, untardir is appended to this (default &amp;#34;.&amp;#34;) --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored.</description>
+    </item>
+    <item>
+      <title>Helm 历史</title>
+      <link>https://helm.sh/zh/docs/helm/helm_history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_history/</guid>
+      <description>helm history 检索发布历史&#xA;简介 打印给定版本的历史修订。&#xA;默认会返回最大的256个历史版本。设置&#39;--max&#39;配置返回历史列表的最大长度。&#xA;历史发布集合会被打印成格式化的表格，例如：&#xA;$ helm history angry-bird REVISION UPDATED STATUS CHART APP VERSION DESCRIPTION 1 Mon Oct 3 10:15:13 2016 superseded alpine-0.1.0 1.0 Initial install 2 Mon Oct 3 10:15:13 2016 superseded alpine-0.1.0 1.0 Upgraded successfully 3 Mon Oct 3 10:15:13 2016 superseded alpine-0.1.0 1.0 Rolled back to 2 4 Mon Oct 3 10:15:13 2016 deployed alpine-0.1.0 1.0 Upgraded successfully helm history RELEASE_NAME [flags] 可选项 -h, --help help for history --max int maximum number of revision to include in history (default 256) -o, --output format prints the output in the specified format.</description>
+    </item>
+    <item>
+      <title>Helm 列表</title>
+      <link>https://helm.sh/zh/docs/helm/helm_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_list/</guid>
+      <description>helm list 列举发布版本&#xA;简介 该命令会列举出指定命名空间的所有发布版本，(如果没有指定命名空间，会使用当前命名空间)。&#xA;默认情况下，只会列举出部署的或者失败的发布，像&#39;--uninstalled&#39;或者&#39;--all&#39;会修改默认行为。这些参数可以组合使用：&#39;--uninstalled --failed&#39;。&#xA;默认情况下，列表按字母排序。使用&#39;-d&#39;参数按照日期排序。&#xA;如果使用--filter参数，会作为一个过滤器。过滤器是应用于发布列表的正则表达式(兼容Perl)。只有过滤器匹配的才会返回。&#xA;$ helm list --filter &amp;#39;ara[a-z]+&amp;#39; NAME UPDATED CHART maudlin-arachnid 2020-06-18 14:17:46.125134977 +0000 UTC alpine-0.1.0 如果未找到结果，&#39;helm list&#39;会退出，但是没有输出(或者使用&#39;-q&#39;，只返回头部）。&#xA;默认情况下，最多返回256项，使用&#39;--max&#39;限制数量，&#39;--max&#39;设置为0不会返回所有结果，而是返回服务器默认值，可能要比256更多。 同时使用&#39;--max&#39;和&#39;--offset&#39;参数可以翻页显示。&#xA;helm list [flags] 可选项 -a, --all show all releases without any filter applied -A, --all-namespaces list releases across all namespaces -d, --date sort by release date --deployed show deployed releases. If no other is specified, this will be automatically enabled --failed show failed releases -f, --filter string a regular expression (Perl compatible).</description>
+    </item>
+    <item>
+      <title>Helm 模板</title>
+      <link>https://helm.sh/zh/docs/helm/helm_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_template/</guid>
+      <description>helm template 本地渲染模板&#xA;简介 本地渲染模板并显示输出&#xA;通常在集群中查找或检索到的任何值都可以在本地伪造。另外，没有对chart有效性进行服务端测试。&#xA;helm template [NAME] [CHART] [flags] 可选项 -a, --api-versions strings Kubernetes api versions used for Capabilities.APIVersions --atomic if set, the installation process deletes the installation on failure. The --wait flag will be set automatically if --atomic is used --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --create-namespace create the release namespace if not present --dependency-update update dependencies if they are missing before installing the chart --description string add a custom description --devel use development versions, too.</description>
+    </item>
+    <item>
+      <title>Helm 删除仓库</title>
+      <link>https://helm.sh/zh/docs/helm/helm_repo_remove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_repo_remove/</guid>
+      <description>helm repo remove 删除一个或多个仓库&#xA;helm repo remove [REPO1 [REPO2 ...]] [flags] 可选项 -h, --help help for remove 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 升级</title>
+      <link>https://helm.sh/zh/docs/helm/helm_upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_upgrade/</guid>
+      <description>helm upgrade 升级版本&#xA;简介 该命令将发布升级到新版的chart。&#xA;升级参数必须是发布和chart。chart参数可以是：chart引用(&#39;example/mariadb&#39;)，chart目录路径，打包的chart或者完整URL。 对于chart引用，除非使用&#39;--version&#39;参数指定，否则会使用最新版本。&#xA;要在chart中重写value，需要使用&#39;--values&#39;参数并传一个文件或者从命令行使用&#39;--set&#39;参数传个配置， 要强制字符串值，使用&#39;--set-string&#39;。当值本身对于命令行太长或者是动态生成的时候，可以使用 &#39;--set-file&#39; 设置独立的值。 也可以在命令行使用&#39;--set-json&#39;参数设置json值(scalars/objects/arrays)。&#xA;可以多次指定&#39;--values&#39;/&#39;-f&#39;参数，最后（最右边）指定的文件优先级最高。比如如果myvalues.yaml和override.yaml同时包含了名为 &#39;Test&#39;的key，override.yaml中的设置会优先使用：&#xA;$ helm upgrade -f myvalues.yaml -f override.yaml redis ./redis 可以多次指定&#39;--set&#39;参数，最后（最右边）指定的优先级最高。比如&#39;bar&#39; 和 &#39;newbar&#39;都设置了一个名为&#39;foo&#39;的可以， &#39;newbar&#39;的值会优先使用：&#xA;$ helm upgrade --set foo=bar --set foo=newbar redis ./redis helm upgrade [RELEASE] [CHART] [flags] 可选项 --atomic if set, upgrade process rolls back changes made in case of failed upgrade. The --wait flag will be set automatically if --atomic is used --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --cleanup-on-fail allow deletion of new resources created in this upgrade when upgrade fails --create-namespace if --install is set, create the release namespace if not present --dependency-update update dependencies if they are missing before installing the chart --description string add a custom description --devel use development versions, too.</description>
+    </item>
+    <item>
+      <title>Helm 搜索</title>
+      <link>https://helm.sh/zh/docs/helm/helm_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_search/</guid>
+      <description>helm search helm中搜索关键字&#xA;简介 搜索提供了可以在已经添加的Artifact Hub和仓库等多个位置搜索Helm chart 的能力。&#xA;可选项 -h, --help help for search 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 搜索hub</title>
+      <link>https://helm.sh/zh/docs/helm/helm_search_hub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_search_hub/</guid>
+      <description>helm search hub 在Artifact Hub或自己的hub实例中搜索chart&#xA;简介 在Artifact Hub或自己的hub实例中搜索Helm charts。&#xA;Artifact Hub 是基于web页面的应用，支持CNCF项目的查找、安装和发布包及配置项，包括了公开发布的Helm chart。它是CNCF的沙盒项目。可以访问https://artifacthub.io/&#xA;[KEYWORD] 参数接受关键字字符串或者带引号的查询字符串。查询字符串的文档，请查看 https://artifacthub.github.io/hub/api/?urls.primaryName=Monocular%20compatible%20search%20API#/Monocular/get_api_chartsvc_v1_charts_search&#xA;之前的Helm版本使用Monocular实例作为默认的endpoint，因此为了向后兼容，Artifact Hub兼容Monocular的搜索API。类似地，要设置endpoint参数时，指定的endpoint也必须兼容Monocular的搜索API。 注意，指定Monocular实例作为endpoint时，不支持字符串查询。更多API细节，请参考 https://github.com/helm/monocular&#xA;helm search hub [KEYWORD] [flags] 可选项 --endpoint string Hub instance to query for charts (default &amp;#34;https://hub.helm.sh&amp;#34;) -h, --help help for hub --list-repo-url print charts repository URL --max-col-width uint maximum column width for output table (default 50) -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 搜索仓库</title>
+      <link>https://helm.sh/zh/docs/helm/helm_search_repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_search_repo/</guid>
+      <description>helm search repo 用chart中关键字搜索仓库&#xA;简介 搜索会读取系统上配置的所有仓库，并查找匹配。搜索这些仓库会使用存储在系统中的元数据。&#xA;它会展示找到最新稳定版本的chart。如果指定了--devel参数，输出会包括预发布版本。&#xA;示例：&#xA;# Search for stable release versions matching the keyword &amp;#34;nginx&amp;#34; $ helm search repo nginx # Search for release versions matching the keyword &amp;#34;nginx&amp;#34;, including pre-release versions $ helm search repo nginx --devel # Search for the latest stable release for nginx-ingress with a major version of 1 $ helm search repo nginx-ingress --version ^1.0.0 仓库使用&#39;helm repo&#39;命令管理。&#xA;helm search repo [keyword] [flags] 可选项 --devel use development versions (alpha, beta, and release candidate releases), too.</description>
+    </item>
+    <item>
+      <title>Helm 添加仓库</title>
+      <link>https://helm.sh/zh/docs/helm/helm_repo_add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_repo_add/</guid>
+      <description>helm repo add 添加chart仓库&#xA;helm repo add [NAME] [URL] [flags] 可选项 --allow-deprecated-repos by default, this command will not allow adding official repos that have been permanently deleted. This disables that behavior --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --force-update replace (overwrite) the repo if it already exists -h, --help help for add --insecure-skip-tls-verify skip tls certificate checks for the repository --key-file string identify HTTPS client using this SSL key file --no-update Ignored.</description>
+    </item>
+    <item>
+      <title>Helm 推送</title>
+      <link>https://helm.sh/zh/docs/helm/helm_push/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_push/</guid>
+      <description>helm push 将chart推送到远程&#xA;简介 上传chart到注册表。&#xA;如果chart有其他相关文件，也会一起上传。&#xA;helm push [chart] [remote] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify registry client using this SSL certificate file -h, --help help for push --insecure-skip-tls-verify skip tls certificate checks for the chart upload --key-file string identify registry client using this SSL key file 从父命令继承的可选项 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 卸载</title>
+      <link>https://helm.sh/zh/docs/helm/helm_uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_uninstall/</guid>
+      <description>helm uninstall 卸载版本&#xA;简介 该命令使用版本名称卸载版本&#xA;会删除与最新版本chart相关的所有资源以及发布历史，释放以供将来使用&#xA;使用&#39;--dry-run&#39;参数查看哪些版本将在不实际卸载的情况下能够被卸载&#xA;helm uninstall RELEASE_NAME [...] [flags] 可选项 --cascade string Must be &amp;#34;background&amp;#34;, &amp;#34;orphan&amp;#34;, or &amp;#34;foreground&amp;#34;. Selects the deletion cascading strategy for the dependents. Defaults to background. (default &amp;#34;background&amp;#34;) --description string add a custom description --dry-run simulate a uninstall -h, --help help for uninstall --keep-history remove all associated resources and mark the release as deleted, but retain the release history --no-hooks prevent hooks from running during uninstallation --timeout duration time to wait for any individual Kubernetes operation (like Jobs for hooks) (default 5m0s) --wait if set, will wait until all the resources are deleted before returning.</description>
+    </item>
+    <item>
+      <title>Helm 验证</title>
+      <link>https://helm.sh/zh/docs/helm/helm_lint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_lint/</guid>
+      <description>helm lint 验证chart是否存在问题&#xA;简介 该命令使用一个chart路径并运行一系列的测试来验证chart的格式是否正确。&#xA;如果遇到引起chart安装失败的情况，会触发[ERROR]信息，如果遇到违反惯例或建议的问题，会触发[WARNING]。&#xA;helm lint PATH [flags] 可选项 -h, --help help for lint --set stringArray set values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2) --set-file stringArray set values from respective files specified via the command line (can specify multiple or separate values with commas: key1=path1,key2=path2) --set-json stringArray set JSON values on the command line (can specify multiple or separate values with commas: key1=jsonval1,key2=jsonval2) --set-literal stringArray set a literal STRING value on the command line --set-string stringArray set STRING values on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2) --strict fail on lint warnings -f, --values strings specify values in a YAML file or a URL (can specify multiple) --with-subcharts lint dependent charts 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 验证</title>
+      <link>https://helm.sh/zh/docs/helm/helm_verify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_verify/</guid>
+      <description>helm verify 验证给定路径的chart已经被签名且有效&#xA;简介 验证指定的chart有合法的源文件。&#xA;源文件提供了加密验证保证chart未被篡改，且由可信提供商打包。&#xA;该命令用于验证本地chart，其他一些命令提供&#39;--verify&#39;参数执行同样的验证。要生成一个签名包，使用&#39;helm package --sign&#39;命令。&#xA;helm verify PATH [flags] 可选项 -h, --help help for verify --keyring string keyring containing public keys (default &amp;#34;~/.gnupg/pubring.gpg&amp;#34;) 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 依赖</title>
+      <link>https://helm.sh/zh/docs/helm/helm_dependency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_dependency/</guid>
+      <description>helm dependency 管理chart依赖&#xA;简介 管理chart依赖&#xA;Helm chart将依赖存储在&#39;charts/&#39;。对于chart开发者，管理依赖比声明了所有依赖的&#39;Chart.yaml&#39;文件更容易。&#xA;依赖命令对该文件进行操作，使得存储在&#39;charts/&#39;目录的需要的依赖和实际依赖之间同步变得很容易。&#xA;比如Chart.yaml声明了两个依赖：&#xA;# Chart.yaml dependencies: - name: nginx version: &amp;#34;1.2.3&amp;#34; repository: &amp;#34;https://example.com/charts&amp;#34; - name: memcached version: &amp;#34;3.2.1&amp;#34; repository: &amp;#34;https://another.example.com/charts&amp;#34; &#39;name&#39;是chart名称，必须匹配&#39;Chart.yaml&#39;文件中名称。&#xA;&#39;version&#39;字段应该包含一个语义化的版本或版本范围。&#xA;&#39;repository&#39;的URL应该指向Chart仓库。Helm希望通过附加&#39;/index.yaml&#39;到URL，应该能检索chart库索引。 注意：&#39;repository&#39;不能是别名。别名必须以&#39;alias:&#39;或&#39;@&#39;开头。&#xA;从2.2.0开始，仓库可以被定义为本地存储的依赖chart的目录路径。路径应该以&amp;quot;file://&amp;quot;前缀开头，比如：&#xA;# Chart.yaml dependencies: - name: nginx version: &amp;#34;1.2.3&amp;#34; repository: &amp;#34;file://../dependency_chart/nginx&amp;#34; 如果在本地检索依赖chart，不需要使用&amp;quot;helm add repo&amp;quot;将仓库加入到helm。该示例中也支持版本匹配。&#xA;可选项 -h, --help help for dependency 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 依赖列表</title>
+      <link>https://helm.sh/zh/docs/helm/helm_dependency_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_dependency_list/</guid>
+      <description>helm dependency list 列举指定chart的依赖&#xA;简介 列举所有的chart中声明的依赖&#xA;该命令可以将chart包或chart目录作为输入，不会修改chart的内容。&#xA;如果chart不能加载会产生错误。&#xA;helm dependency list CHART [flags] 可选项 -h, --help help for list --max-col-width uint 输出结果的最大宽度（默认80） 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 展示</title>
+      <link>https://helm.sh/zh/docs/helm/helm_show/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_show/</guid>
+      <description>helm show 显示chart信息&#xA;简介 该命令由多条子命令组成来显示chart的信息&#xA;可选项 -h, --help help for show 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 展示chart</title>
+      <link>https://helm.sh/zh/docs/helm/helm_show_chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_show_chart/</guid>
+      <description>helm show chart 显示chart定义&#xA;简介 该命令检查chart(目录、文件或URL)并显示Chart.yaml文件的内容&#xA;helm show chart [CHART] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for chart --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm 展示Crd</title>
+      <link>https://helm.sh/zh/docs/helm/helm_show_crds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_show_crds/</guid>
+      <description>helm show crds 显示chart的CRD&#xA;简介 该命令检查chart(目录、文件或URL)并显示自定义资源（CustomResourceDefinition）文件的内容。&#xA;helm show crds [CHART] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for crds --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm 展示readme</title>
+      <link>https://helm.sh/zh/docs/helm/helm_show_readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_show_readme/</guid>
+      <description>helm show readme 显示chart的README&#xA;简介 该命令检查chart(目录、文件或URL)并显示README文件内容&#xA;helm show readme [CHART] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for readme --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm 展示value</title>
+      <link>https://helm.sh/zh/docs/helm/helm_show_values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_show_values/</guid>
+      <description>helm show values 显示chart的values&#xA;简介 该命令检查chart(目录、文件或URL)并显示values.yaml文件的内容&#xA;helm show values [CHART] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for values --insecure-skip-tls-verify skip tls certificate checks for the chart download --jsonpath string supply a JSONPath expression to filter the output --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm 展示所有</title>
+      <link>https://helm.sh/zh/docs/helm/helm_show_all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_show_all/</guid>
+      <description>helm show all 显示chart的所有信息&#xA;简介 该命令检查chart(目录、文件或URL)并显示所有的内容（values.yaml, Chart.yaml, README）&#xA;helm show all [CHART] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify HTTPS client using this SSL certificate file --devel use development versions, too. Equivalent to version &amp;#39;&amp;gt;0.0.0-0&amp;#39;. If --version is set, this is ignored -h, --help help for all --insecure-skip-tls-verify skip tls certificate checks for the chart download --key-file string identify HTTPS client using this SSL key file --keyring string location of public keys used for verification (default &amp;#34;~/.</description>
+    </item>
+    <item>
+      <title>Helm 注册表</title>
+      <link>https://helm.sh/zh/docs/helm/helm_registry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_registry/</guid>
+      <description>helm registry 登录或登出注册表&#xA;简介 该命令由多个子命令组成，用于与注册表交互。&#xA;可选项 -h, --help help for registry 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 注册表登出</title>
+      <link>https://helm.sh/zh/docs/helm/helm_registry_logout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_registry_logout/</guid>
+      <description>helm registry logout 从注册表登出&#xA;简介 从远程注册表移除认证信息。&#xA;helm registry logout [host] [flags] 可选项 -h, --help help for logout 从父命令继承的可选项 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups. --kube-as-user string username to impersonate for the operation --kube-ca-file string the certificate authority file for the Kubernetes API server connection --kube-context string name of the kubeconfig context to use --kube-insecure-skip-tls-verify if true, the Kubernetes API server&amp;#39;s certificate will not be checked for validity.</description>
+    </item>
+    <item>
+      <title>Helm 注册表登录</title>
+      <link>https://helm.sh/zh/docs/helm/helm_registry_login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_registry_login/</guid>
+      <description>helm registry login 登录注册表&#xA;简介 用远程注册表进行身份验证。&#xA;helm registry login [host] [flags] 可选项 --ca-file string verify certificates of HTTPS-enabled servers using this CA bundle --cert-file string identify registry client using this SSL certificate file -h, --help help for login --insecure allow connections to TLS registry without certs --key-file string identify registry client using this SSL key file -p, --password string registry password or identity token --password-stdin read password or identity token from stdin -u, --username string registry username 从父命令继承的可选项 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm 状态</title>
+      <link>https://helm.sh/zh/docs/helm/helm_status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_status/</guid>
+      <description>helm status 显示已命名发布的状态&#xA;简介 该命令显示已命名发布的状态，状态包括：&#xA;最后部署时间 发布版本所在的k8s命名空间 发布状态(可以是： unknown, deployed, uninstalled, superseded, failed, uninstalling, pending-install, pending-upgrade 或 pending-rollback) 发布版本修订 发布版本描述(可以是完成信息或错误信息，需要用--show-desc启用) 列举版本包含的资源（使用--show-resources显示） 最后一次测试套件运行的详细信息（如果使用） chart提供的额外的注释 helm status RELEASE_NAME [flags] 可选项 -h, --help help for status -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) --revision int if set, display the status of the named release with revision --show-desc if set, display the description message of the named release --show-resources if set, display the resources of the named release 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm补全 - bash</title>
+      <link>https://helm.sh/zh/docs/helm/helm_completion_bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_completion_bash/</guid>
+      <description>helm completion bash 为bash生成自动补全脚本&#xA;简介 为Helm生成针对于bash shell的自动补全脚本。&#xA;在当前shell会话中加载自动补全：&#xA;source &amp;lt;(helm completion bash)&#xD;为每个新的会话加载自动补全，执行一次：&#xA;Linux:&#xA;helm completion bash | sudo tee /etc/bash_completion.d/helm&#xD;MacOS:&#xA;helm completion bash | sudo tee /usr/local/etc/bash_completion.d/helm&#xD;helm completion bash [flags] 可选项 -h, --help help for bash --no-descriptions disable completion descriptions 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm补全 - fish</title>
+      <link>https://helm.sh/zh/docs/helm/helm_completion_fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_completion_fish/</guid>
+      <description>helm completion fish 为fish生成自动补全脚本&#xA;简介 为Helm生成针对于fish shell的自动补全脚本。&#xA;在当前shell会话中加载自动补全：&#xA;helm completion fish | source&#xD;为每个新的会话加载自动补全，执行一次：&#xA;helm completion fish &amp;gt; ~/.config/fish/completions/helm.fish&#xD;您需要启动一个新的shell使其生效&#xA;helm completion fish [flags] 可选项 -h, --help help for fish --no-descriptions disable completion descriptions 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm补全 - Powershell</title>
+      <link>https://helm.sh/zh/docs/helm/helm_completion_powershell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_completion_powershell/</guid>
+      <description>helm completion powershell 为powershell生成自动补全脚本&#xA;简介 为powershell生成自动补全脚本。&#xA;在当前shell会话中加载补全项： PS C:&amp;gt; helm completion powershell | Out-String | Invoke-Expression&#xA;在每个新会话中加载补全项，将上述命令的输出添加到你的powershell profile中。&#xA;helm completion powershell [flags] 可选项 -h, --help help for powershell --no-descriptions disable completion descriptions 从父命令继承的选项 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm补全 - zsh</title>
+      <link>https://helm.sh/zh/docs/helm/helm_completion_zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_completion_zsh/</guid>
+      <description>helm completion zsh 为zsh生成自动补全脚本&#xA;简介 为Helm生成针对于zsh shell的自动补全脚本。&#xA;在当前shell会话中加载自动补全：&#xA;source &amp;lt;(helm completion zsh)&#xD;为每个新的会话加载自动补全，执行一次：&#xA;helm completion zsh &amp;gt; &amp;quot;${fpath[1]}/_helm&amp;quot;&#xD;helm completion zsh [flags] 可选项 -h, --help help for zsh --no-descriptions disable completion descriptions 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm创建</title>
+      <link>https://helm.sh/zh/docs/helm/helm_create/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_create/</guid>
+      <description>helm create 使用给定名称创建新的chart&#xA;简介 该命令创建chart目录和chart用到的公共文件目录&#xA;比如&#39;helm create foo&#39;会创建一个目录结构看起来像这样：&#xA;foo/ ├── .helmignore # Contains patterns to ignore when packaging Helm charts. ├── Chart.yaml # Information about your chart ├── values.yaml # The default values for your templates ├── charts/ # Charts that this chart depends on └── templates/ # The template files └── tests/ # The test files &#39;helm create&#39;使用一个目录作为参数。如果给定目录路径不存在，Helm会自动创建。如果给定目录存在且非空，冲突文件会被覆盖，其他文件会被保留。&#xA;helm create NAME [flags] 可选项 -h, --help help for create -p, --starter string the name or absolute path to Helm starter scaffold 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm获取Values</title>
+      <link>https://helm.sh/zh/docs/helm/helm_get_values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_get_values/</guid>
+      <description>helm get values 下载命名版本的values文件&#xA;简介 该命令下载给定版本的values文件&#xA;helm get values RELEASE_NAME [flags] 可选项 -a, --all dump all (computed) values -h, --help help for values -o, --output format prints the output in the specified format. Allowed values: table, json, yaml (default table) --revision int get the named release with revision 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm依赖构建</title>
+      <link>https://helm.sh/zh/docs/helm/helm_dependency_build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_dependency_build/</guid>
+      <description>helm dependency build 基于Chart.lock文件重新构建charts/目录&#xA;简介 从Chart.lock构建输出到charts/目录&#xA;该构建是用来将chart的依赖项重建为锁定文件中的指定状态。就像&#39;helm dependency update&#39;一样并不会调整依赖状态。&#xA;如果没找到锁定文件，&#39;helm dependency build&#39;映射到&#39;helm dependency update&#39;&#xA;helm dependency build CHART [flags] 可选项 -h, --help help for build --keyring string keyring containing public keys (default &amp;#34;~/.gnupg/pubring.gpg&amp;#34;) --skip-refresh do not refresh the local repository cache --verify verify the packages against signatures 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+    <item>
+      <title>Helm依赖升级</title>
+      <link>https://helm.sh/zh/docs/helm/helm_dependency_update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/helm/helm_dependency_update/</guid>
+      <description>helm dependency update 基于Chart.yaml内容升级charts/&#xA;简介 更新磁盘上的依赖为Chart.yaml指定内容。&#xA;该命令验证存储在&#39;charts/&#39;目录中的&#39;Chart.yaml&#39;文件描述的所需chart以及所需版本。 它会拉取满足依赖的最新chart并清理旧依赖。&#xA;成功更新后，会生成一个锁定文件用来重新构建精确版本的依赖。&#xA;不需要在&#39;Chart.yaml&#39;中表示依赖。 因此，更新命令不会删除chart，除非是在Chart.yaml文件中的错误版本。&#xA;helm dependency update CHART [flags] 可选项 -h, --help help for update --keyring string keyring containing public keys (default &amp;#34;~/.gnupg/pubring.gpg&amp;#34;) --skip-refresh do not refresh the local repository cache --verify verify the packages against signatures 从父命令继承的命令 --burst-limit int client-side default throttling limit (default 100) --debug enable verbose output --kube-apiserver string the address and the port for the Kubernetes API server --kube-as-group stringArray group to impersonate for the operation, this flag can be repeated to specify multiple groups.</description>
+    </item>
+  </channel>
+</rss>

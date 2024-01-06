@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introdução on Helm</title>
+    <link>https://helm.sh/pt/docs/intro/</link>
+    <description>Recent content in Introdução on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <atom:link href="https://helm.sh/pt/docs/intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guia de Início Rápido</title>
+      <link>https://helm.sh/pt/docs/intro/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/pt/docs/intro/quickstart/</guid>
+      <description>Esse guia cobre como você rapidamente pode começar a utilizar o Helm.&#xA;Pré-requisitos Os pré-requisitos a seguir são exigidos para uma experiência bem sucedida e segura do uso do Helm.&#xA;Ter acesso a um cluster Kubernetes Decidir quais configurações de segurança serão aplicadas durante a instalação, se houver alguma Instalar e configurar o Helm. Instale o Kubernetes ou tenha acesso a um cluster Você deve ter o Kubernetes instalado. Para a utilização da última versão do Helm, nós recomendamos a última versão estável do Kubernetes, que geralmente é a penúltima minor version.</description>
+    </item>
+    <item>
+      <title>Instalando o  Helm</title>
+      <link>https://helm.sh/pt/docs/intro/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/pt/docs/intro/install/</guid>
+      <description>Esse guia ensina como instalar a CLI do Helm. O Helm pode ser instalado a partir do código-fonte, ou mesmo de um binário pré-buildado.&#xA;A partir do Projeto Helm O projeto Helm disponibiliza duas maneiras de baixar e instalar o Helm. Essas são as formas oficiais de se obter as versões do Helm. Além disso, a comunidade do Helm disponibiliza alternativas de download através de diversos gerenciadores de pacotes. A seção de instalação pelos gerenciadores de pacotes se encontra abaixo dos métodos oficiais.</description>
+    </item>
+  </channel>
+</rss>

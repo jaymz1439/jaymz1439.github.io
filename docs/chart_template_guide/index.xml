@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chart Template Guide on Helm</title>
+    <link>https://helm.sh/docs/chart_template_guide/</link>
+    <description>Recent content in Chart Template Guide on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://helm.sh/docs/chart_template_guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>https://helm.sh/docs/chart_template_guide/getting_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/getting_started/</guid>
+      <description>In this section of the guide, we&#39;ll create a chart and then add a first template. The chart we created here will be used throughout the rest of the guide.&#xA;To get going, let&#39;s take a brief look at a Helm chart.&#xA;Charts As described in the Charts Guide, Helm charts are structured like this:&#xA;mychart/ Chart.yaml values.yaml charts/ templates/ ... The templates/ directory is for template files. When Helm evaluates a chart, it will send all of the files in the templates/ directory through the template rendering engine.</description>
+    </item>
+    <item>
+      <title>Built-in Objects</title>
+      <link>https://helm.sh/docs/chart_template_guide/builtin_objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/builtin_objects/</guid>
+      <description>Objects are passed into a template from the template engine. And your code can pass objects around (we&#39;ll see examples when we look at the with and range statements). There are even a few ways to create new objects within your templates, like with the tuple function we&#39;ll see later.&#xA;Objects can be simple, and have just one value. Or they can contain other objects or functions. For example. the Release object contains several objects (like Release.</description>
+    </item>
+    <item>
+      <title>Values Files</title>
+      <link>https://helm.sh/docs/chart_template_guide/values_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/values_files/</guid>
+      <description>In the previous section we looked at the built-in objects that Helm templates offer. One of the built-in objects is Values. This object provides access to values passed into the chart. Its contents come from multiple sources:&#xA;The values.yaml file in the chart If this is a subchart, the values.yaml file of a parent chart A values file if passed into helm install or helm upgrade with the -f flag (helm install -f myvals.</description>
+    </item>
+    <item>
+      <title>Template Functions and Pipelines</title>
+      <link>https://helm.sh/docs/chart_template_guide/functions_and_pipelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/functions_and_pipelines/</guid>
+      <description>So far, we&#39;ve seen how to place information into a template. But that information is placed into the template unmodified. Sometimes we want to transform the supplied data in a way that makes it more useable to us.&#xA;Let&#39;s start with a best practice: When injecting strings from the .Values object into the template, we ought to quote these strings. We can do that by calling the quote function in the template directive:</description>
+    </item>
+    <item>
+      <title>Template Function List</title>
+      <link>https://helm.sh/docs/chart_template_guide/function_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/function_list/</guid>
+      <description>Helm includes many template functions you can take advantage of in templates. They are listed here and broken down by the following categories:&#xA;Cryptographic and Security Date Dictionaries Encoding File Path Kubernetes and Chart Logic and Flow Control Lists Math Float Math Network Reflection Regular Expressions Semantic Versions String Type Conversion URL UUID Logic and Flow Control Functions Helm includes numerous logic and control flow functions including and, coalesce, default, empty, eq, fail, ge, gt, le, lt, ne, not, or, and required.</description>
+    </item>
+    <item>
+      <title>Flow Control</title>
+      <link>https://helm.sh/docs/chart_template_guide/control_structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/control_structures/</guid>
+      <description>Control structures (called &amp;quot;actions&amp;quot; in template parlance) provide you, the template author, with the ability to control the flow of a template&#39;s generation. Helm&#39;s template language provides the following control structures:&#xA;if/else for creating conditional blocks with to specify a scope range, which provides a &amp;quot;for each&amp;quot;-style loop In addition to these, it provides a few actions for declaring and using named template segments:&#xA;define declares a new named template inside of your template template imports a named template block declares a special kind of fillable template area In this section, we&#39;ll talk about if, with, and range.</description>
+    </item>
+    <item>
+      <title>Variables</title>
+      <link>https://helm.sh/docs/chart_template_guide/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/variables/</guid>
+      <description>With functions, pipelines, objects, and control structures under our belts, we can turn to one of the more basic ideas in many programming languages: variables. In templates, they are less frequently used. But we will see how to use them to simplify code, and to make better use of with and range.&#xA;In an earlier example, we saw that this code will fail:&#xA;{{- with .Values.favorite }} drink: {{ .drink | default &amp;#34;tea&amp;#34; | quote }} food: {{ .</description>
+    </item>
+    <item>
+      <title>Named Templates</title>
+      <link>https://helm.sh/docs/chart_template_guide/named_templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/named_templates/</guid>
+      <description>It is time to move beyond one template, and begin to create others. In this section, we will see how to define named templates in one file, and then use them elsewhere. A named template (sometimes called a partial or a subtemplate) is simply a template defined inside of a file, and given a name. We&#39;ll see two ways to create them, and a few different ways to use them.</description>
+    </item>
+    <item>
+      <title>Accessing Files Inside Templates</title>
+      <link>https://helm.sh/docs/chart_template_guide/accessing_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/accessing_files/</guid>
+      <description>In the previous section we looked at several ways to create and access named templates. This makes it easy to import one template from within another template. But sometimes it is desirable to import a file that is not a template and inject its contents without sending the contents through the template renderer.&#xA;Helm provides access to files through the .Files object. Before we get going with the template examples, though, there are a few things to note about how this works:</description>
+    </item>
+    <item>
+      <title>Creating a NOTES.txt File</title>
+      <link>https://helm.sh/docs/chart_template_guide/notes_files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/notes_files/</guid>
+      <description>In this section we are going to look at Helm&#39;s tool for providing instructions to your chart users. At the end of a helm install or helm upgrade, Helm can print out a block of helpful information for users. This information is highly customizable using templates.&#xA;To add installation notes to your chart, simply create a templates/NOTES.txt file. This file is plain text, but it is processed like a template, and has all the normal template functions and objects available.</description>
+    </item>
+    <item>
+      <title>Subcharts and Global Values</title>
+      <link>https://helm.sh/docs/chart_template_guide/subcharts_and_globals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/subcharts_and_globals/</guid>
+      <description>To this point we have been working only with one chart. But charts can have dependencies, called subcharts, that also have their own values and templates. In this section we will create a subchart and see the different ways we can access values from within templates.&#xA;Before we dive into the code, there are a few important details to learn about application subcharts.&#xA;A subchart is considered &amp;quot;stand-alone&amp;quot;, which means a subchart can never explicitly depend on its parent chart.</description>
+    </item>
+    <item>
+      <title>The .helmignore file</title>
+      <link>https://helm.sh/docs/chart_template_guide/helm_ignore_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/helm_ignore_file/</guid>
+      <description>The .helmignore file is used to specify files you don&#39;t want to include in your helm chart.&#xA;If this file exists, the helm package command will ignore all the files that match the pattern specified in the .helmignore file while packaging your application.&#xA;This can help in avoiding unnecessary or sensitive files or directories from being added in your helm chart.&#xA;The .helmignore file supports Unix shell glob matching, relative path matching, and negation (prefixed with !</description>
+    </item>
+    <item>
+      <title>Debugging Templates</title>
+      <link>https://helm.sh/docs/chart_template_guide/debugging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/debugging/</guid>
+      <description>Debugging templates can be tricky because the rendered templates are sent to the Kubernetes API server, which may reject the YAML files for reasons other than formatting.&#xA;There are a few commands that can help you debug.&#xA;helm lint is your go-to tool for verifying that your chart follows best practices helm template --debug will test rendering chart templates locally. helm install --dry-run --debug: We&#39;ve seen this trick already. It&#39;s a great way to have the server render your templates, then return the resulting manifest file.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>https://helm.sh/docs/chart_template_guide/wrapping_up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/wrapping_up/</guid>
+      <description>This guide is intended to give you, the chart developer, a strong understanding of how to use Helm&#39;s template language. The guide focuses on the technical aspects of template development.&#xA;But there are many things this guide has not covered when it comes to the practical day-to-day development of charts. Here are some useful pointers to other documentation that will help you as you create new charts:&#xA;The CNCF Artifact Hub is an indispensable source of charts.</description>
+    </item>
+    <item>
+      <title>Appendix: YAML Techniques</title>
+      <link>https://helm.sh/docs/chart_template_guide/yaml_techniques/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/yaml_techniques/</guid>
+      <description>Most of this guide has been focused on writing the template language. Here, we&#39;ll look at the YAML format. YAML has some useful features that we, as template authors, can use to make our templates less error prone and easier to read.&#xA;Scalars and Collections According to the YAML spec, there are two types of collections, and many scalar types.&#xA;The two types of collections are maps and sequences:&#xA;map: one: 1 two: 2 three: 3 sequence: - one - two - three Scalar values are individual values (as opposed to collections)</description>
+    </item>
+    <item>
+      <title>Appendix: Go Data Types and Templates</title>
+      <link>https://helm.sh/docs/chart_template_guide/data_types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/docs/chart_template_guide/data_types/</guid>
+      <description>The Helm template language is implemented in the strongly typed Go programming language. For that reason, variables in templates are typed. For the most part, variables will be exposed as one of the following types:&#xA;string: A string of text bool: a true or false int: An integer value (there are also 8, 16, 32, and 64 bit signed and unsigned variants of this) float64: a 64-bit floating point value (there are also 8, 16, and 32 bit varieties of this) a byte slice ([]byte), often used to hold (potentially) binary data struct: an object with properties and methods a slice (indexed list) of one of the previous types a string-keyed map (map[string]interface{}) where the value is one of the previous types There are many other types in Go, and sometimes you will have to convert between them in your templates.</description>
+    </item>
+  </channel>
+</rss>

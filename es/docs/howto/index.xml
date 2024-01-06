@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cómo Hacer on Helm</title>
+    <link>https://helm.sh/es/docs/howto/</link>
+    <description>Recent content in Cómo Hacer on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <atom:link href="https://helm.sh/es/docs/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consejos y Trucos para el Desarrollo de Charts</title>
+      <link>https://helm.sh/es/docs/howto/charts_tips_and_tricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/es/docs/howto/charts_tips_and_tricks/</guid>
+      <description>Esta guía cubre algunos de los consejos y trucos que los desarrolladores de charts de Helm han aprendido al crear charts con calidad de producción.&#xA;Conozca las funciones de plantilla Helm usa plantillas Go para crear plantillas para sus archivos de recursos. Si bien Go incluye varias funciones integradas, hemos agregado muchas otras.&#xA;Primero, agregamos todas las funciones en la biblioteca Sprig.&#xA;También agregamos dos funciones de plantilla especiales: include y required.</description>
+    </item>
+    <item>
+      <title>Sincronizar tu Repositorio de Charts</title>
+      <link>https://helm.sh/es/docs/howto/chart_repository_sync_example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/es/docs/howto/chart_repository_sync_example/</guid>
+      <description>Nota: Este ejemplo es específico para un bucket de Google Cloud Storage (GCS) que sirve como repositorio de charts.&#xA;Requisitos Previos Instalar la herramienta gsutil. Dependemos en gran medida de la funcionalidad de gsutil rsync Asegúrese de tener acceso al binario de Helm Opcional: Le recomendamos que establezca control de versiones del objeto en su bucket de GCS en caso de que elimine algo accidentalmente. Configurar un directorio de repositorio de charts local Cree un directorio local como lo hicimos en la guía del repositorio de charts , y coloque sus charts empaquetados en ese directorio.</description>
+    </item>
+    <item>
+      <title>Chart Releaser Action para automatizar página GitHub de Charts</title>
+      <link>https://helm.sh/es/docs/howto/chart_releaser_action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/es/docs/howto/chart_releaser_action/</guid>
+      <description>Esta guía describe cómo utilizar Chart Releaser Action para automatizar el releasing charts a través de las páginas GitHub. Chart Releaser Action es una GitHub Action workflow para converitrun proyecto GitHub en un repositorio de chart de Helm autoalojados, utilizando la herramienta helm/chart-releaser CLI.&#xA;Cambios en el repositorio Crear un repositorio Git en tu organización GitHub. Puedes dar el nombre del repositorio como helm-charts, aunque también son aceptables otros nombres. Las fuentes de todos los Charts pueden colocarse en la rama main.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helm</title>
+    <link>https://helm.sh/ru/</link>
+    <description>Recent content on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <atom:link href="https://helm.sh/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Краткое Руководство</title>
+      <link>https://helm.sh/ru/docs/intro/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/ru/docs/intro/quickstart/</guid>
+      <description>Это руководство описывает, как вы можете быстро начать использовать Helm.&#xA;Необходимые компоненты Для успешного и надежного использования Helm необходимо&#xA;Kubernetes кластер Принятие решения о том, какие конфигурации безопасности должны применяться к вашей установке, если таковые имеются. Установка и настройка Helm Установите Kubernetes или получите доступ к кластеру У вас должен быть установлен Kubernetes. Для последней версии Helm мы рекомендуем последнюю стабильную версию Kubernetes, которая в большинстве случаев является второй последней минорной версией.</description>
+    </item>
+    <item>
+      <title>Установка Helm</title>
+      <link>https://helm.sh/ru/docs/intro/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/ru/docs/intro/install/</guid>
+      <description>В этом руководстве рассказывается, как установить Helm CLI. Helm может быть установлен как из исходного кода, так и из собранных binary релизов.&#xA;Из Проекта Helm Проект Helm предоставляет два способа получения и установки Helm. Это официальные методы получения релизов Helm. В дополнение к этому сообщество Helm предоставляет методы установки Helm через различные менеджеры пакетов. Установка с помощью этих методов может быть найдена ниже официальных методов.&#xA;Из Binary Релизов Каждый релиз Helm предоставляет различные binary сборки под разные операционные системы (OSes).</description>
+    </item>
+    <item>
+      <title>Использование Helm</title>
+      <link>https://helm.sh/ru/docs/intro/using_helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/ru/docs/intro/using_helm/</guid>
+      <description>В этом руководстве объясняются основы использования Helm для управления пакетами на вашем кластере Kubernetes. Руководство предполагает, что вы уже установили Helm CLI.&#xA;Если вы просто заинтересованы нескольких командам, то можете начать с Краткого Руководства. В этой главе описаны особенности команд Helm.&#xA;Three Big Concepts Chart – это пакет Helm. Он содержит описания ресурсов, необходимые для запуска приложения, инструмента или службы внутри кластера Kubernetes.&#xA;Репозиторий это место, где можно собирать charts-ы и делиться ими.</description>
+    </item>
+  </channel>
+</rss>

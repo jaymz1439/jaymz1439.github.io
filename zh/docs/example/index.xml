@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>集成开发 on Helm</title>
+    <link>https://helm.sh/zh/docs/example/</link>
+    <description>Recent content in 集成开发 on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://helm.sh/zh/docs/example/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://helm.sh/zh/docs/example/golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/example/golang/</guid>
+      <description>基于GO语言的集成开发示例 环境 go version 1.20.x helm v3 kubernetes 1.24.x 示例 增加仓库 package kubestore import ( &amp;#34;fmt&amp;#34; &amp;#34;helm.sh/helm/v3/pkg/cli&amp;#34; &amp;#34;helm.sh/helm/v3/pkg/getter&amp;#34; &amp;#34;helm.sh/helm/v3/pkg/repo&amp;#34; &amp;#34;kube-store-operator/commons/logger&amp;#34; ) // 添加一个仓库地址 // Helm 的添加仓库地就是将【仓库名+仓库地址】写到一个本地的repositories.yaml文件中 func add(entry *repo.Entry) error { settings := cli.New() repoFile := settings.RepositoryConfig // 加载仓库配置文件 repositories, err := repo.LoadFile(repoFile) // 如果文件不存在 if err != nil { // 创建一个新的仓库配置对象 repositories = repo.NewFile() } // 检查要添加的仓库是否已存在 if repositories.Has(entry.Name) { return fmt.Errorf(&amp;#34;仓库 %s 已存在&amp;#34;, entry.Name) } // 添加仓库信息到仓库配置 repositories.Add(entry) // 保存更新后的仓库配置到文件 if err = repositories.</description>
+    </item>
+  </channel>
+</rss>

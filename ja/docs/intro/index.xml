@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>概要 on Helm</title>
+    <link>https://helm.sh/ja/docs/intro/</link>
+    <description>Recent content in 概要 on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <atom:link href="https://helm.sh/ja/docs/intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>クイックスタートガイド</title>
+      <link>https://helm.sh/ja/docs/intro/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/ja/docs/intro/quickstart/</guid>
+      <description>このガイドでは、Helm をすぐに使い始める方法について説明します。&#xA;前提条件 Helm を正しく安全に使用するには、 次の前提条件が必要です。&#xA;Kubernetes クラスター インストールに適用するセキュリティ構成がある場合は、それを決定する Helm のインストールと構成 Kubernetes をインストールするか、クラスターにアクセスする Kubernetes がインストールされている必要があります。 Helm の最新リリースには、Kubernetesの最新の安定リリースをお勧めします。 これは、ほとんどの場合、2番目に新しいマイナーリリースです。 ローカルに設定された kubectl のコピーも必要です。 注: 1.6 より前のバージョンの Kubernetes では、ロールベースのアクセス制御 (RBAC) のサポートが制限されているか、 サポートされていません。&#xA;Helm のインストール Helm クライアントのバイナリリリースをダウンロードします。homebrew のようなツールを使うか、 公式リリースページ を見ることができます。&#xA;詳細またはその他のオプションについては、 インストールガイド を参照してください。&#xA;Helm チャートリポジトリを初期化する Helm の準備ができたら、チャートリポジトリを追加できます。 ポピュラーな開始場所の1つは、公式の Helm Stable チャートです。&#xA;$ helm repo add stable https://charts.helm.sh/stable これがインストールされると、インストールできるチャートを一覧表示できるようになります。&#xA;helm search repo stable NAME CHART VERSION APP VERSION DESCRIPTION stable/acs-engine-autoscaler 2.2.2 2.1.1 DEPRECATED Scales worker nodes within agent pools stable/aerospike 0.</description>
+    </item>
+    <item>
+      <title>Helm のインストール</title>
+      <link>https://helm.sh/ja/docs/intro/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/ja/docs/intro/install/</guid>
+      <description>このガイドでは、Helm CLI のインストール方法を示します。Helm はソースから、またはビルド済みのバイナリリリースから インストールできます。&#xA;Helm プロジェクトから Helm プロジェクトは、Helm をフェッチしてインストールする2つの方法を提供します。 これらは Helm リリースを取得するための公式の方法です。さらに、Helm コミュニティは、 さまざまなパッケージマネージャーを通じて Helm をインストールする方法を提供しています。 これらの方法によるインストールは、公式の方法の下にあります。&#xA;バイナリリリースから Helm のすべての リリース は、さまざまな OS のバイナリリリースを提供します。 これらのバイナリバージョンは、手動でダウンロードして インストールできます。&#xA;任意のバージョンをダウンロードします ダウンロードしたパッケージを展開します (tar -zxvf helm-v3.0.0-linux-amd64.tar.gz) 展開したディレクトリで helm バイナリを見つけ、 目的の場所に移動します (mv linux-amd64/helm /usr/local/bin/helm) そこから、クライアントを実行し、&#xD;Stable リポジトリを追加できるはずです: helm help を参考&#xA;注: Helm 自動テストは、CircleCi のビルドとリリース中にのみLinux AMD64 に対して実行されます。 他の OS のテストは、 対象の OS の Helm を要求するコミュニティの責任の元で行われています。&#xA;スクリプトから Helm に、最新バージョンの Helm を自動的に取得して ローカルにインストールする インストーラースクリプトが追加されました。&#xA;そのスクリプトをフェッチして、ローカルで実行できます。 十分に文書化されているため、実行する前にそれを読んで何が行われているかを理解できます。&#xA;$ curl -fsSL -o get_helm.</description>
+    </item>
+    <item>
+      <title>Helm の使い方</title>
+      <link>https://helm.sh/ja/docs/intro/using_helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/ja/docs/intro/using_helm/</guid>
+      <description>このガイドでは、Helm を使用して Kubernetes クラスタ上のパッケージを管理する基本について説明します。 Helm クライアントが既に インストール済み であると 想定しています。&#xA;いくつかのクイックコマンドを実行したいだけの場合は、 クイックスタートガイド から始めてください。 この章では、Helm コマンドの詳細について説明し、Helm の使用方法を説明します。&#xA;3つの大きな概念 チャート は Helm パッケージです。 これには、Kubernetes クラスタ内でアプリケーション、ツール、またはサービスを実行するために必要なすべてのリソース定義が含まれています。 Kubernetes に置ける Homebrew の式、Apt dpkg、 または Yum RPM ファイルに相当するようなものと考えてください。&#xA;リポジトリ は、チャートを収集して共有できる場所です。 Perl の CPAN アーカイブ や Fedora パッケージデータベースに似ていますが、 Kubernetes パッケージが対象です。&#xA;リリース は、Kubernetes クラスタで実行されているチャートのインスタンスです。 多くの場合、1つのチャートを同じクラスターに何度もインストールできます。 そして、それがインストールされるたびに、新しい リリース が作成されます。 MySQL チャートを考えてみましょう。クラスターで2つのデータベースを実行する場合は、そのチャートを2回インストールできます。 それぞれに独自の リリース があり、次に独自の リリース名 が付けられます。&#xA;これらの概念を念頭に置いて、Helm を次のように説明できます。&#xA;Helm は チャート を Kubernetes にインストールし、インストールごとに新しい リリース を作成します。 また、新しいチャートを見つけるには、Helm チャート リポジトリ を検索できます。</description>
+    </item>
+  </channel>
+</rss>

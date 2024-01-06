@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>如何使用 on Helm</title>
+    <link>https://helm.sh/zh/docs/howto/</link>
+    <description>Recent content in 如何使用 on Helm</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://helm.sh/zh/docs/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chart开发提示和技巧</title>
+      <link>https://helm.sh/zh/docs/howto/charts_tips_and_tricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/howto/charts_tips_and_tricks/</guid>
+      <description>本指南涵盖了Helm chart的开发人员在构建生产环境质量的chart时学到的一些提示和技巧。&#xA;了解你的模板功能 Helm使用了&#xD;Go模板将你的自由文件构建成模板。 Go塑造了一些内置方法，我们增加了一些其他的。&#xA;首先，我们添加了&#xD;Sprig库中所有的方法，出于安全原因，“env”和“expandenv”除外。&#xA;我们也添加了两个特殊的模板方法：include和required。include方法允许你引入另一个模板，并将结果传递给其他模板方法。&#xA;比如，这个模板片段包含了一个叫mytpl的模板，然后将其转成小写，并使用双引号括起来。&#xA;value: {{ include &amp;#34;mytpl&amp;#34; . | lower | quote }} required方法可以让你声明模板渲染所需的特定值。如果这个值是空的，模板渲染会出错并打印用户提交的错误信息。&#xA;下面这个required方法的例子声明了一个.Values.who需要的条目，并且当这个条目不存在时会打印错误信息：&#xA;value: {{ required &amp;#34;A valid .Values.who entry required!&amp;#34; .Values.who }} 字符串引号括起来，但整型不用 使用字符串数据时，你总是更安全地将字符串括起来而不是露在外面：&#xA;name: {{ .Values.MyName | quote }} 但是使用整型时 不要把值括起来。在很多场景中那样会导致Kubernetes内解析失败。&#xA;port: {{ .Values.Port }} 这个说明不适用于环境变量是字符串的情况，即使表现为整型：&#xA;env: - name: HOST value: &amp;#34;http://host&amp;#34; - name: PORT value: &amp;#34;1234&amp;#34; 使用&#39;include&#39;方法 Go提供了一种使用内置模板将一个模板包含在另一个模板中的方法。然而内置方法并不适用于Go模板流水线。&#xA;为使包含模板成为可能，然后对该模板的输出执行操作，Helm有一个特殊的include方法：&#xA;{{ include &amp;#34;toYaml&amp;#34; $value | indent 2 }} 上面这个包含的模板称为toYaml，传值给$value，然后将这个模板的输出传给indent方法。</description>
+    </item>
+    <item>
+      <title>同步你的Chart仓库</title>
+      <link>https://helm.sh/zh/docs/howto/chart_repository_sync_example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/howto/chart_repository_sync_example/</guid>
+      <description>注意： 该示例是专门针对Google Cloud Storage (GCS)提供的chart仓库。&#xA;先决条件 安装&#xD;gsutil工具。 我们非常依赖gsutil rsync功能 确保可以使用Helm程序 可选：我们推荐在你的GCS中设置&#xD;对象版本以防不小心删除了什么。 设置本地chart仓库目录 就像我们在&#xD;chart仓库指南做的，创建一个本地目录，并将打包好的chart放在该目录中。&#xA;例如：&#xA;$ mkdir fantastic-charts $ mv alpine-0.1.0.tgz fantastic-charts/ 生成新的index.yaml 使用Helm生成新的index.yaml文件，通过将目录路径和远程仓库url传递给helm repo index命令：&#xA;$ helm repo index fantastic-charts/ --url https://fantastic-charts.storage.googleapis.com 这会生成新的index.yaml文件并放在fantastic-charts/目录。&#xA;同步本地和远程仓库 使用scripts/sync-repo.sh命令上传GCS目录中的内容并传入本地目录名和GCS名。&#xA;例如:&#xA;$ pwd /Users/me/code/go/src/helm.sh/helm $ scripts/sync-repo.sh fantastic-charts/ fantastic-charts Getting ready to sync your local directory (fantastic-charts/) to a remote repository at gs://fantastic-charts Verifying Prerequisites.... Thumbs up! Looks like you have gsutil. Let&amp;#39;s continue.</description>
+    </item>
+    <item>
+      <title>Chart发布操作用以自动化GitHub的页面Chart</title>
+      <link>https://helm.sh/zh/docs/howto/chart_releaser_action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://helm.sh/zh/docs/howto/chart_releaser_action/</guid>
+      <description>该指南描述了如何使用&#xD;Chart发布操作 通过GitHub页面自动发布chart。Chart发布操作是一个将GitHub项目转换成自托管Helm chart仓库的GitHub操作流。使用了 helm/chart-releaser CLI 工具。&#xA;仓库变化 在你的GitHub组织下创建一个Git仓库。可以将其命名为helm-charts，当然其他名称也可以接受。所有chart的资源都可以放在主分支。 chart应该放在根目录下的/charts目录中。&#xA;还应该有另一个分支 gh-pages 用于发布chart。这个分支的更改会通过Chart发布操作自动创建。同时可以创建一个 gh-branch分支并添加README.md文件，其对访问该页面的用户是可见的。&#xA;你可以在README.md中为chart的安装添加说明，像这样： （替换 &amp;lt;alias&amp;gt;， &amp;lt;orgname&amp;gt; 和 &amp;lt;chart-name&amp;gt;）:&#xA;## Usage [Helm](https://helm.sh) must be installed to use the charts. Please refer to Helm&amp;#39;s [documentation](https://helm.sh/docs) to get started. Once Helm has been set up correctly, add the repo as follows: helm repo add &amp;lt;alias&amp;gt; https://&amp;lt;orgname&amp;gt;.github.io/helm-charts If you had already added this repo earlier, run `helm repo update` to retrieve the latest versions of the packages.</description>
+    </item>
+  </channel>
+</rss>
