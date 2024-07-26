@@ -4,422 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40b1c0be-0bdf-4350-9d18-8bc830dbbf35" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.bb9a3f16cd8b057bc29c79565ae0d4a0d40d2088a9939d614209a479d640b7bb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/advanced_helm_techniques/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/architecture/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/conventions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/custom_resource_definitions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/dependencies/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/labels/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/pods/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/rbac/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_best_practices/values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_repository/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_repository_sync_example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/accessing_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/builtin_objects/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/control_structures/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/data_types/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/debugging/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/function_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/functions_and_pipelines/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/getting_started/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/helm_ignore_file/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/named_templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/notes_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/subcharts_and_globals/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/values_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/variables/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/wrapping_up/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_template_guide/yaml_techniques/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/chart_tests/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/charts_hooks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/charts_tips_and_tricks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/developers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/history/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/localization/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/related/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/community/release_checklist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faq/changes_since_helm2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faq/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faq/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faq/installing/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faq/troubleshooting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/faq/uninstalling/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/glossary/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/glossary/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_completion/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_completion_bash/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_completion_fish/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_completion_powershell/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_completion_zsh/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_create/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_delete/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_dependency/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_dependency_build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_dependency_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_dependency_update/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_env/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get_all/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get_hooks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get_manifest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get_metadata/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get_notes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_get_values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_history/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_init/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_inspect/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_lint/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_package/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_plugin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_plugin_install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_plugin_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_plugin_uninstall/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_plugin_update/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_pull/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_push/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_registry/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_registry_login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_registry_logout/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_repo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_repo_add/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_repo_index/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_repo_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_repo_remove/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_repo_update/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_rollback/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_search/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_search_hub/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_search_repo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_show/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_show_all/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_show_chart/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_show_crds/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_show_readme/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_show_values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_status/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_template/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_uninstall/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_upgrade/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_verify/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/helm_version/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/helm/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/history/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/howto/chart_releaser_action/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/howto/chart_repository_sync_example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/howto/charts_tips_and_tricks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/howto/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/howto/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/create-a-bucket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/create-a-gh-page-button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/edit-permissions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/make-bucket-public.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/set-a-gh-page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro/cheatsheet/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro/install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro/quickstart/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro/using_helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/kubernetes_distros/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/localization/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logos/helm-blue-vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logos/helm-white-vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logos/helm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logos/helm_logo_transparent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/permissions_sql_storage_backend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/plugins/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/provenance/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/quickstart/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/rbac/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/registries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/related/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/advanced/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/architecture/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/conventions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/custom_resource_definitions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/dependencies/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/labels/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/pods/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/rbac/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_best_practices/values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_repository/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/chart_tests/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/charts_hooks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/developing_charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/docs/developing_charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/docs/k8s_apis/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/docs/library_charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/faq/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/kubernetes_apis/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/kubernetes_distros/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/library_charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/permissions_sql_storage_backend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/plugins/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/provenance/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/rbac/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/registries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/release_policy/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/v2_v3_migration/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/topics/version_skew/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/using_helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/materialdesignicons-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/materialdesignicons-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/materialdesignicons-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/materialdesignicons-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/publicsans-medium-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/publicsans-medium-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/publicsans-regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/publicsans-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/spacemono-bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/spacemono-bold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/spacemono-regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/spacemono-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helm/v2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helm/v3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/apple-touch-icon-precomposed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/artifact-hub.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bitnami.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/blog/helm-hub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/boat.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/boat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/boat.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/btn-get-helm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/chart-illustration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cncf-color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cncf-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/create-a-bucket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/create-a-gh-page-button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/deis-logo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/edit-permissions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon-152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/feature-icon-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/feature-icon-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/feature-icon-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/feature-icon-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/features-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fish.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/geometry3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-3-badge.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-blue-vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-charts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-hub.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-logo-deis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-logo-microsoft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-logo-microsoft.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-pyramid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-pyramid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm-white-vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/helm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo-with-deis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/bitnami.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/bloodorange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/codecademy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/codecentric.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/codefresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/ibm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/microsoft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/montreal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/samsungsds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/suse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/tm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logowall/weaveworks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/make-bucket-public.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/microsoft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/microsoft.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/og-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pattern-topo-sm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pattern-topo-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pattern-topo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pattern-waves.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/phippy-sm-smiling.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/set-a-gh-page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/skippbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/topography.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/conventions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/custom_resource_definitions/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/dependencies/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/labels/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/pods/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/rbac/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_best_practices/values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/accessing_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/builtin_objects/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/control_structures/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/data_types/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/debugging/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/function_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/functions_and_pipelines/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/getting_started/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/helm_ignore_file/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/named_templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/notes_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/subcharts_and_globals/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/values_files/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/variables/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/wrapping_up/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/chart_template_guide/yaml_techniques/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/developers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/history/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/localization/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/related/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/community/release_checklist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/example/golang/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/example/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/faq/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/faq/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/glossary/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/glossary/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_completion/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_completion_bash/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_completion_fish/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_completion_powershell/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_completion_zsh/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_create/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_delete/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_dependency/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_dependency_build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_dependency_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_dependency_update/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_env/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_get/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_get_all/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_get_hooks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_get_manifest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_get_notes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_get_values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_history/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_init/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_inspect/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_lint/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_package/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_plugin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_plugin_install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_plugin_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_plugin_uninstall/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_plugin_update/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_pull/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_push/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_registry/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_registry_login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_registry_logout/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_repo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_repo_add/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_repo_index/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_repo_list/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_repo_remove/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_repo_update/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_rollback/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_search/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_search_hub/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_search_repo/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_show/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_show_all/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_show_chart/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_show_crds/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_show_readme/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_show_values/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_status/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_template/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_uninstall/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_upgrade/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_verify/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/helm_version/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/helm/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/howto/chart_releaser_action/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/howto/chart_repository_sync_example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/howto/charts_tips_and_tricks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/howto/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/howto/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/intro/cheatsheet/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/intro/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/intro/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/intro/install/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/intro/quickstart/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/intro/using_helm/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/advanced/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/architecture/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/chart_repository/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/chart_tests/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/charts_hooks/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/kubernetes_apis/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/kubernetes_distros/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/library_charts/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/permissions_sql_storage_backend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/plugins/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/provenance/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/rbac/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/registries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/release_policy/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/v2_v3_migration/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/docs/topics/version_skew/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zh/sitemap.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="40b1c0be-0bdf-4350-9d18-8bc830dbbf35" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -438,32 +23,66 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2jm8Za6xrCdIlNKTTCzNfcIDJt3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/project/jaymz1439.github.io",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/jaymz1439.github.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="jaymz1439.github.io" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="jaymz1439.github.io" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="jaymz1439.github.io" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="jaymz1439.github.io" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -473,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721980947561</updated>
       <workItem from="1721980948583" duration="1399000" />
+      <workItem from="1721982909984" duration="2468000" />
     </task>
     <servers />
   </component>
